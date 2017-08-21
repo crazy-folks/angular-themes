@@ -1,0 +1,104 @@
+.navbar .searchbox md-autocomplete{
+    min-width: 150px;
+}
+md-menu-content.navMenu {
+    max-height: 90vh;
+}
+md-menu-content md-menu-item.active {
+  color: #03a9f4;
+}
+md-sidenav .cart-content{
+    padding: 5px;
+}
+md-sidenav .cart-content .md-dialog-actions{
+    margin-top: 10px;
+    display: flex;
+}
+md-sidenav .cart-item{
+    margin-bottom:10px;
+    padding-bottom:5px;
+    cursor: pointer;
+    /*font-size: 14px;*/
+}
+md-sidenav .cart-item img{
+    width: 50px;
+    /*height: 50px;*/
+    margin: 5px 10px;
+}
+md-sidenav .cart-item .middle{
+    margin-left: 20px;  
+}
+.cart-content .md-avatar{
+    max-width:50px;
+}
+.navbar .search .searchbox{
+    margin: 0 20px;
+    /*width:750px;*/
+    max-width:850px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+} 
+.navbar .search .searchbox{
+    margin: 0 20px;
+    /*width:850px;*/
+    max-width:850px;
+}
+.navbar .search .searchbox input {
+    padding: 8px;
+    font-size: 14px;
+    flex:1;
+    /*background: rgba(0,0,0,0.1);*/
+    border: 0;
+}
+.navbar .search .searchbox button {
+    font-size: 14px;
+    margin-left: 0;
+    padding: 2px 10px;
+    border-radius: 0 3px 3px 0;
+}
+ 
+ul.navbar-autocomplete{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.navbar .search md-autocomplete.md-blue-theme {
+     background: white;
+     border-radius:3px 0 0 0; 
+}
+ul.navbar-autocomplete li:hover {
+    background: lightgrey!important;
+}
+ul.navbar-autocomplete li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex:1;
+    align-items: flex-start;
+}
+ul.navbar-autocomplete li > *{
+    display: flex;
+}
+ul.navbar-autocomplete li img{
+    margin-right: 10px;
+    max-height: 50px;
+}
+ul.navbar-autocomplete li .description {
+    flex:1;
+    margin-left: 10px;
+}
+ 
+.md-autocomplete-suggestions-container li:last-child {
+  border-bottom-width: 0; 
+}
+
+.md-scroll-mask{
+    position: initial
+}

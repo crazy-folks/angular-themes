@@ -1,0 +1,313 @@
+<md-toolbar class="md-hue-1" id="user-detail-toolbar">
+	<span layout="row" layout-align="space-between" class="md-toolbar-tools md-toolbar-tools-top">
+		<md-button ng-click="detail.goBack();" aria-label="Close detail view">
+			<ng-md-icon icon="close" aria-label="Close dialog"></ng-md-icon>
+		</md-button>
+		<h3>Edit {{detail.header | labelCase}} - {{detail.product._id}}</h3>
+		<md-button aria-label="-">
+		</md-button>
+	</span>
+</md-toolbar>
+<md-content class="md-padding" flex layout-fill ng-cloak id="user-detail-content">
+	<section class="section" layout="row">
+    
+<form name="form" layout="column" layout-fill layout-align="space-between" ng-submit="detail.save(detail.product);detail.goBack();" novalidate autocomplete="off">
+		<span layout="column" layout-sm="column">
+		  <!--<md-content>-->
+				<br/>
+			    <section layout="column">
+							<span layout="row">
+								<!--<md-input-container flex>
+									<label>SKU</label>
+									<input name="sku" ng-model="detail.product.sku" md-autofocus>
+								</md-input-container>-->
+
+								<md-input-container flex>
+									<label>Name</label>
+									<input name="name" ng-model="detail.product.name"/>
+								</md-input-container>
+							</span>
+								<md-input-container flex>
+									<label>Description</label>
+									<textarea name="description" ng-model="detail.product.info" rows="2"></textarea>
+								</md-input-container>
+								<span layout="row">
+									<md-input-container flex>
+										<label>Category</label>
+										<md-select ng-model="detail.product.category">
+											<md-option ng-repeat="o in detail.options.categories" value="{{o._id}}">
+												{{o.name}} - <b>{{o.parent.name}}</b>
+											</md-option>
+										</md-select>
+										<md-button ui-sref="category"><ng-md-icon icon="subject"></ng-md-icon>New Category</md-button>
+									</md-input-container>
+									<md-input-container flex>
+										<label>Brand</label>
+										<md-select ng-model="detail.product.brand">
+											<md-option ng-repeat="o in detail.options.brands" value="{{o._id}}">
+												{{o.name}}
+											</md-option>
+										</md-select>
+										<md-button ui-sref="brand"><ng-md-icon icon="verified_user"></ng-md-icon>New Brand</md-button>
+									</md-input-container>
+								</span>
+			    </section>
+			    <section>
+			      <md-subheader class="md-warn">General Features</md-subheader> 
+						<md-button ui-sref="feature"><ng-md-icon icon="spellcheck"></ng-md-icon>New Feature</md-button>
+						<table md-colresize="md-colresize" class="md-table" id="exportable">
+							<thead>
+								<tr class="md-table-headers-row">
+									<th class="md-table-header">#</th>
+									<th class="md-table-header">Key</th>
+									<th class="md-table-header">Value</th>
+									<th class="md-table-header"></th>
+								</tr>
+							</thead>
+
+							<tbody>
+
+								<tr ng-repeat="feature in detail.product.features track by $index" id="{{feature._id}}"
+										class="md-table-content-row"
+										ng-class="{'selected': detail.isSelected(p)}">
+									<td>{{$index+1}}</td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="feature.key" aria-label="Features Key">
+												<md-option ng-repeat="o in detail.options.features | unique: 'key'" value="{{o.key}}">
+													{{o.key}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="feature.val" aria-label="Features Value">
+												<md-option ng-repeat="o in detail.options.features | filter: feature.key | unique: 'val'" value="{{o.val}}">
+													{{o.val}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td>
+										<md-button class="md-icon-button" aria-label="Delete Feature" ng-click="detail.deleteFeature($index,detail.product);"><ng-md-icon icon="delete"></ng-md-icon></md-button>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="detail.product.features[detail.product.features.length].key" aria-label="Features Key">
+												<md-option ng-repeat="o in detail.options.features | unique: 'key'" value="{{o.key}}">
+													{{o.key}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="detail.product.features[detail.product.features.length].val" aria-label="Features Value">
+												<md-option ng-repeat="o in detail.options.features | filter: feature.key | unique: 'val'" value="{{o.val}}">
+													{{o.val}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td></td>
+								</tr>
+							</tbody>
+			      </table>
+			    </section>
+			    <section>
+			      <md-subheader class="md-warn">Key Features</md-subheader>
+						<a href="/feature" class="pull-right">Create New</a>
+						<table md-colresize="md-colresize" class="md-table" id="exportable">
+							<thead>
+								<tr class="md-table-headers-row">
+									<th class="md-table-header">#</th>
+									<th class="md-table-header">Key</th>
+									<th class="md-table-header">Value</th>
+									<th class="md-table-header"></th>
+								</tr>
+							</thead>
+
+							<tbody>
+
+								<tr ng-repeat="feature in detail.product.keyFeatures track by $index" id="{{feature._id}}"
+										class="md-table-content-row"
+										ng-class="{'selected': detail.isSelected(p)}">
+									<td>{{$index+1}}</td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="feature.key" aria-label="Features Key">
+												<md-option ng-repeat="o in detail.options.features | unique: 'key'" value="{{o.key}}">
+													{{o.key}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="feature.val" aria-label="Features Value">
+												<md-option ng-repeat="o in detail.options.features | filter: feature.key | unique: 'val'" value="{{o.val}}">
+													{{o.val}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td>
+										<md-button class="md-icon-button" aria-label="Delete Feature" ng-click="detail.deleteFeature($index,detail.product);"><ng-md-icon icon="delete"></ng-md-icon></md-button>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="detail.product.keyFeatures[detail.product.keyFeatures.length].key" aria-label="Features Key">
+												<md-option ng-repeat="o in detail.options.features | unique: 'key'" value="{{o.key}}">
+													{{o.key}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<md-select ng-model="detail.product.keyFeatures[detail.product.keyFeatures.length].val" aria-label="Features Value">
+												<md-option ng-repeat="o in detail.options.features | filter: feature.key | unique: 'val'" value="{{o.val}}">
+													{{o.val}}
+												</md-option>
+											</md-select>
+										</md-input-container>
+									</td>
+									<td></td>
+								</tr>
+							</tbody>
+			      </table>
+			    </section>
+			    <section>
+			      <md-subheader class="md-accent">Variants</md-subheader>
+
+						<table md-colresize="md-colresize" class="md-table" id="exportable">
+							<thead>
+								<tr class="md-table-headers-row">
+									<th class="md-table-header">#</th>
+									<th class="md-table-header">Preview</th>
+									<th class="md-table-header">Size</th>
+									<th class="md-table-header">Weight</th>
+									<th class="md-table-header">MRP</th>
+									<th class="md-table-header">Price</th>
+									<th class="md-table-header">Image</th>
+									<th class="md-table-header"></th>
+								</tr>
+							</thead>
+
+							<tbody>
+
+								<tr ng-repeat="v in detail.product.variants track by $index" id="{{v._id}}"
+										class="md-table-content-row"
+										ng-class="{'selected': detail.isSelected(p)}">
+									<td>{{$index+1}}</td>
+									<td>
+										<md-input-container flex>
+											<img ng-src="{{v.image}}" alt="{{v.name}}" err-SRC="/assets/images/material-shop.jpg">
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="size" ng-model="v.size" aria-label="Variant Size"/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="weight" ng-model="v.weight" aria-label="Variant Weight"/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="mrp" ng-model="v.mrp" aria-label="Variant List Price" only-numbers/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="price" ng-model="v.price" aria-label="Variant Selling Price" only-numbers/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="image" ng-model="v.image" aria-label="Variant Image"/>
+											<ng-md-icon icon="insert_photo" ng-click="detail.mediaLibrary($index)"></ng-md-icon>
+										</md-input-container>
+									</td>
+									<td>
+										<md-button class="md-icon-button" aria-label="Delete Feature"   ng-click="detail.deleteVariants($index,product);"><ng-md-icon icon="delete"></ng-md-icon></md-button>
+									</td>
+								</tr>
+								<tr class="md-table-content-row"
+										ng-class="{'selected': detail.isSelected(p)}">
+									<td>New</td>
+									<td>
+										<md-input-container flex>
+											<input name="size" ng-model="detail.product.newVariant.size" aria-label="Variant Size"/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="weight" ng-model="detail.product.newVariant.weight" aria-label="Variant Weight"/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="mrp" ng-model="detail.product.newVariant.mrp" aria-label="Variant List Price" only-numbers/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="price" ng-model="detail.product.newVariant.price" aria-label="Variant Selling Price" only-numbers/>
+										</md-input-container>
+									</td>
+									<td>
+										<md-input-container flex>
+											<input name="image" ng-model="detail.product.newVariant.image" aria-label="Variant Image"/>
+											<ng-md-icon icon="insert_photo" ng-click="detail.mediaLibrary(1000000)"></ng-md-icon>
+										</md-input-container>
+									</td>
+									<td>
+									</td>
+								</tr>
+							</tbody>
+			      </table>
+			    </section>
+
+			  </md-content>
+
+		<md-dialog-actions layout="row">
+			<span flex></span>
+			<md-button ng-disabled="detailForm.$invalid" type="submit" class="md-primary md-raised" aria-label="Save changes">Save</md-button>
+		</md-dialog-actions>
+		</form>
+
+	</section>
+
+	<section class="section" layout="column" ng-hide="detail.isRoot">
+
+		<span class="section-title">Record Information</span>
+		<span layout="row" layout-sm="column" class="detail-info">
+			<span flex>Modified
+				<span am-time-ago="detail.product.updated_at"></span>
+				{{detail.product.updated_at && 'by ' + detail.product.uid}}
+				<md-tooltip>{{detail.product.updated_at | date:'dd. MMMM yyyy H:mm'}}</md-tooltip>
+			</span>
+		</span>
+
+		<span layout="row" layout-sm="column" class="detail-info" ng-show="detail.product.created_at">
+			<span flex="25">Created</span>
+			<span flex>{{detail.product.created_at | date:'dd. MMMM yyyy H:mm'}}</span>
+		</span>
+
+	</section>
+
+<!--</md-content>-->
+
+<md-button class="md-fab md-accent md-fab-bottom-right fab-overlap md-button ng-scope md-blue-theme" aria-label="Save Product" ng-if="form.$dirty" ng-click="detail.save(detail.product);">
+	<ng-md-icon icon="save"></ng-md-icon>
+</md-button>

@@ -1,0 +1,226 @@
+/*
+.product-preview-wrapper {
+    max-width: none;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.product-preview-wrapper {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
+.product-preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.product-preview__info {
+    border-top-color: #dfdfdf;
+    background: #ffffff;
+}
+.product-preview__info {
+    position: absolute;
+    bottom: 0;
+    border-top-width: 2px;
+    border-top-style: solid;
+    width: 100%;
+    padding: 30px 30px 20px 30px;
+    border-radius: 0 0 5px 5px;
+}
+.text-center {
+    text-align: center;
+}
+
+.product-preview__info__btns {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 -30px;
+    -webkit-transition: all 200ms ease-out 0s;
+    -moz-transition: all 200ms ease-out 0s;
+    -ms-transition: all 200ms ease-out 0s;
+    -o-transition: all 200ms ease-out 0s;
+    transition: all 200ms ease-out 0s;
+}
+
+.product-preview__info .rating {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+.rating {
+    color: #9a9a9a;
+}
+.rating {
+    font-size: 10px;
+    line-height: 1em;
+}
+
+.options-swatch {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+}
+.price-box {
+    margin: 0 0 10px 0;
+    font-size: 1.231em;
+    line-height: 1em;
+}
+
+.product-preview__info__link {
+    color: #adadad;
+}
+.product-preview__info__link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.846em;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    opacity: 0;
+    margin: 0 -30px;
+    -webkit-transition: all 200ms ease-out 0s;
+    -moz-transition: all 200ms ease-out 0s;
+    -ms-transition: all 200ms ease-out 0s;
+    -o-transition: all 200ms ease-out 0s;
+    transition: all 200ms ease-out 0s;
+}
+
+.product-preview__info__link a {
+    text-decoration: none;
+    white-space: nowrap;
+}.product-preview__info__link a {
+    color: #adadad;
+}
+.product-preview__info__link a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+*/
+
+.reviews list-image div, list-image img {
+    margin: 0;
+}
+.reviews{
+    padding: 20px 0;
+}
+.reviews list-image div {
+  text-align: center;
+}
+.reviews md-card-actions span{
+    margin-left: 10px;
+    color: #999;
+}
+.reviews md-card md-card-content{
+    padding: 0 16px;
+}
+.reviews .reviews-header .total-rating{
+    margin: 10px 50px 10px 10px;
+    
+}
+.reviews .rating-signal md-progress-linear{
+    width:150px;
+    margin: 0 20px;
+}
+.reviews .reviews-header .total{
+    font-size: 2em;
+    margin-bottom : 20px;
+}
+.reviews md-card-header-text .md-title{
+    /*font-weight: bold;*/
+}
+.reviews md-card-header-text .md-subhead .rating-button{
+    font-size: 1.1em;
+    background-color: limegreen;
+    color: #fff;
+    width: 29px;
+    border-radius: 4px;
+    padding: 0 6px;
+}
+.product-description{
+    margin-left: 10px;
+}
+.single-product-container .price{
+  font-size: 25px;
+  color: #555;
+}
+.single-product-container .price .text-muted{
+  font-size: 28px;
+  color: #333;
+}
+.single-product-container .md-content{
+    margin-left: 10px;
+}
+/*.side-thumb{
+    width:150px;
+}*/
+.side-thumb md-card{
+    cursor: pointer;
+}
+/*.single-product-container md-card img{
+    width:100%;
+}*/
+.big-thumb{
+    width:40%;
+}
+.detail-cta{
+    width:15%;
+}
+ul.filter-list{
+    padding-left: 0;
+}
+ul.filter-list li {
+    cursor: pointer;
+}
+.open .filters-col {
+    position: relative;
+}
+.filters-col {
+    background-color: #ffffff;
+}
+.filters-col {
+    width: 280px;
+    float: left;
+    transition: opacity 300ms ease-out 0s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 4px 20px 4px;
+    position: absolute;
+}
+.filters-col__collapse__title {
+    cursor: pointer;
+    padding: 20px 20px 20px 0;
+    margin-top: 0 !important;
+    position: relative;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.692em;
+    padding: 0 0 1.5em;
+    margin: 0;
+}
+.filters-col__collapse__content {
+    padding-bottom: 15px;
+}
+.filter-list li {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.checkbox-group {
+    position: relative;
+}
+
+
+

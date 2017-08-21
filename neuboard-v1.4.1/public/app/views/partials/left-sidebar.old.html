@@ -1,0 +1,180 @@
+<!--<div class="sidebar-profile">
+  <div class="avatar">
+    <img class="img-circle profile-image" src="img/profile.jpg">
+    <i class="on border-dark animated bounceIn"></i>
+  </div>
+  <div class="profile-body dropdown">
+    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><h4>Mike Adams <span class="caret"></span></h4></a>
+    <small class="title">Front-end Developer</small>
+    <ul class="dropdown-menu animated fadeInRight" role="menu">
+      <li class="profile-progress">
+        <h5>
+          <span>80%</span>
+          <small>Profile complete</small>
+        </h5>
+        <div class="progress progress-xs">
+          <div class="progress-bar progress-bar-primary" style="width: 80%">
+          </div>
+        </div>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon">
+            <i class="fa fa-user"></i>
+          </span>My Account
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon">
+            <i class="fa fa-envelope"></i>
+          </span>Messages
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon">
+            <i class="fa fa-cog"></i>
+          </span>Settings
+        </a>
+      </li>
+      <li class="divider"></li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon">
+            <i class="fa fa-sign-out"></i>
+          </span>Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>-->
+<nav>
+  <!--<h5 class="sidebar-header">Navigation</h5>-->
+  <!-- location directive.js | data-nav-toggle-sub maps to -->
+  <ul class="nav nav-pills nav-stacked" data-nav-toggle-sub ng-controller="sidebarController">
+    <li ui-sref-active="active"  ng-show='dashboard_mod'>
+      <a href="" ui-sref="dashboard" title="Dashboard">
+        <i class="fa fa-fw fa-tachometer"></i>Dashboard
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='vault_mod'>
+      <a href="" ui-sref="vault" title="Vault">
+        <i class="fa fa-fw fa-lock"></i> Vault
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='files_mod'>
+      <a href="" ui-sref="files" title="Files">
+        <i class="fa fa-file-o" style = "margin-left:5px"></i> Files
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='participants_mod'>
+      <a href="" ui-sref="participants" title="Participants">
+        <i class="fa fa-fw fa-users"></i> Participants
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='processes_mod'>
+      <a href="" ui-sref="processes" title="Processes">
+        <i class="fa fa-fw fa-cogs"></i> Processes
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='agreements_mod'>
+      <a href="" ui-sref="agreements" title="Agreements">
+        <i class="fa fa-fw fa-exchange"></i> Agreements
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='users_mod'>
+      <a href="" ui-sref="users" title="Users">
+        <i class="fa fa-fw fa-user"></i> Users
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='roles_mod'>
+      <a href="" ui-sref="roles" title="Roles">
+        <i class="fa fa-fw fa-plus-square"></i> Roles
+      </a>
+    </li>
+    <li ui-sref-active="active"  ng-show='admin_mod'>
+      <a href="" ui-sref="admin" title="Admin">
+        <i class="fa fa-fw fa-unlock"></i> Administration
+      </a>
+    </li>
+    <!--<li class="nav-dropdown" ng-class="{active: $state.includes('ui')}">
+      <a href="" title="UI Elements">
+        <i class="fa  fa-fw fa-cogs"></i> UI Elements
+      </a>
+      <ul class="nav-sub" ng-class="{in: $state.includes('ui')}">
+        <li ui-sref-active="active">
+          <a href="" ui-sref="ui.buttons" title="Buttons">
+            Buttons
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.sliders-progress" title="Sliders &amp; Progress">
+            Sliders &amp; Progress
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.modals-popups" title="Modals &amp; Popups">
+            Modals &amp; Popups
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.tabs-accordions" title="Tabs &amp; Accordions">
+            Tabs &amp; Accordions
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.alerts-notifications" title="Alerts &amp; Notifications">
+            Alerts &amp; Notifications
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.nestable-lists" title="Nestable &amp; Lists">
+            Nestable Lists
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.panels" title="Panels">
+            Panels
+          </a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.icons" title="Icons">Icons</a>
+        </li>
+        <li ui-sref-active="active">
+          <a href="javascript:;" ui-sref="ui.typography" title="Typography">Typography</a>
+        </li>
+      </ul>
+    </li>
+    <li ui-sref-active="active">
+      <a href="../Frontend/" title="Front-end Theme">
+        <i class="fa  fa-fw fa-desktop"></i> Front-end Theme<span class="pull-right badge badge-danger">new</span>
+      </a>
+    </li>
+    <li ui-sref-active="active">
+      <a href="javascript:;" ui-sref="animations" title="Animations">
+        <i class="fa  fa-fw fa-magic"></i> CSS Animations
+      </a>
+    </li>-->
+  </ul>
+</nav>
+<!--<h5 class="sidebar-header">Account Settings</h5>
+<div class="setting-list">
+  <div class="row">
+    <div class="col-xs-8">
+      <label for="checkOne" class="control-label">Share your status</label>
+    </div>
+    <div class="col-xs-4">
+      <input type="checkbox" class="js-switch" ui-switch="{size: 'small', color:'#27B6AF',secondaryColor: '#B3B8C3'}" ng-model="checkOne" checked id="checkOne" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label for="checkTwo" class="control-label">Push Notifications</label>
+    </div>
+    <div class="col-xs-4">
+      <input type="checkbox" class="js-switch" ui-switch="{size: 'small',color:'#27B6AF',secondaryColor: '#B3B8C3'}" ng-model="checkTwo" id="checkTwo" />
+    </div>
+  </div>
+</div>-->

@@ -1,0 +1,259 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+      <link rel="stylesheet" href="bower_components/angular-material-icons/angular-material-icons.css" />
+      <link rel="stylesheet" href="bower_components/material-date-picker/build/styles/mbdatepicker.css" />
+      <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.css" />
+      <link rel="stylesheet" href="bower_components/angular-ui-tree/dist/angular-ui-tree.css" />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+      <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <link rel="stylesheet" href="app/account/password/forgot.css">
+      <link rel="stylesheet" href="app/admin/admin.css">
+      <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/book/book.css">
+      <link rel="stylesheet" href="app/brand/brand.css">
+      <link rel="stylesheet" href="app/category/category-tree.css">
+      <link rel="stylesheet" href="app/category/category.css">
+      <link rel="stylesheet" href="app/checkout/checkout.css">
+      <link rel="stylesheet" href="app/contact/contact.css">
+      <link rel="stylesheet" href="app/country/country.css">
+      <link rel="stylesheet" href="app/coupon/coupon.css">
+      <link rel="stylesheet" href="app/customer/customer.css">
+      <link rel="stylesheet" href="app/dashboard/dashboard.css">
+      <link rel="stylesheet" href="app/documentation/documentation.css">
+      <link rel="stylesheet" href="app/documentation/doc.css">
+      <link rel="stylesheet" href="app/feature/feature.css">
+      <link rel="stylesheet" href="app/main/main.css">
+      <link rel="stylesheet" href="app/main/product.css">
+      <link rel="stylesheet" href="app/media/media.css">
+      <link rel="stylesheet" href="app/order/order.css">
+      <link rel="stylesheet" href="app/payment-method/payment-method.css">
+      <link rel="stylesheet" href="app/product/main.css">
+      <link rel="stylesheet" href="app/product/product.css">
+      <link rel="stylesheet" href="app/product/products.css">
+      <link rel="stylesheet" href="app/shipping/shipping.css">
+      <link rel="stylesheet" href="app/wish/wish.css">
+      <link rel="stylesheet" href="components/calendar/calendar.css">
+      <link rel="stylesheet" href="components/crud-table/crud-table.css">
+      <link rel="stylesheet" href="components/crud-table/main.css">
+      <link rel="stylesheet" href="components/footer/footer.css">
+      <link rel="stylesheet" href="components/left-menu/left-menu.css">
+      <link rel="stylesheet" href="components/login-modal/modal.css">
+      <link rel="stylesheet" href="components/modal/modal.css">
+      <link rel="stylesheet" href="components/navbar-public/navbar-public.css">
+      <link rel="stylesheet" href="components/navbar/navbar.css">
+      <link rel="stylesheet" href="components/oauth-buttons/oauth-buttons.css">
+      <link rel="stylesheet" href="components/repeat-input/repeat-input.css">
+      <link rel="stylesheet" href="components/top-menu/megamenu.css">
+      <link rel="stylesheet" href="components/user-avatar/user-avatar.css">
+      <link rel="stylesheet" href="components/rating/rating.css">
+      <link rel="stylesheet" href="bower_components/odometer/themes/odometer-theme-minimal.css"/>
+      
+      <!-- endinjector -->
+    <!-- endbuild -->
+
+  </head>
+  <body ng-app="materialShopApp">
+    <!--[if lt IE 7]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ui-view class="wrapper">
+      <div class="sk-cube-grid" ng-hide="vm.siteLoaded">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>  
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49421899-2 ');
+      ga('send', 'pageview');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/lodash/lodash.js"></script>
+      <script src="bower_components/angular-socket-io/socket.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/angular-aria/angular-aria.js"></script>
+      <script src="bower_components/angular-messages/angular-messages.js"></script>
+      <script src="bower_components/angular-material/angular-material.js"></script>
+      <script src="bower_components/moment/moment.js"></script>
+      <script src="bower_components/angular-moment/angular-moment.js"></script>
+      <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+      <script src="bower_components/blob-polyfill/Blob.js"></script>
+      <script src="bower_components/file-saver.js/FileSaver.js"></script>
+      <script src="bower_components/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
+      <script src="bower_components/material-date-picker/build/mbdatepicker.js"></script>
+      <script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+      <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+      <script src="bower_components/ng-file-upload-shim/ng-file-upload-shim.js"></script>
+      <script src="bower_components/spin.js/spin.js"></script>
+      <script src="bower_components/angular-loading/angular-loading.js"></script>
+      <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
+      <script src="bower_components/angular-ui-tree/dist/angular-ui-tree.js"></script>
+      <script src="bower_components/odometer/odometer.js"></script>
+      <script src="bower_components/angular-odometer-js/dist/angular-odometer.js"></script>
+      <script src="bower_components/ng-infinite-scroll-npm-is-better-than-bower/build/ng-infinite-scroll.js"></script>
+      <!-- endbower -->
+      <script src="socket.io-client/socket.io.js"></script>
+    <!-- endbuild -->
+    <!-- build:js(.tmp) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/admin/admin.module.js"></script>
+      <script src="components/auth/auth.module.js"></script>
+      <script src="components/util/util.module.js"></script>
+      <script src="app/account/account.js"></script>
+      <script src="app/account/cp/cp.controller.js"></script>
+      <script src="app/account/login/login.controller.js"></script>
+      <script src="app/account/password/password.controller.js"></script>
+      <script src="app/account/signup/signup.controller.js"></script>
+      <script src="app/address/address.controller.js"></script>
+      <script src="app/address/address.js"></script>
+      <script src="app/admin/admin.controller.js"></script>
+      <script src="app/admin/admin.router.js"></script>
+      <script src="app/app.constant.js"></script>
+      <script src="app/book/book.controller.js"></script>
+      <script src="app/book/book.js"></script>
+      <script src="app/brand/brand.controller.js"></script>
+      <script src="app/brand/brand.js"></script>
+      <script src="app/cart/cart.controller.js"></script>
+      <script src="app/cart/cart.js"></script>
+      <script src="app/category/category.controller.js"></script>
+      <script src="app/category/category.js"></script>
+      <script src="app/category/detail.controller.js"></script>
+      <script src="app/category/list.controller.js"></script>
+      <script src="app/category/main.controller.js"></script>
+      <script src="app/checkout/checkout.controller.js"></script>
+      <script src="app/checkout/checkout.js"></script>
+      <script src="app/contact/contact.controller.js"></script>
+      <script src="app/contact/contact.js"></script>
+      <script src="app/country/country.controller.js"></script>
+      <script src="app/country/country.js"></script>
+      <script src="app/coupon/coupon.controller.js"></script>
+      <script src="app/coupon/coupon.js"></script>
+      <script src="app/customer/customer.controller.js"></script>
+      <script src="app/customer/customer.js"></script>
+      <script src="app/dashboard/dashboard.controller.js"></script>
+      <script src="app/dashboard/dashboard.js"></script>
+      <script src="app/documentation/documentation.controller.js"></script>
+      <script src="app/documentation/documentation.js"></script>
+      <script src="app/feature/feature.controller.js"></script>
+      <script src="app/feature/feature.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/main/single.controller.js"></script>
+      <script src="app/media/media.controller.js"></script>
+      <script src="app/media/media.js"></script>
+      <script src="app/order/order.controller.js"></script>
+      <script src="app/order/order.js"></script>
+      <script src="app/orders/orders.controller.js"></script>
+      <script src="app/orders/orders.js"></script>
+      <script src="app/payment-method/payment-method.controller.js"></script>
+      <script src="app/payment-method/payment-method.js"></script>
+      <script src="app/payment/payment.controller.js"></script>
+      <script src="app/payment/payment.js"></script>
+      <script src="app/product/detail.controller.js"></script>
+      <script src="app/product/list.controller.js"></script>
+      <script src="app/product/main.controller.js"></script>
+      <script src="app/product/product.controller.js"></script>
+      <script src="app/product/product.js"></script>
+      <script src="app/review/review.controller.js"></script>
+      <script src="app/review/review.js"></script>
+      <script src="app/reviews/reviews.controller.js"></script>
+      <script src="app/reviews/reviews.js"></script>
+      <script src="app/settings.js"></script>
+      <script src="app/shipping/shipping.controller.js"></script>
+      <script src="app/shipping/shipping.js"></script>
+      <script src="app/wish/wish.controller.js"></script>
+      <script src="app/wish/wish.js"></script>
+      <script src="components/auth/auth.service.js"></script>
+      <script src="components/auth/interceptor.service.js"></script>
+      <script src="components/auth/router.decorator.js"></script>
+      <script src="components/auth/user.service.js"></script>
+      <script src="components/calendar/calendar.directive.js"></script>
+      <script src="components/cart-buttons/cart-buttons.component.js"></script>
+      <script src="components/crud-table/crud-table.js"></script>
+      <script src="components/crud-table/detail.controller.js"></script>
+      <script src="components/crud-table/list.controller.js"></script>
+      <script src="components/crud-table/main.controller.js"></script>
+      <script src="components/crud-table/main.js"></script>
+      <script src="components/directives/directive.directive.js"></script>
+      <script src="components/factory/cart.service.js"></script>
+      <script src="components/factory/factory.service.js"></script>
+      <script src="components/filters/filters.filter.js"></script>
+      <script src="components/footer/footer.directive.js"></script>
+      <script src="components/left-menu/left-menu.controller.js"></script>
+      <script src="components/left-menu/left-menu.directive.js"></script>
+      <script src="components/left-menu/left-menu.service.js"></script>
+      <script src="components/list-image/list-image.directive.js"></script>
+      <script src="components/lodash/lodash.service.js"></script>
+      <script src="components/login-modal/modal.service.js"></script>
+      <script src="components/modal/modal.service.js"></script>
+      <script src="components/mongoose-error/mongoose-error.directive.js"></script>
+      <script src="components/navbar-public/navbar-public.controller.js"></script>
+      <script src="components/navbar-public/navbar-public.directive.js"></script>
+      <script src="components/navbar/navbar.controller.js"></script>
+      <script src="components/navbar/navbar.directive.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.controller.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.directive.js"></script>
+      <script src="components/rating/rating.component.js"></script>
+      <script src="components/remote-unique/remote-unique.directive.js"></script>
+      <script src="components/repeat-input/repeat-input.directive.js"></script>
+      <script src="components/right-menu/right-menu.controller.js"></script>
+      <script src="components/right-menu/right-menu.js"></script>
+      <script src="components/socket/socket.service.js"></script>
+      <script src="components/submit-button/submit-button.component.js"></script>
+      <script src="components/toast/toast.service.js"></script>
+      <script src="components/toggle-component/toggle-component.directive.js"></script>
+      <script src="components/toggle-component/toggle-component.service.js"></script>
+      <script src="components/top-menu/top-menu.directive.js"></script>
+      <script src="components/top-menu/topmenu.controller.js"></script>
+      <script src="components/user-avatar/user-avatar.directive.js"></script>
+      <script src="components/util/util.service.js"></script>
+      <script src="components/wish/wish.component.js"></script>
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </body>
+</html>

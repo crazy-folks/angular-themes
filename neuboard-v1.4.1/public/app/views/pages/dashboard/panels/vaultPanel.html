@@ -1,0 +1,26 @@
+﻿<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-dashboardtitle">Vault</h3>
+    <div class="actions pull-right">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel" ui-sref="vault">
+    <div class="content" ng-controller="vaultController">
+    <div class="col-md-6 col-sm-12" ng-repeat="item in categories">
+    <div class="panel panel-solid-info widget-mini">
+      <div class="panel-body text-center">
+        <i class="icon-user"></i>
+        {{item.name}}
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+              
+              

@@ -1,0 +1,23 @@
+<style> 
+
+.wrapper {margin: 0 auto; width: 100%; }
+.pdf-controls { width: 100%; display: block; background: white; padding: 1em;}
+.rotate0 {-webkit-transform: rotate(0deg); transform: rotate(0deg); }
+/*.rotate90 {-webkit-transform: rotate(90deg); transform: rotate(90deg); }
+.rotate180 {-webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.rotate270 {-webkit-transform: rotate(270deg); transform: rotate(270deg); }*/
+
+h1 {
+    display: block;
+    font-weight: bold;
+}
+
+</style>
+
+<div class="wrapper" > 
+
+	<nav ng-class="{'pdf-controls fixed': scroll > 100, 'pdf-controls': scroll <= 100}">
+		<h1> {{pdffilename}} </h1>   <a href="" ui-sref="autoViewFile({viewFile: '{{pdffilename}}'})"> <h4 style = "color:#3078ef; font-weight:bold;" ng-hide = "pdffilename == 'Loan Application PDF Auto Form' || pdffilename == 'Loan Estimate PDF Auto Form' || pdffilename == 'Step by Step Mortgage Guide' "> Auto Fill </h4> </a> 
+		<ng-pdf template-url='/app/views/pages/vault/partial/viewer.html' scale=2></ng-pdf>
+	</nav> 
+</div> 

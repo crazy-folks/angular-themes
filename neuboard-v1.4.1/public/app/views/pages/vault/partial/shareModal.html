@@ -1,0 +1,111 @@
+<style>
+  span.error{color:red;font-weight: bold;}
+
+
+  .full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }
+  .partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+  }
+
+</style>
+
+<div class="modal-header">
+    <h3 class="modal-title"> Sharing Agreement <span class="pull-right close-btn"><i class="fa fa-times" ng-click = "cancel()"></i></span></h3>
+   
+</div>
+  <div class="modal-body"> 
+    <form novalidate name="sharingForm">  
+    <div>
+    <h4> <label class="control-label no-padding">  Shared With</label> </h4>
+    <span class="pull-right btn btn-success btn-md" ng-click="cancel()" ><a ui-sref="participants" title="Participants" style = "color: white"> Add Participant </a> </span>
+      </div>
+    
+   <div
+    isteven-multi-select
+    input-model="allParticipants"
+    output-model="outputParts"
+    button-label="icon shareName"
+    item-label="icon shareName maker"
+    tick-property="ticked"
+    ...
+    group-property="msGroup"
+    >
+  </div>
+  <p ng-show = "allParticipants.length == 0" style = "color:red; font-weight:bold"> You don't have any participants to share </p>
+  <p ng-show = "outputParts.length == 0 && allParticipants.length != 0" style = "color:red; font-weight:bold"> Please select whom to share </p>
+
+ 
+  <!--  <div class="row">
+   <span> {{selectedParts(outputParts)}}  </span>
+    <div class="col-md-4" ng-repeat="option in participants.categories">
+    <h5> <label class="control-label no-padding">{{option.name}} </label></h5>
+    <ui-select ng-model="item" theme="bootstrap">
+    <ui-select-match placeholder="Select one...">{{item.displayname}}</ui-select-match>
+    <ui-select-choices repeat="item in option.participants">
+      <div class="row">
+        {{item.displayname}}
+      </div>
+    </ui-select-choices>
+    </ui-select>
+    </div>
+    </div> -->
+
+                  <br> </br>
+                  <div style= "margin-left:-20px;">
+                   <h4> <label class="control-label no-padding" style = "margin-left:18px">Privacy Level</label> </h4>
+                    <div class="clearfix fa-border padding10">
+                      <div class="col-sm-4 col-md-3 col-lg-4">
+                      <h5>  <label class="display-block">Read-only access</label> </h5>
+                        <input data-size="small" type="checkbox" ng-model = "property.readonlyaccess" ng-init="property.readonlyaccess=false">
+                        <span ng-show="property.readonlyaccess == true"> Yes </span>
+                        <span ng-show="property.readonlyaccess == false"> No </span>
+              
+                      </div>
+                      <div class="col-sm-4 col-md-3 col-lg-3">
+                      <h5>  <label class="display-block">Get Updates</label></h5>
+                        <input data-size="small" type="checkbox" ng-model = "property.getupdates" ng-init="property.getupdates=false">
+                        <span ng-show="property.getupdates == true"> Yes </span>
+                        <span ng-show="property.getupdates == false"> No </span>
+                        
+                      </div>
+                      <div class="col-sm-4 col-md-3 col-lg-5">
+                      <h5>  <label class="display-block">Allow to Retain (Days)</label></h5>
+
+              <p class="input-group">
+              <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="timeshare" is-open="popup1.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+             </p>
+      
+                    <span ng-show="timeshare <= todaydate" style = "color:red; font-weight:bold">Please pick a date after today</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                                                      
+                  </div>
+                  </div>
+
+                </form>
+      
+    </div>
+    <div class="modal-footer" >  
+        <button class="btn btn-primary"  ng-click = "startShared(outputParts, property, timeshare, dataToShare)" ng-disabled = "sharingForm.$invalid || outputParts.length == 0 || timeshare <= todaydate">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        <alert type="info" close="closeAlert()" ng-show = "status" > {{status}}
+        </alert>
+    </div>    
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kazume</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=480, maximum-scale=1" />
+	
+    <!-- Styles -->
+  <link rel="stylesheet" href="external/assets/css/base.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="external/assets/css/desktop.css" type="text/css" media="screen and (min-width: 768px)" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen, print" />
+  <!--<link rel="stylesheet" href="external/assets/css/nb.css" type="text/css" media="screen, print" />-->
+
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="external/assets/js/base.js"></script>
+</head>
+<body>
+  <header role="banner">
+    <div id="privacy-modal">
+      <h5>About Your Privacy</h5>
+      <p>Kazume is committed to your online security. We will never share your company's email address with anyone or any institution. We will only use your email address to update you on our launch and to keep you up to date on new Kazume features.</p>
+    </div>
+    <div class="content-container group">
+      <div class="user-container">
+        <nav>
+          <ul>
+            <li id="login">
+              <a id="login-trigger" href="#" class="btn btn-primary">
+                Log in <span>▼</span>
+              </a>
+              <div id="login-content">
+                <form id="login" method="post" action="api/authenticate">
+                  <fieldset id="inputs">
+                    <input id="username" type="text" name="username" placeholder="User Name" required>
+                    <input id="password" type="password" name="password" placeholder="Password" required>
+                  </fieldset>
+                  <div id="error_message" class="bg-danger"></div>
+                  <fieldset id="actions">
+                    <input type="button" id="submit" value="Log in">
+                    <label><input type="checkbox" checked="checked"> Keep me signed in</label>
+                  </fieldset>
+                </form>
+              </div>
+            </li>
+            <li id="signup">
+              <a href="/newUser">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content">
+        <img class="logo" src="external/assets/img/kazumeblue.jpg" alt="kazume">
+        <div><br> <br></div>
+        <h1>Digital Transaction Management</h1>
+        <h4>We are launching soon...</h4>
+
+
+        <!-- Begin MailChimp Signup Form -->
+        <!--<div id="mc_embed_signup">-->
+          <!--<form action="//kazume.us9.list-manage.com/subscribe/post?u=43b169008622e1d1612a53c5a&amp;id=4e34f2cebf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>-->
+  	        <!--<input type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email address here to be notified" id="mce-EMAIL">-->
+	          <!--<div id="mce-responses" class="clear">-->
+		          <!--<div class="response" id="mce-error-response" style="display:none"></div>-->
+		          <!--<div class="response" id="mce-success-response" style="display:none"></div>-->
+	          <!--</div>    &lt;!&ndash; real people should not fill this in and expect good things - do not remove this or risk form bot signups&ndash;&gt;-->
+            <!--<div style="position: absolute; left: -5000px;"><input type="text" name="b_43b169008622e1d1612a53c5a_4e34f2cebf" tabindex="-1" value=""></div>-->
+            <!--<div class="clear"><input type="submit" value="Notify Me!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>-->
+          <!--</form>-->
+        <!--</div>-->
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+
+        <a href="#" class="modal about-privacy">About Your Privacy &#187;</a>
+      </div>
+    </div>
+  </header>
+  <div class="content-container">
+    <article>
+<!--       <section class="section-panel first group">
+        <div class="column">
+          <h2>Here's how it works...</h2>
+          <div class="group circles">
+            <div class="circle active" rel="upload">
+              <div class="circle-bg">
+                <img src="assets/img/upload.png" />
+              </div>
+              <span>Upload</span>
+            </div>
+            <div class="icon">
+              <img src="assets/img/icon_arrow.png" />
+            </div>
+            <div class="circle" rel="organize">
+              <div class="circle-bg">
+                <img src="assets/img/share.png" />
+              </div>
+              <span>Organize</span>
+            </div>
+            <div class="icon">
+              <img src="assets/img/icon_arrow.png" />
+            </div>
+            <div class="circle" rel="share">
+              <div class="circle-bg">
+                <img src="assets/img/organize.png" />
+              </div>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+        <div class="column steps">
+          <div id="upload" class="active">
+            <h3>Manage your personal information</h3>
+            <p>Today online, there is a lack of security and privacy. Kazume will change that. It’s time to take control of your personal information. Our application allows you to import your personal information from various sources into your secure, encrypted vault. Once added, you can begin sharing your information, privately and securely.</p>
+          </div>
+          <div id="organize">
+            <h3>Organize it</h3>
+            <p>The personal vault allows you to organize your various types of information such that it is easily findable and always accessible on any device.</p>
+          </div>
+          <div id="share">
+            <h3>Share it your way</h3>
+            <p>Using our agreement engine, you get to choose which personal data to share with other people or businesses based on clear usage agreements</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section-panel group">
+        <div class="column">
+          <h2>Kazume for small businesses.</h2>
+          <h3>Collaborate and engage with your customers using Kazume Smart Forms. </h3>
+          <p>Easily engage with your customers and employees in one system. You can store and share important data and files with your customers. Your customers will get their own portal to manage their data and interact on mutual transactions. You will be able to track the progress of each transaction with audit tracking.</p>
+        </div>
+        <div class="column">
+          <img src="external/assets/img/web_image_1.png" alt="Kazume for you." />
+        </div>
+      </section>
+
+      <section class="section-panel group">
+        <div class="column">
+          <h2>Kazume for the enterprise.</h2>
+          <h3>Improve customer engagement and build trust.</h3>
+          <p>The Kazume agreement engine breaks complex transactions into a series of easy-to-follow steps; simultaneously, it uses your client’s stored information to auto-fill forms. And with your customer’s agreement, your CRM is updated with accurate data. Transactions are transparent and controlled by clear usage agreements. That, coupled with Kazume’s streamlined efficiency, provides a new opportunity for building trust.</p>
+        </div>
+        <div class="column">
+          <img src="external/assets/img/web_image_2.png" alt="Kazume for business." />
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="content-container group">
+      <p>For more information, please email us: <a href="mailto:info@kazume.com">info@kazume.com</a></p>
+      <p class="copyright">&copy; 2014. All rights reserved. Seattle, WA</p>
+    </div>
+  </footer>
+<script>
+  $(document).ready(function(){
+    $('#login-trigger').click(function(){
+      $(this).next('#login-content').slideToggle();
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;');
+      else $(this).find('span').html('&#x25BC;');
+    });
+    $('#submit').click(function() {
+
+      $.ajax({
+        type: "POST",
+        url: 'api/authenticate',
+        data: {
+          username: $("#username").val(),
+          password: $("#password").val()
+        },
+        success: function(data)
+        {
+          if (data && data.success) {
+            window.localStorage.setItem('token', data.token);
+            window.location.replace('dashboard');
+          }
+          else {
+            alert(data);
+          }
+        },
+        error: function(error)
+        {
+          $('#error_message').html(error.responseJSON.message);
+          //if(error) alert(JSON.stringify(error));
+        }
+      });
+
+    });
+  });
+
+</script>
+</body>
+</html>

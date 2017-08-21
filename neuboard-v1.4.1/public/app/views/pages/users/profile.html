@@ -1,0 +1,87 @@
+<div class="pageheader">
+  <h1>Edit Profile</h1>
+  <div class="breadcrumb-wrapper hidden-xs">
+    <span class="label">You are here:</span>
+    <ol class="breadcrumb">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li>Users</li>
+      <li class="active">Edit Profile</li>
+    </ol>
+  </div>
+</div>
+<section id="main-content">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form class="form-horizontal">
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="user.userData.name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Username</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="user.userData.username">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-6">
+            <input type="password" class="form-control" ng-model="user.userData.password">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="user.userData.email">
+          </div>
+        </div>
+
+        <div class="form-group" ng-if="user.type == 'edit'">
+          <!--<label class="col-sm-2 control-label">Profile Picture</label>-->
+          <div class="col-sm-2">
+            <span class="pull-right"><user-img userid="{{user.userData._id}}" filename="{{user.avatar.filename || 'null'}}" style="max-height:50px;max-width:50px;"></user-img></span>
+          </div>
+          <div class="col-sm-6">
+
+            <div class="input-group">
+              <ui-select ng-model="user.avatar" theme="bootstrap">
+                <ui-select-match placeholder="Select a file...">{{user.avatar.filename}}</ui-select-match>
+                <ui-select-choices repeat="item in user.files">
+                  <div class="row">
+                    <user-img userid="{{user.userData._id}}" filename="{{item.filename}}" style="max-height:40px;max-width:40px;" css="pull-left"></user-img>
+                    <div ng-bind-html="item.filename | highlight: $select.search" style="margin-left:50px;"></div>
+                  </div>
+                </ui-select-choices>
+              </ui-select>
+        <span class="input-group-btn">
+          <button class="btn btn-primary" ngf-select="user.upload($files)" accept="image/*" ngf-max-size="5MB" alt="Upload Avatar"
+                  style="display:table-cell;margin-left:5px !important;" ngf-model="user.userData.avatar"
+                  uib-tooltip="Upload local image" uib-tooltip-placement="top" uib-tooltip-trigger="mouseenter">
+            <span class="fa fa-folder-open-o"></span>
+          </button>
+            </span>
+        <span class="input-group-btn">
+          <button class="btn btn-primary" ng-click="user.deleteFile()"
+                  uib-tooltip="Delete selected image" uib-tooltip-placement="top" uib-tooltip-trigger="mouseenter">
+            <span class="fa fa-trash-o"></span>
+          </button>
+        </span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-6">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" ng-click="user.saveUser()">Update User</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>

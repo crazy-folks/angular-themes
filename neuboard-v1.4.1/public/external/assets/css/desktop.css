@@ -1,0 +1,248 @@
+/*
+Desktop stylesheet for Kazume
+Version: 1.0
+Author: Christine Estrada
+Author URI: http://www.christineestrada.com
+*/
+
+
+/* GENERAL TYPOGRAPHY
+ * Styling for global typographical elements
+ * ---------------------------------------------------------------------- */
+/*
+h1 {
+  font-size: 45px;
+}
+*/
+
+
+
+/* SITE STRUCTURE
+ * Structural elements
+ * ---------------------------------------------------------------------- */
+
+.section-panel .column {
+  float: left;
+  width: 48%;
+  margin-left: 2%;
+}
+
+.section-panel .column:first-child {
+  margin-left: 0;
+  margin-right: 2%;
+  margin-bottom: 0;
+}
+
+.section-panel .column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-panel .steps div {
+  margin-top: 60px;
+}
+
+.circle {
+  width: 120px;
+}
+
+.circle .circle-bg {
+  width: 120px;
+  height: 120px;
+}
+
+.circle img {
+  margin-top: 37px;
+}
+
+.circle span {
+  width: 120px;
+}
+
+.icon {
+  height: 120px;
+}
+
+.icon img {
+  /*max-width: auto;*/
+  margin-top: 46px;
+}
+
+
+
+
+/* HEADER STYLING
+ * Styling for the header area of the site
+ * ---------------------------------------------------------------------- */
+ 
+  header[role='banner'] .header-content {
+    float: left;
+    width: 50%;
+  }
+
+.user-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  float: right;
+  text-align: right;
+  width: 90%;
+  padding: 15px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+
+/* FORM STYLING
+ * Styling for the form area of the site
+ * ---------------------------------------------------------------------- */
+
+form input[type='text'] {
+  max-width: 470px;
+}
+
+
+/* LOGIN DROPDOWN CSS
+*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  background: rgba(238, 238, 238, 0.6);
+  border-bottom: 1px solid #fff;
+  border-radius: 3px;
+}
+
+nav li {
+  float: left;
+}
+
+nav #login {
+  /*border-right: 1px solid #ddd;*/
+  box-shadow: 1px 0 0 #fff;
+}
+
+nav #login-trigger,
+nav #signup a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+nav #signup a {
+  border-radius: 3px;
+}
+
+nav #login-trigger {
+  border-radius: 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+  background: #fff;
+}
+
+nav #login-content {
+  display: none;
+  position: absolute;
+  /*top: 24px;*/
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+  right: 0;
+  width: 250px;
+}
+
+/*--------------------*/
+
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 5px 0;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/*--------------------*/
+
+#login #actions {
+  margin: 10px 0 0 0;
+}
+
+#login #submit {
+  background-color: #3c57a6;
+  /*background-image: linear-gradient(top, #e97171, #d14545);*/
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 1px solid #2A49A6;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: 100px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica;
+  color: #fff;
+}
+
+#login #submit:hover,
+#login #submit:focus {
+  background-color: #5C6EA6;
+  background-image: linear-gradient(top, #d14545, #5C6EA6);
+}
+
+#login #submit:active {
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+#login #submit::-moz-focus-inner {
+  border: none;
+}
+
+#login label {
+  float: right;
+  line-height: 30px;
+}
+
+#login label input {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+#error_message {
+  background: #f2dede;
+  text-align: left;
+  /*color: white;*/
+  /*padding: 3px;*/
+}

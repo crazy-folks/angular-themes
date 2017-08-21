@@ -1,0 +1,78 @@
+{
+  "Total": 7,
+  "Categories": [
+    {
+      "id": "8fe27441-644a-49bd-9247-288c72e8d512",
+      "name": "Finance",
+      "description": "",
+      "actiondatetime": "7/7/2015 6:52:24 PM",
+      "effectivedatetime": "7/6/2015 12:00:00 AM",
+      "type": "1",
+      "subscriberid": null,
+      "CategoryActivity": null
+    },
+    {
+      "id": "d2872168-6a8a-4441-a86e-35573392dedb",
+      "name": "Real Estate",
+      "description": "",
+      "actiondatetime": "7/7/2015 6:53:51 PM",
+      "effectivedatetime": "7/6/2015 12:00:00 AM",
+      "type": "1",
+      "subscriberid": null,
+      "CategoryActivity": null
+    },
+    {
+      "id": "f0eb535e-d35f-4bd9-9bf0-4977b79456fb",
+      "name": "Insurance",
+      "description": "",
+      "actiondatetime": "7/7/2015 6:51:59 PM",
+      "effectivedatetime": "7/6/2015 12:00:00 AM",
+      "type": "1",
+      "subscriberid": null,
+      "CategoryActivity": null
+    },
+    {
+      "id": "b8879192-1f0b-48ec-a087-86f725832667",
+      "name": "Health",
+      "description": "",
+      "actiondatetime": "7/7/2015 6:53:28 PM",
+      "effectivedatetime": "7/6/2015 12:00:00 AM",
+      "type": "1",
+      "subscriberid": null,
+      "CategoryActivity": null
+    },
+    {
+      "id": "7bbde99c-eff4-4958-97f0-876fada8b3bb",
+      "name": "Business",
+      "description": "Business Contacts",
+      "actiondatetime": "7/7/2015 9:49:57 PM",
+      "effectivedatetime": "7/6/2015 12:00:00 AM",
+      "type": "2",
+      "subscriberid": null,
+      "CategoryActivity": null
+    },
+    {
+      "id": "a20d6c31-ff03-4abf-8f80-924dec7a40ae",
+      "name": "Social",
+      "description": "",
+      "actiondatetime": "7/7/2015 6:53:10 PM",
+      "effectivedatetime": "7/6/2015 12:00:00 AM",
+      "type": "1",
+      "subscriberid": null,
+      "CategoryActivity": null
+    },
+    {
+      "id": "03ebef38-3b18-4715-a5cd-c394ec5b7084",
+      "name": "Family",
+      "description": "Family",
+      "actiondatetime": "7/13/2015 9:41:55 PM",
+      "effectivedatetime": "1/1/1900 12:00:00 AM",
+      "type": "2",
+      "subscriberid": null,
+      "CategoryActivity": null
+    }
+  ],
+  "UserMessage": "",
+  "LogMessage": "",
+  "ExecSql": "SELECT TOP 1000 [id],[name] ,[description] ,[type] ,[effectivedatetime] ,[actiondatetime]  FROM [ksubscribers].[kaz].[category] cat"
+}

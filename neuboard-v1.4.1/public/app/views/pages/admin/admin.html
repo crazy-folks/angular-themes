@@ -1,0 +1,79 @@
+<div class="pageheader">
+  <h1>Administration</h1>
+  <div class="breadcrumb-wrapper hidden-xs">
+    <span class="label">You are here:</span>
+    <ol class="breadcrumb">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li class="active">Administration</li>
+    </ol>
+  </div>
+</div>
+<section id="main-content">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Licenses
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Owner</th>
+          <th>Code</th>
+          <th>Role</th>
+          <th>Number of Sub-Licenses</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="license in admin.filteredLicenses">
+          <td style="min-width: 100px;word-wrap: break-word;">{{ license.owner }}</td>
+          <td style="min-width: 100px;word-wrap: break-word;">{{ license.code }}</td>
+          <td style="min-width: 80px;word-wrap: break-word;">{{ license.role }}</td>
+          <td style="min-width: 80px;word-wrap: break-word;">{{ license.codes.length }}</td>
+          <td style="min-width: 80px;max-width: 80px;width: 80px;">
+            <!--<a href="javascript:void(0);" ng-click="deleteUser(person._id)"-->
+               <!--class="pull-right btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></a>-->
+            <!--<a href="javascript:void(0);" ui-sref="usersEdit({ user_id: person._id })"-->
+               <!--class="pull-right btn btn-warning btn-sm" style="margin-right:8px;"><span-->
+                <!--class="glyphicon glyphicon-edit"></span></a>-->
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <uib-pagination boundary-links="true" total-items="admin.numUsers" ng-model="admin.currentPage" class="pagination-sm"
+                      ng-change="admin.changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                      last-text="&raquo;" items-per-page="admin.numPerPage" style="margin: 0;">
+      </uib-pagination>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+
+  <div class="panel panel-default col-lg-6 col-md-8 col-sm-12">
+    <div class="panel-heading">Add User Code(s)</div>
+    <div class="panel-body">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th class="col-md-6">Role</th>
+          <th class="col-md-6">Code(s)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="code in admin.codes">
+          <td>{{code.role}}</td>
+          <td>{{code.code}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-footer">
+      <div class="input-group">
+        <select class="form-control input-group-lg" ng-model="admin.role">
+          <option ng-repeat="item in admin.roles" value="{{item.name}}">{{item.name}}</option>
+        </select>
+        <a class="btn btn-default input-group-btn" ng-click="admin.addNewCode()">Add New Code</a>
+      </div>
+    </div>
+  </div>
+</section>

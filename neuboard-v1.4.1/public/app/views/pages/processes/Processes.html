@@ -1,0 +1,254 @@
+<style>
+    #otherA {
+        width:12%;
+        font-size:13px; padding:2px 4px; z-index: 100; margin-top: -33px;
+    }
+
+    #otherA:hover, #otherA:focus{
+        background-color: #2a6496;
+        text-decoration: none;
+    }
+</style>
+<div class="pageheader">
+    <h1>Processes</h1>
+    <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li class="active">Processes</li>
+        </ol>
+    </div>
+</div>
+<section id="main-content" ng-controller="processController" ng-init = "loadProcess()">
+
+  <div class="row no-margin-y">
+      <div class="col-md-5 col-sm-5"> <!--ng-show = "showLender">-->
+
+        <div class="panel-body">
+          <div class="tab-wrapper tab-left">
+            <ul class="nav nav-tabs">
+              <li ng-repeat="item in userCategory.category" ng-class="{active: $first}">
+                <a href="#home3" ng-click="load(item, $index)" data-toggle="tab">
+                  <i class="fa fa-users" style="color:#3c57a6"></i>
+                  {{item}}
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="home3">
+                <p>
+                  <ul class="nav nav-pills nav-stacked">
+                  <li ng-repeat="item in userProcess">
+                  <div class = "row">
+                  <a style="cursor: pointer; font-weight:bold; margin-left:20px"> <span> {{item.name}} </span> </a>
+                  <a style = "margin-left:5px; margin-right:35px" ng-click = "deleteProcess(item._id, tempName)" class="btn btn-danger btn-xs pull-right" uib-tooltip="Delete Process" uib-tooltip-placement="top" > <span class="glyphicon glyphicon-delete"></span> Delete </a>
+
+                  <a style = "margin-left:5px;" ui-sref="editProcess({page: '{{item._id}}'})"  class="btn btn-warning btn-xs pull-right" uib-tooltip="Modify Process" uib-tooltip-placement="top" > <span class="glyphicon glyphicon-edit"></span> Edit</a>
+
+                  <!--  <a class="btn btn-info btn-xs pull-right" uib-tooltip="Start Process" uib-tooltip-placement="top" ui-sref="processesNews({name: '{{item._id}}'})"> <span class="glyphicon glyphicon-edit"></span> Start </a> -->
+                  </div>
+                  </li>
+                  </ul>
+                </p>
+              </div>
+              <div class="tab-pane" id="profile3">
+                <p>
+                  Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo
+                  enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore
+                  stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente
+                  accusamus tattooed echo park.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--<uib-accordion>-->
+              <!--<uib-accordion-group ng-repeat="item in userCategory.category" is-open="isOpen" >-->
+                  <!--<uib-accordion-heading>-->
+                      <!--<i class="fa fa-users" style="color:#3c57a6"> </i>-->
+                      <!--<span ng-click="load(item, $index)" >{{item}}</span>-->
+                      <!--<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isOpen, 'glyphicon-chevron-right': !isOpen}"></i>-->
+                      <!--<a class="pull-right btn btn-info btn-xs" style = "margin-right:10px" ng-click = "sendProcess(item)">  <span class="glyphicon glyphicon-share" ></span> Invite participant </a>-->
+
+
+                  <!--</uib-accordion-heading>-->
+                  <!--&lt;!&ndash; content for the sub category here &ndash;&gt;-->
+                  <!--<div>-->
+                      <!--<ul class="nav nav-pills nav-stacked">-->
+                          <!--<li ng-repeat="item in userProcess">-->
+                              <!--<div class = "row">-->
+                                  <!--<a style="cursor: pointer; font-weight:bold; margin-left:20px"> <span> {{item.name}} </span> </a>-->
+                                  <!--<a style = "margin-left:5px; margin-right:35px" ng-click = "deleteProcess(item._id, tempName)" class="btn btn-danger btn-xs pull-right" uib-tooltip="Delete Process" uib-tooltip-placement="top" > <span class="glyphicon glyphicon-delete"></span> Delete </a>-->
+
+                                  <!--<a style = "margin-left:5px;" ui-sref="editProcess({page: '{{item._id}}'})"  class="btn btn-warning btn-xs pull-right" uib-tooltip="Modify Process" uib-tooltip-placement="top" > <span class="glyphicon glyphicon-edit"></span> Edit</a>-->
+
+                                  <!--&lt;!&ndash;  <a class="btn btn-info btn-xs pull-right" uib-tooltip="Start Process" uib-tooltip-placement="top" ui-sref="processesNews({name: '{{item._id}}'})"> <span class="glyphicon glyphicon-edit"></span> Start </a> &ndash;&gt;-->
+                              <!--</div>-->
+                          <!--</li>-->
+                      <!--</ul>-->
+                  <!--</div>-->
+              <!--</uib-accordion-group>-->
+              <!--<uib-accordion-group is-disabled="true" ng-show = "showLender">-->
+                  <!--<uib-accordion-heading>-->
+                      <!--<span style="font-style:italic;" ng-click = "addCategory()"><i class="fa fa-plus"></i>&nbsp;<a  ui-sref="newProcess({page: 'newProcess'})"> New Process </a>  </span>-->
+                  <!--</uib-accordion-heading>-->
+              <!--</uib-accordion-group>-->
+
+          <!--</uib-accordion>-->
+      </div>
+
+      <!-- For the right side of lender part -->
+      <div class="col-md-7 col-sm-7" ng-show = "showLender && borrowerInfos">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <p class="panel-dashboardtitle"> Customer process status</p>
+                  <div class="actions pull-right">
+                      <i data-fullscreen-widget class="fa fa-expand"></i>
+                      <i data-widget-toggle class="fa fa-chevron-down"></i>
+
+                      <i data-widget-close class="fa fa-times"></i>
+                  </div>
+              </div>
+              <div class="panel-body fixed-panel">
+                      <div class = "row" style = "margin-top:-10px; margin-left:-1%;color:#3078ef; font-weight:bold">
+                                  <div class = "col-md-1">
+                                      Customer
+                                  </div>
+                                  <div class = "col-md-2">
+
+                                  </div>
+                                  <div class = "col-md-2">
+                                      Process Category
+                                  </div>
+                                  <div class = "col-md-3" style = "text-align:center">
+                                      Process
+                                  </div>
+                                  <div class = "col-md-2" style = "margin-left:6%">
+                                      Start date
+                                  </div>
+                                  <!-- <div class = "col-md-3" style = "margin-left:-6%">
+                                    <p> <span class = "pull-right"> Completion % </span> </p>
+                                  </div> -->
+
+                  </div>
+                  <hr>
+                  <div class="list-group tickets">
+                      <ul class="list list-group tickets" style="list-style:none;margin-bottom:0;">
+                          <li ng-repeat="item in borrowerInfos track by $index"  ng-class="{'list-group-item in-progress':item.link != '', 'list-group-item coming-up':item.link == ''}" class="list-group-item message messages">
+                              <div class = "row" style = "margin-top:-10px">
+                                  <div class = "col-md-1" style = "margin-top:-5px">
+                                      <!-- <span class="name" >{{item.cusName}}  </span> -->
+                                      <profile-img userid="{{item.cusid}}" style = "height:45px; width:45px;" uib-tooltip = "{{item.cusName}}"  uib-tooltip-placement="right"> <profile-img>
+                                  </div>
+                                  <div class = "col-md-2" >
+                                      <span class="name">{{item.cusName}}  </span>
+                                  </div>
+                                  <div class = "col-md-2">
+
+                                      <p style = "font-weight:bold">  {{tempName}} </p>
+                                  </div>
+                                  <div class = "col-md-4">
+                                      <span> </span>
+                                      <select ng-init="bprocess = item.borrowerInfo[0].currentProcess"
+                                              ng-model="bprocess"
+                                              ng-options="option.currentProcess for option in item.borrowerInfo" ng-change="locationChangeFunction(bprocess,item.cusid, item.cusName)" style = "margin-top:10px; width:100%">
+                                      </select>
+                                  </div>
+                                  <div class = "col-md-2" style = "margin-top:10px;">
+                                      <span> {{toNormalDate(item.updatedAt)}}  </span>  <p style = "font-weight:bold"> {{normalDate}} </p>
+                                  </div>
+                                  <!-- <div class = "col-md-1" style = "margin-top:10px; margin-left:5%" >
+                                      <p style = "font-weight:bold; color:red">  {{item.completion}}% </p>
+                                      <canvas tc-chartjs chart-type="doughnut" chart-data="data" chart-options="options" width="70px" height="70px"></canvas>
+                                  </div> -->
+
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+
+
+      <!-- For the primary participant process -->
+
+      <div class="col-md-6 col-sm-6" ng-show = "partProcess && showBorrower">
+          <div class="content">
+              <uib-accordion>
+                  <uib-accordion-group ng-repeat="item in partProcess" is-open="isOpen" ng-show = "item.confirmStatus == 'Acknowledged' ">
+                      <uib-accordion-heading>
+                          <i class="fa fa-users" style="color:#3c57a6"> </i>
+                          <span ng-click = "loadActuallProcess(item)">{{item.myName}}</span>
+                          <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isOpen, 'glyphicon-chevron-right': !isOpen}"></i>
+
+                      </uib-accordion-heading>
+                      <!-- content for the sub category here -->
+
+                  </uib-accordion-group>
+              </uib-accordion>
+          </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6" ng-show = "newPartProcess && showBorrower">
+          <div class="content">
+              <uib-accordion>
+                  <uib-accordion-group ng-repeat="item in newPartProcess" is-open="isOpen">
+                      <uib-accordion-heading>
+                          <i class="fa fa-users" style="color:#3c57a6"> </i>
+                          <span>{{item.owner}}</span>
+                          <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isOpen, 'glyphicon-chevron-right': !isOpen}"></i>
+
+                      </uib-accordion-heading>
+                      <!-- content for the sub category here -->
+                      <div>
+                          <div>
+                               <ul class="nav nav-pills nav-stacked">
+                                  <li  ng-repeat = "process in item.priParts"> <a  style = "cursor: pointer; font-weight:bold;" ng-click = "loadPartProcess(process, item.userid)">   <span > {{process.processName}} </span>
+                                      <i class="pull-right btn btn-info btn-xs" style="margin-right:6px;" ng-click = "loadPartProcess(process, item.userid)"> <span class="glyphicon glyphicon-search" uib-tooltip="Open Process"></span> </i>
+                                  </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </uib-accordion-group>
+              </uib-accordion>
+          </div>
+      </div>
+
+      <!-- End for the primary participant process -->
+
+      <div class="col-md-6 col-sm-6" ng-show = "otherShowTempPanel">
+
+          <div class="panel panel-default" >
+              <div class="panel-heading" style ="background-color:#CEECF5; height:50px;">
+                  <h3 class="panel-dashboardtitle" style = "margin-top:-5px;">Processes</h3>
+
+                  <div class="actions pull-right">
+                      <i data-fullscreen-widget class="fa fa-expand"></i>
+                      <i data-widget-toggle class="fa fa-chevron-down"></i>
+
+                      <i data-widget-close class="fa fa-times"></i>
+                  </div>
+              </div>
+              <div class="panel-body fixed-panel">
+                  <ul class="nav nav-pills nav-stacked">
+                      <li  ng-repeat = "item in partProcessName"> <a  style = "cursor: pointer; font-weight:bold;" ui-sref="processesNews({name: '{{item._id}}'})">   <span > {{item.name}} </span> </a>
+                          <a id = "otherA" class="btn btn-info btn-xs pull-right" uib-tooltip="Go To Process" uib-tooltip-placement="top" ui-sref="processesNews({name: '{{item._id}}'})" style = "margin-right:10px"> <span class="glyphicon glyphicon-edit"></span> Go </a>
+
+                      </li>
+                  </ul>
+
+              </div>
+
+          </div>
+      </div>
+      <!-- end of primary participant process -->
+
+
+
+  </div>
+
+</section>

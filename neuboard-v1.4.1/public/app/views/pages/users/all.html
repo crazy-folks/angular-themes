@@ -1,0 +1,59 @@
+<div class="pageheader">
+  <h1>Users</h1>
+  <div class="breadcrumb-wrapper hidden-xs">
+    <span class="label">You are here:</span>
+    <ol class="breadcrumb">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li class="active">Users</li>
+    </ol>
+  </div>
+</div>
+<section id="main-content">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Registered Users
+    </div>
+    <div class="panel-body" style="overflow:auto;text-align: center;">
+      <!-- <table class="table table-bordered table-striped" ng-show="users"> -->
+      <table class="table table-bordered" id="datatable" ng-show="users">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Roles</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="person in filteredUsers">
+          <td class="text-center" style="min-width: 48px;max-width: 48px;width: 48px;">
+            <profile-img userid="{{ person._id }}" style="width:30px;height:30px;"></profile-img>
+          </td>
+          <td style="min-width: 100px;word-wrap: break-word;">{{ person.name }}</td>
+          <td style="min-width: 100px;word-wrap: break-word;">{{ person.username }}</td>
+          <td style="min-width: 80px;word-wrap: break-word;">{{ person.email }}</td>
+          <td style="min-width: 80px;word-wrap: break-word;">{{ person.userRoles }}</td>
+          <td style="min-width: 90px;max-width: 90px;width: 90px;">
+            <a href="javascript:void(0);" ng-click="deleteUser(person._id)"
+               class="pull-right btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></a>
+            <a href="javascript:void(0);" ui-sref="usersEdit({ user_id: person._id })"
+               class="pull-right btn btn-warning btn-sm" style="margin-right:8px;"><span
+                class="glyphicon glyphicon-edit"></span></a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <uib-pagination boundary-links="true" total-items="numUsers" ng-model="currentPage" class="pagination-sm" ng-change="changePage()"
+                      previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" items-per-page="numPerPage"
+                      style="margin: 0;">
+      </uib-pagination>
+    </div>
+    <div class="panel-footer" style="text-align: left;">
+      <a ui-sref="usersCreate" class="btn btn-primary">Add User</a>
+    </div>
+  </div>
+
+
+</section>

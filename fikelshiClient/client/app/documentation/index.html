@@ -1,0 +1,49 @@
+<div layout="row" layout-align="center center">
+<div class="banner banner-floaty" layout="row" layout-align="space-around center">
+  <doc-nav></doc-nav>
+</div>
+</div>
+<md-content flex layout-padding>
+
+ <section class="doc">
+  <div layout="row" layout-align="center center">
+    <h3 class="text-headline m100">What You Get</h3>
+  </div>
+  <md-divider></md-divider>
+<div class="highlights" layout="row" layout-align="center center">
+  <div>
+    <md-list-item ng-repeat="w in doc.why" ng-if="$index%2!=0">
+        <ng-md-icon icon="{{w.i}}" style="{{w.c}}" size="30"></ng-md-icon>
+        <p cl> {{ w.h }} </p>
+    </md-list-item>
+  </div>
+  <div>
+    <md-list-item ng-repeat="w in doc.why" ng-if="$index%2==0">
+        <ng-md-icon icon="{{w.i}}" style="{{w.c}}" size="30"></ng-md-icon>
+        <p cl> {{ w.h }} </p>
+    </md-list-item>
+  </div>
+</div>
+
+<md-divider></md-divider>
+<br/>
+<br/>
+  <div layout="column" layout-align="start center">
+  <div layout="row" layout-xs="column" class="home-row layout-xs-column layout-row" ng-repeat="i in doc.topFeatures">
+    <div ng-if="$index%2==0" class="promo-img-container promo-1">
+      <div><img src="{{i.i}}"></div>
+    </div>
+    <div class="text-container">
+      <div class="text-block promo-1-desc l-pad-top-2">
+        <h3 class="text-headline">{{i.h}}</h3>
+        <p class="text-body"> {{i.p}}</p>
+      </div>
+    </div>
+    <div ng-if="$index%2==1" class="promo-img-container promo-1">
+      <div><img src="{{i.i}}"></div>
+    </div>
+  </div>
+
+</section>
+    </md-content>
+    <doc-menu></doc-menu>

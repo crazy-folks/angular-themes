@@ -1,0 +1,5 @@
+[{"MenuCategories": "Dashboard", "icon" : "fa fa-tachometer"},
+ {"MenuCategories": "Vault", "icon" : "fa fa-lock"},
+ {"MenuCategories": "Participants", "icon" : "fa fa-user"},
+ {"MenuCategories": "Processes", "icon" : "fa fa-cogs"},
+ {"MenuCategories": "Agreements", "icon" : "fa fa-exchange"}]

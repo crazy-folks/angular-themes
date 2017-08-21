@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <h3 class="modal-title"> Notification <span class="pull-right close-btn"><i class="fa fa-times" ng-click = "cancel()"></i></span></h3>
+   
+</div>
+<div class="modal-body"> 
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<h5 class="panel-title" style="font-weight:bold">Message</h5>
+    <div class="actions pull-right">    
+    <i data-widget-toggle class="fa fa-chevron-down"></i> 
+    <i class="fa fa-times" ng-click = "cancel()"></i>   
+    </div>
+	</div>
+	<div class="panel-body">
+		<ul class="nav nav-pills nav-stacked">
+            <li  ng-repeat = "item in notifications track by $index"> <span > {{item.msg}} </span>
+            <i class="pull-right btn btn-danger btn-xs" style="margin-left:5px; margin-top:-10px" ng-click = "deleteNotification($index)"> <span class="glyphicon glyphicon-delete" uib-tooltip="Delete"></span> Dismiss </i>
+            
+            </li>
+        </ul> 
+	</div>
+	</div>
+</div>
+
+   

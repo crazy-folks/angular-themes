@@ -1,0 +1,68 @@
+<div class="content">
+    <h2>Edit Agreement</h2>
+    <ul class="list-group" style="list-style:none;">
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Name</span>
+        <input type="text" required ng-model="editagreement.displayname" class="col-md-6 col-sm-6 text-right" placeholder="Agreement Name" />
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Description</span>
+        <input type="text" class="col-sm-6 col-xs-6 text-right" ng-model="editagreement.description" />
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Category</span>
+        <span class="col-sm-6 col-xs-6  text-right">
+          <select class="form-control" ng-model="editagreement.categoryname">
+            <option ng-repeat="item in MainCategory track by item.name" ng-selected="(item.name==editagreement.categoryname)" value="{{item.name}}">{{item.name}}</option>
+          </select>
+        </span>
+      </li>
+      <li class="row" ng-show="editagreement.categoryname != null">
+        <span  class="col-sm-6 col-xs-6 text-right"  ng-show = "Participant.length > 0" >
+          Participant
+        </span>
+        <span class="col-sm-6 col-xs-6  text-right">
+          <div ng-repeat="item in Participant track by item.name" ng-selected="(item.name==editagreement.categoryname)" value="{{item.name}}">
+            <span class="col-sm-6 col-xs-6 text-right">{{item.name}}</span>
+            <input type="checkbox" class="col-sm-6 col-xs-6 text-right" ng-model="editagreement.sharesubscribers" ng-true-value="true" ng-false-value="false" />
+          </div>
+        </span>
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Process</span>
+        <span class="col-sm-6 col-xs-6  text-right">
+          <select class="form-control" ng-model="editagreement.processid">
+            <option ng-repeat="item in MainCategory track by item.name" ng-selected="(item.name==editagreement.categoryname)" value="{{item.name}}">{{item.name}}</option>
+          </select>
+        </span>
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Start Date</span>
+        <input type="date" placeholder="yyyy-MM-dd" ng-model="editagreement.startdatetime" />
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">End Date</span>
+        <input type="date" placeholder="yyyy-MM-dd" ng-model="editagreement.enddatetime" />
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Action Date</span>
+        <input type="date"  placeholder="yyyy-MM-dd" ng-model="editagreement.actiondatetime" />
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Read-only Access</span>
+        <input type="checkbox" class="col-sm-6 col-xs-6 text-right" ng-model="editagreement.readonlyaccess" ng-true-value="true" ng-false-value="false" />
+      </li>
+      <li class="row">
+        <span class="col-sm-6 col-xs-6 text-right">Get Updates</span>
+        <input type="checkbox" class="col-sm-6 col-xs-6 text-right" ng-model="editagreement.getupdates" ng-true-value="true" ng-false-value="false" />
+      </li>
+    </ul>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-6">
+    <button type="submit" class="btn btn-success btn-lg btn-block" ng-if="agreement.type == 'edit'" ng-click="agreement.saveAgreement()">Update Agreement</button>
+    <div ng-repeat="item in agreement.alerts">
+      <alert type="{{item.type}}" close="agreement.closeAlert($index)" dismiss-on-timeout="4000" style="margin-top:20px;">{{item}}</alert>
+    </div>
+  </div>
+</div>

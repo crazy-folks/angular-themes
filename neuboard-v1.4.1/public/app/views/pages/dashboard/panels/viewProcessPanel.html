@@ -1,0 +1,97 @@
+﻿<style>
+#otherA, #otherB {
+  width:12%;
+  font-size:14px; padding:2px 4px; z-index: 100; margin-top: -33px;
+}
+
+#otherA:hover, #otherA:focus, #otherB:hover, #otherB:focus{
+    background-color: #2a6496;
+    text-decoration: none;
+}
+#otherB {
+  margin-left:75%;
+}
+
+</style>
+
+<div class="panel panel-default" ng-controller="processController">
+  <div class="panel-heading">
+    <h3 class="panel-dashboardtitle">Process </h3>
+    <div class="actions pull-right">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel">
+    <div  >
+     
+      <ul class="list list-group tickets" style="list-style:none;margin-bottom:0;" >
+   <!--      <li ng-repeat="item in process"
+            ng-class="{'list-group-item in-progress':item.link != '', 'list-group-item coming-up':item.link == ''}"
+            class="list-group-item message messages" 
+            ng-controller="chartJsDoughnutCtrl">
+          <i class="fa fa-gears fa-3x avatar c-avatar"></i>
+        <p> <b style = "color:blue"> {{item.name}} </b> </p>
+          <span class="pull-right">
+            <a style="margin-right:8px;font-size:14px;" class="pull-right btn btn-info btn-xs" tooltip="Send Email" tooltip-placement="top" href="/processes/email" ng-show="item.name == 'Loan Application' || item.name == 'Loan Estimate' ">  <span class="glyphicon glyphicon-share" ></span> Send </a>
+            <a style="margin-right:8px;font-size:14px;" class="pull-right btn btn-info btn-xs" tooltip="Start Process" tooltip-placement="top"ui-sref="processesNews({name: '{{item.name}}'})" ng-show="item.name == 'Loan Application' || item.name == 'Loan Estimate' ">  <span class="glyphicon glyphicon-edit" ></span> Start </a>           
+          </span>
+        </li> -->
+       
+            <div class="col-sm-3"> <p style = "font-weight:bold"> Select Process </p> </div>
+            <div class="col-sm-9"> 
+               <ui-select ng-model="model.temp" theme="bootstrap"> <span> {{funtionTemp(model.temp.name)}} </span>
+          <ui-select-match placeholder="Select a process..." tooltip = "Select process" tooltip-placement="bottom">{{model.temp.name}}</ui-select-match>
+          <ui-select-choices repeat="item in Mortgage" style="z-index: 200" >
+            <div class="row">
+               {{item.name}}
+            </div>
+          </ui-select-choices> 
+        </ui-select>  
+            </div>
+           
+            <div ng-show = "showTempPanel">
+            <li ng-class="{'list-group-item in-progress':item.link != '', 'list-group-item coming-up':item.link == ''}"
+            class="list-group-item message messages" >
+            <hr style="margin-top:-2px">
+            <div class = "col-sm-12" style="margin-top:-10px">
+              <ul class="nav nav-pills nav-stacked">
+
+              <li ng-repeat="item in pdfFileName">  <a href="" > <b style = "color:#3078ef; font-weight:bold;"> {{item.name}} </b> </a>
+              <a id = "otherA"  class="pull-right btn btn-info btn-xs" tooltip="Send Email" tooltip-placement="top" href="/processes/email">  <span class="glyphicon glyphicon-share" ></span> Send </a>
+              <a id = "otherB" style="" class="btn btn-info btn-xs" tooltip="View File" tooltip-placement="top" ui-sref="viewFile({file: '{{item.name}}'})" title="view File">  <span class="glyphicon glyphicon-edit" ></span> View </a>
+              </li>
+
+
+              <li  ng-repeat = "item in process"> <a  style = "cursor: pointer; font-weight:bold"> <span> {{item.name}} </span>    
+              <a id = "otherA"  class="pull-right btn btn-info btn-xs" tooltip="Send Email" tooltip-placement="top" href="/processes/email" ng-show="item.name == 'Loan Application' || item.name == 'Loan Estimate' ">  <span class="glyphicon glyphicon-share" ></span> Send </a>
+              <a id = "otherB" style="" class="btn btn-info btn-xs" tooltip="Start Process" tooltip-placement="top"ui-sref="processesNews({name: '{{item.name}}'})" ng-show="item.name == 'Loan Application' || item.name == 'Loan Estimate' ">  <span class="glyphicon glyphicon-edit" ></span> Start </a>    
+              </a>   
+              </li>
+
+              <li> 
+              <a href=""> <b style = "color:#3078ef; font-weight:bold;"> View Loan Estimate PDF form </b> </a>
+
+              <a id = "otherA"  class="pull-right btn btn-info btn-xs" tooltip="Send Email" tooltip-placement="top" href="/processes/email">  <span class="glyphicon glyphicon-share" ></span> Send </a>
+              <a id = "otherB" style="" class="btn btn-info btn-xs" tooltip="View File" tooltip-placement="top" ui-sref="viewFile({file: 'View Loan Estimate PDF form'})" title="view File">  <span class="glyphicon glyphicon-edit" ></span> View </a>    
+
+              <a href="" > <b style = "color:#3078ef; font-weight:bold;"> View Loan Application PDF form </b> </a> 
+              <a id = "otherA"  class="pull-right btn btn-info btn-xs" tooltip="Send Email" tooltip-placement="top" href="/processes/email">  <span class="glyphicon glyphicon-share" ></span> Send </a>
+              <a id = "otherB" style="" class="btn btn-info btn-xs" tooltip="View File" tooltip-placement="top" ui-sref="viewFile({file: 'View Loan Application PDF form'})" title="view File">  <span class="glyphicon glyphicon-edit" ></span> View </a>
+              </li>
+
+              </ul>
+            </div>  
+
+        </li>
+      </div>
+
+
+       
+
+    </div>
+  </div>
+ 
+</div>

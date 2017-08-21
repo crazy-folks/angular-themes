@@ -1,0 +1,31 @@
+
+<div class="modal-header">
+    <h3 class="modal-title"> Sharing Agreement <span class="pull-right close-btn"><i class="fa fa-times" ng-click = "cancel()"></i></span></h3>
+   
+</div>
+<div class="modal-body"> 
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	<h2 class="panel-title" style="font-weight:bold">Sharing Agreement</h2>
+    <div class="actions pull-right">    
+    <i data-fullscreen-widget class="fa fa-expand"></i>
+    <i data-widget-toggle class="fa fa-chevron-down"></i>    
+    </div>
+	</div>
+	<div class="panel-body">
+		By clicking the I AGREE button you are entering into a legally binding agreement regarding the use and sharing of the attached information. Please click the TERMS & CONDITIONS and or the OPTIONS  button for further information regarding this agreement. Thank you.
+		<!-- <ul ng-repeat = "item in argeementConfirm">
+			<li ng-show = "item.confirmStatus = 'needConfirm'"> Name: {{item.name}} - Description: {{item.description}}
+			</li>
+		</ul> -->
+		</p>
+	</div>
+	</div>
+</div>
+
+<div class="modal-footer" > 
+		<button class="btn btn-primary" style ="margin-left:10px;" >TERMS & CONDITIONS</button>
+		<button class="btn btn-primary" style ="margin-left:10px;" >OPTIONS</button>
+        <button class="btn btn-success" style ="margin-left:10px;"  ng-click = "displayInfo()"> I AGREE </button>
+        <button class="btn btn-warning" ng-click="cancel()">I DO NOT AGREE</button>
+</div>    

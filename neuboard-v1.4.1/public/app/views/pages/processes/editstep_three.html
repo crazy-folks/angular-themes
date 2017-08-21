@@ -1,0 +1,123 @@
+<style>
+    input.ng-invalid{background-color: lightpink;}
+    input.ng-valid{background-color: lightgreen;}
+    span.error{color:red;font-weight: bold;}
+</style>
+<h2> Click Section name to edit Data elements</h2>
+
+<div class="row"> 
+    <div class="col-lg-4">
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat="item in editprocess.sections track by $index"> 
+            <a style="cursor: pointer; font-weight:bold; margin-left:20px"> <span ng-click = "showSectionElement($index)"> {{item.name}} </span> <i class="btn btn-success btn-xs pull-right" ng-click="addElementInEdit($index)"><span class="glyphicon glyphicon-plus" uib-tooltip="Add element"></span></i> </a> 
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4" ng-show ="showElements" >
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat="item in filteredAgr track by $index"> 
+            <a style="cursor: pointer; font-weight:bold; margin-left:20px"> <span ng-click = "editSectionElements($index)"> {{item.name}} </span> <i class="btn btn-danger btn-xs pull-right" ng-click="deleteElementSection($index)"><span class="glyphicon glyphicon-remove" uib-tooltip="Delete"></span></i> </a> 
+            </li>
+        </ul>    
+    </div>
+
+    <div class="col-lg-3" ng-show = "showEditSectionElement">
+       <form name="editSectionForm" novalidate>
+        <div class="form-group">
+            <label class="control-label">Name</label> {{editprocess.sections[idxS].fields[idxE].name}}
+            <input  name="elementName" class="form-control" type="text" ng-model = "editprocess.sections[idxS].fields[idxE].name" required />
+            <span class="error" ng-show="editSectionForm.elementName.$error.required">
+            Please enter name
+            </span>
+          
+        </div>
+        <div class="form-group">
+            <label class="control-label">PlaceHolder</label>
+            <input  name ="elementHolder" class="form-control" type="text" ng-model = "editprocess.sections[idxS].fields[idxE].placeholder"/>
+            <!-- <span class="error" ng-show="editSectionForm.elementHolder.$error.required">
+            Please enter placeholder
+            </span> -->
+        </div>
+         <div class="form-group">
+            <label class="control-label">Type</label>
+            <select name ="elementType" ng-model = "editprocess.sections[idxS].fields[idxE].type"
+            ng-options="label for label in otherType" class="form-control" required> </select>
+
+            <!-- <input   class="form-control" type="text" ng-model = "editprocess.sections[idxS].fields[idxE].type" required/> -->
+            <span class="error" ng-show="editSectionForm.elementType.$error.required">
+            Please select type
+            </span>
+        </div>
+        </form>
+    </div>
+    <div class ="col-lg-2" ng-show = "editprocess.sections[idxS].fields[idxE].type == 'select' " ng-hide ="hideOption">
+         <li ng-repeat = "item in editprocess.sections[idxS].fields[idxE].options track by $index">
+            <label class="control-label">Option</label>
+            <input  name ="optionElement" class="form-control" type="text" ng-model = "editprocess.sections[idxS].fields[idxE].options[$index].name"/>
+            <span class="error" ng-show="editSectionForm.optionElement.$error.required">
+            Please enter option
+            </span>
+         </li>
+    </div>
+    <div class = "col-lg-6" ng-show = "showAddElement">
+         <form name="addElementForm" novalidate>
+        <table class ="table table-bordered" >
+        <thead>
+          <tr> 
+          <th>Name</th>
+          <!-- <th>Shared With</th> -->
+          <th>PlaceHolder</th>
+          <th>Required</th>
+          <th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><input type="text" name="elementName" class="form-control" style ="height:30px;" ng-model='dataElements.name' required>
+        <span class="error" ng-show="addElementForm.elementName.$error.required">
+            Please enter name
+        </span> </td>
+        <!-- <td>{{item.nameShare}}</td> -->
+        <td><input type="text" name="placehoder" class="form-control" style ="height:30px;" ng-model='dataElements.placeholder'></td>
+
+        <td><select ng-init = "dataElements.required = elementRequire[0]" ng-model = "dataElements.required"
+            ng-options="label for label in elementRequire" class="form-control" name="elementRequired" required> </select>
+            <span class="error" ng-show="addElementForm.elementRequired.$error.required">
+            Please select Requirement
+        </span> </td>
+
+
+        <td><select ng-init = "dataElements.type = elementType[0]" ng-model = "dataElements.type"
+            ng-options="label for label in elementType" name = "elementType" class="form-control" required> </select>  
+             <span class="error" ng-show="addElementForm.elementType.$error.required">
+            Please select Type
+        </span> </td>
+
+        </tr>
+        </tbody>
+        </table>
+        <div class="btn btn-primary info" ng-click = "saveElementInEdit(dataElements, idxToAdd)" ng-disabled ="addElementForm.$invalid">
+            Save
+        </div> 
+    </form>
+    </div>
+    <div ng-show = "dataElements.type == 'single select' || dataElements.type == 'multiple select'" class = "col-lg-3">
+        <label class="col-sm-2 control-label" > Enter options </label>
+        <div class="col-sm-10"><input type="text" class="form-control" placeholder="option1 option2 option3"
+                ng-model = "options.toAdd" required>
+        <a class="btn btn-sm btn-success"style="margin-top:10px" ng-disabled = "!options.toAdd" ng-click = "addOptionInEdit(options, idxToAdd)">Save Option</a>
+        </div> 
+    </div>
+
+    
+</div>
+<div class = "row" style = "margin-bottom:10px"> 
+<div class = lass="col-lg-6" style = "margin-left:1.7%">
+<uib-pagination boundary-links="true" total-items="totalItems" ng-model="agrVar.currentPage" class="pagination-sm"
+                      ng-change="changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                      last-text="&raquo;" items-per-page="agrVar.numPerPage" style = "width:100%" ng-show ="showElements">
+    </uib-pagination>
+</div>
+</div>
+<a ui-sref="editProcess.edit_two" class="btn btn-default">Previous</a>
+<a ui-sref="editProcess.edit_fourth" class="btn btn-primary" style = "margin-left:5px" ng-disabled = "editSectionForm.$invalid">Next</a>

@@ -1,0 +1,32 @@
+<style>
+.pdfControl {
+    width: 50%;
+    display: block;
+    background: #eee;
+    padding: 1em;
+    margin-left:25%;
+}
+</style>
+
+<nav ng-class="getNavStyle(scroll)" class = "pdfControl">
+  <button ng-click="goPrevious()"><</span></button>
+  <button ng-click="goNext()">></span></button>
+
+  <button ng-click="zoomIn()">+</span></button>
+  <button ng-click="zoomOut()">-</span></button>
+
+  <button ng-click="rotate()">90</span></button>
+
+  <span>Page: </span>
+  <input type="text" min=1 ng-model="pageNum">
+  <span> / {{pageCount}}</span>
+
+  &nbsp;&nbsp;
+  <span>Document URL: </span>
+  <input type="url" ng-model="pdfUrl">
+</nav>
+
+<hr>
+
+{{loading}}
+<canvas id="pdf-canvas" class="rotate0" width="979" height="1267" style="width: 979px; height: 1267px;"></canvas>

@@ -1,0 +1,41 @@
+<section layout="column" layout-align="start center">
+	<!-- remove in production -->
+	  <p class="muted">User account is <code>user@codenx.com</code> / <code>codenx</code><br/>
+	  Admin account is <code>admin@codenx.com</code> / <code>codenx</code></p>
+  <!-- /remove in production -->
+
+	<p ng-show="vm.error" class="md-warn">{{vm.error.message}}</p>
+
+	<form name="form" ng-submit="vm.login(form)" autocomplete="off" novalidate flex>
+	<section class="section" layout="column">
+		<md-input-container md-is-error="(form.email.$error.required || form.email.$error.email) && form.email.$dirty">
+			<label>Email</label>
+			<input name="email" type="email" ng-model="vm.user.email" required md-autofocus/>
+			<div ng-messages="form.email.$error" ng-if="form.email.$dirty">
+				<div ng-message="required">Email ID is required</div>
+				<div ng-message="email">Please enter valid email address.</div>
+			</div>
+		</md-input-container>
+
+		<md-input-container md-is-error="form.password.$error.required && form.password.$dirty">
+			<label>Password</label>
+			<input name="password" type="password" ng-model="vm.user.password" required/>
+			<div ng-messages="form.password.$error">
+				<div ng-message="required">Password is required</div>
+				<div class="err">{{ vm.errors.other }}<br/>
++					<a ng-click="vm.goForgot({ email: vm.user.email})" href="#">Forgot Password</a></div>
+			</div>
+		</md-input-container>
+
+    <div class="form-group has-error">
+    <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && vm.submitted">
+       Please enter your email and password.
+    </p>
+
+    </div>
+</section>
+
+<submit-button loading="vm.loading" form="form" text="Secure Login"></submit-button>
+	
+	</form>
+</section>

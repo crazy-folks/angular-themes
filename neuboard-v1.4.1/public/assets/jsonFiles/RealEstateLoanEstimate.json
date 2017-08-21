@@ -1,0 +1,184 @@
+﻿{
+  "description": "This is a loan estimate template.",
+  "name": "Loan Estimate",
+  "participants": [
+    "nathan@kazume.com",
+    "pam@kazume.com"
+  ],
+  "sections": [
+    {
+      "description": " ",
+       "name": "Loan Details",
+       "fields": [
+        {
+          "name": "Date Issued",
+          "placeholder": "Date",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Applicants",
+          "placeholder": "Names",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Property",
+          "placeholder": "Address",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Sale Price",
+          "placeholder": "$0.00",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Loan Term",
+          "placeholder": "In Years",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Purpose",
+          "placeholder": "Purpose",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Product",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Loan Type",
+          "placeholder": "",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Conventional"
+            },
+            {
+              "name": "FHA"
+            },
+            {
+              "name": "VA"
+            }
+          ]
+        },
+         {
+          "name": "Loan ID#",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Rate Lock",
+          "placeholder": "",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "No"
+            },
+            {
+              "name": "Yes, Until"
+            }
+          ]
+         },
+        {
+          "name": "Before closing, your interest rate, points, and lender credits can change unless you lock the interest rate. All other estimated closing costs expire options",
+          "type": "label"
+         }
+      ]
+    },
+    {
+      "description": "Loan Terms",
+      "name": "Loan Terms and Payments",
+      "fields": [
+        {
+          "name": "Loan Amount",
+          "placeholder": "$",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Interest Rate",
+          "placeholder": "%",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Monthly Principal and Interest",
+          "placeholder": "$",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "(See Projected Payments below for your Estimated Total Monthly Payment)",
+          "type": "label"
+         },
+        {
+          "name": "Prepayment Penalty",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Balloon Payment",
+          "placeholder": "$",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Projected Payments",
+          "type": "label"
+         },
+          {
+          "name": "Principal and Interest",
+          "placeholder": "$",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Mortgage Insurance",
+          "placeholder": "$",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Estimated Escrow",
+          "placeholder": "$",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "(Amount can increase over time)",
+          "type": "label"
+         },
+        {
+          "name": "Estimated Total Monthly Payment",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+         {
+          "name": "Estimated Taxes, Insurance and Assessments",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+         {
+          "name": "(Amount can increase over time)",
+          "type": "label"
+         }
+        
+      ]
+    }
+  ]
+}

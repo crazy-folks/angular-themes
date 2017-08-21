@@ -1,0 +1,234 @@
+﻿<style>
+  input.ng-dirty.ng-valid,
+  select.ng-dirty.ng-valid,
+  textarea.ng-dirty.ng-valid {
+    border: 1px solid green;
+    background-color: #efe;
+  }
+
+  input.ng-dirty.ng-invalid,
+  select.ng-dirty.ng-invalid,
+  textarea.ng-dirty.ng-invalid {
+    border: 1px solid red;
+    background-color: #fee;
+  }
+</style>
+<div class="page-head">
+  <h2>{{title}}</h2>
+</div>
+
+<section id="main-content" class="animated fadeInUp">
+    <!--mail wrapper start-->
+  <div class="row">
+    <div class="col-md-4 col-sm-12" id="inbox-wrapper">
+
+            <section class="panel">
+                <header class="panel-heading wht-bg">
+                    <h4 class="gen-case">Inbox (83)
+                        <form action="#" class="pull-right mail-src-position">
+                            <div class="input-append">
+                                <input type="text" class="form-control " placeholder="Search Mail">
+                            </div>
+                        </form>
+                       </h4>
+                </header>
+                <div class="panel-body minimal">
+                    <div class="mail-option">
+                        <div class="pull-left mail-checkbox icheck ">
+                            <input type="checkbox" class="mail-checkbox icheck" ichecks class="icheck">
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                All <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">None</a>
+                                </li>
+                                <li><a href="#">Read</a>
+                                </li>
+                                <li><a href="#">Unread</a>
+                                </li>
+                                <li><a href="#">Starred</a>
+                                </li>
+                                <li><a href="#">Unstarred</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <a data-original-title="Refresh" data-placement="top" data-toggle="tooltip" href="#" class="btn btn-default btn-sm tooltips">
+                                <i class=" fa fa-refresh"></i>
+                            </a>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">
+                                More <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-ban"></i> Spam</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="inbox-pag pull-right">
+                            <li><span>1-50 of 83</span>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-sm" href="#"><i class="fa fa-angle-left  pag-left"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-sm" href="#"><i class="fa fa-angle-right pag-right"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="table-responsive pull-left">
+                        <table class="table table-inbox table-hover">
+                            <tbody>
+                                <tr class="unread">
+                                    <td>
+                                        <input type="checkbox" class="mail-checkbox icheck" ichecks class="icheck">
+                                    </td>
+                                    <td><i class="fa fa-star"></i>
+                                    </td>
+                                    <td class="message"><a href="#"><span class="title">Dribbble </span>
+                                               [Dribbble] Work Inquiry from Google Inc. </a>
+                                    </td>
+                                    <td class="text-right">April 20 <i class="fa fa-paperclip"></i>
+                                    </td>
+                                </tr>
+                                <tr class="unread">
+                                    <td>
+                                        <input type="checkbox" class="mail-checkbox icheck" ichecks class="icheck">
+                                    </td>
+                                    <td><i class="fa fa-star-o"></i>
+                                    </td>
+                                    <td class="message"><a href="#"><span class="title">James Bagian</span>
+                                                Development - Elit vitae ridiculus nonummy vestibulum</a>
+                                    </td>
+                                    <td class="text-right">April 20<span class="label label-danger pull-right">urgent</span>
+                                    </td>
+                                </tr>
+                                <tr class="unread">
+                                    <td>
+                                        <input type="checkbox" class="mail-checkbox icheck" ichecks class="icheck">
+                                    </td>
+                                    <td><i class="fa fa-star"></i>
+                                    </td>
+                                    <td class="message"><a href="#"><span class="title">Jeffrey Ashby</span>
+                                                 Progress - Sed ut perspiciatis unde omnis iste natus..</a>
+                                    </td>
+                                    <td class="text-right">April 20 <i class="fa fa-paperclip"></i>
+                                    </td>
+                                </tr>
+                                <tr class="unread">
+                                    <td>
+                                        <input type="checkbox" class="mail-checkbox icheck" ichecks class="icheck">
+                                    </td>
+                                    <td><i class="fa fa-star-o"></i>
+                                    </td>
+                                    <td class="message"><a href="#"><span class="title">John Douey</span>
+                                                 Touch Base - Reprehenderit qui in ea voluptate velit esse quam</a>
+                                    </td>
+                                    <td class="text-right">April 20</td>
+                                </tr>
+                                
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="col-md-8 col-sm-12" id="view-mail-wrapper">
+            <div class="panel">
+                <div class="panel-body"> 
+                    <header> 
+                        <h2>New Message <span ng-show ="outputBrowsers.length < 1" style="color:red; font-size:14px;">  Select Sender  </span> </h2>
+                    </header>
+                    <div class="row view-mail-header">
+                        <div class="col-md-12">
+                            <div class="view-mail-reply pull-right">
+                                <!-- <button class="btn btn-sm btn-primary">Send</button>
+                                <button class="btn btn-default btn-sm tooltips" data-original-title="Discard" data-toggle="tooltip" data-placement="top" title="Discard"><i class="fa fa-times"></i> Discard
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel view-compose-body">
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <!-- <input type="email" class="form-control" id="to" placeholder="To:"> -->
+                                       <!--  <div class="send-options">
+                                            <a href="javascript:void(0);" class="ccLink">Cc</a>
+                                            <a href="javascript:void(0);" class="bccLink">Bcc</a>
+                                        </div> -->
+    <div class = "row">
+    <div class="col-md-3">  
+     <!-- <select ng-init = "option = optionsData[0]" ng-model = "option"
+            ng-options="labels.option for labels in optionsData track by labels.option" class="form-control"> 
+    </select>
+    <span> {{selectOption(option)}} </span> -->
+    
+     <ui-select ng-model="selectedOption.select" theme="bootstrap" style = "margin-top:2px"> <span>{{select(selectedOption.select.option)}} </span>
+                        <ui-select-match placeholder="Select email template..." tooltip="Select template" tooltip-placement="bottom">{{selectedOption.select.option}} </ui-select-match>
+                        <ui-select-choices repeat="item in optionsData" style="z-index: 200">
+                            <div class="row">
+                                {{item.option}}
+                            </div>
+                        </ui-select-choices>
+                    </ui-select>
+    </div>
+    <div
+    isteven-multi-select
+    input-model="modernBrowsers"
+    output-model="outputBrowsers"
+    button-label="icon name"
+    item-label="icon name maker"
+    tick-property="ticked"
+    >
+    </div>
+
+   
+
+    </div>
+                                          
+                                       
+                                    </div>
+                                    <!-- <div class="form-group" id="form-group-cc">
+                                        <input type="text" class="form-control" id="cc" placeholder="Cc:">
+                                    </div>
+                                    <div class="form-group" id="form-group-bcc">
+                                        <input type="text" class="form-control" id="bcc" placeholder="Bcc:">
+                                    </div> -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject"  ng-model = "sendEmail.subject">
+                                    </div>
+
+                                    <textarea class="textarea form-control" ng-model = "sendEmail.content" rows="5" cols="40" 
+                                    style="width: 100%; height: 200px"></textarea>
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-sm btn-primary " ng-click = "alertEmail(sendEmail, outputBrowsers)" ng-disabled="outputBrowsers.length < 1 || !sendEmail.subject || !sendEmail.content">Send</button>
+                                    <button class="btn btn-default btn-sm "><i class="fa fa-times"></i> Discard</button>
+                                    <button class="btn btn-default btn-sm pull-right"><i class="fa fa-paperclip"></i> Attach a File</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+     </div>
+  </section>      

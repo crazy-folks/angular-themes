@@ -1,0 +1,25 @@
+<form class="form-horizontal" ng-submit= "updateSubVault(dataMain._id,categoryData)">
+	<a class="pull-right btn btn-info btn-xs" ng-click="cancel()" tooltip="Cancel"><span class="glyphicon glyphicon-remove"></span></a>
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="categoryData.name">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Description</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="categoryData.description">
+		</div>
+	</div>
+	
+	<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-6">
+		<button type="submit" class="btn btn-success btn-lg">Update Sub Category</button>
+		<i class="btn btn-success btn-lg" tooltip="Share" ng-click = "openEditShare(dataMain._id, categoryData)">  <span class="glyphicon glyphicon-share"></span> </i>
+	</div>
+	</div>
+
+</form>
+

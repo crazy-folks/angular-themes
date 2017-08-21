@@ -1,0 +1,170 @@
+<doc-menu></doc-menu>
+
+<md-content layout-padding>
+<section class="doc" layout="row">
+  <div flex="5"></div>
+  <div flex="95" layout-align="center start">
+    <h1 class="">Installation Instructions</h1>
+
+    <!-- Requirements-->
+    <div layout="row" layout-xs="column" id="req">
+      <div>
+        <h3>Requirements</h3>
+        <p>We need <a href="https://nodejs.org/en/">Node (To create web server)</a> + <a href="https://git-scm.com/">Git (Version Control System)</a> + <a href="https://www.mongodb.com/">MongoDB (Database)</a> + <a href="https://www.python.org/downloads/release/python-2710/">Python 2.7</a>
+        <br/>
+         Go ahead <b>download and install</b> them</p>
+        <p>We need to start an instance of MongoDB. In my case it was sitting @ 
+          <ng-prism class="language-javascript">C:\Program Files\MongoDB\Server\3.0\bin\mongod.exe</ng-prism></p>
+      </div>
+    </div>
+    
+    <!-- Commands-->
+    <div layout="row" layout-xs="column" id="cmd">
+      <div>
+        <h3>Start</h3>
+          <ul>
+            <li><ng-md-icon icon="check"></ng-md-icon>Extract the zip file provided</li>
+            <li><ng-md-icon icon="check"></ng-md-icon>Point your command prompt into that folder</li>
+            <li><ng-md-icon icon="check"></ng-md-icon>Run the following commands</li>
+          </ul> 
+<ng-prism class="language-javascript">npm i -g bower gulp-cli
+npm install
+bower install
+gulp serve
+</ng-prism>
+This should fire up the serve at <a href="http://localhost:9000/">http://localhost:9000/</a>
+<br>
+<br>
+        <h3>Deploy</h3>
+        <ng-prism class="language-javascript">gulp build</ng-prism>
+        <p>Run the above command which will minify, compress, cdnify, uglify the content and generate the production version files into the <em>dist</em> directory. 
+          <br/>Simply copy the content of the dist directory into your production server and your app is live.</p>
+      </div>
+    </div>
+<br/>
+
+    <!-- Settings-->
+    <div layout="row" layout-xs="column" id="settings">
+      <div>
+        <h3>Settings</h3>
+        <p> There are 3 files which need to be configured.<br/>
+          <ul>
+            <li>1. client/app/settings.js</li>
+            <li>2. Rename server/config/local.env.sample.js to server/config/local.env.js</li>
+            <li>3. server/config/environment/shared.js</li>
+          </ul>
+        </p>
+
+<h5>1. settings.js (client/app/settings.js)</h5>
+<ng-prism class="language-javascript">demo: false,
+  country: {
+    name:'India', 
+    code: 'IN' // must be 2 digit code from the list https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 
+  },
+  currency: {
+    code: 'USD', // Paypal currency code *** Please choose from https://developer.paypal.com/docs/classic/api/currency_codes/
+    shop_currency: 'INR',
+    symbol: 'Rs ', // Currency symbol to be displayed through out the shop
+    exchange_rate: '0.015' // Paypal currency code(USD) / Shop currency (INR) ***  exchange_rate should not be 0 else it will generate divided by 0 error
+  }, 
+  paymentStatus: ['Pending','Paid','created'], // On success from Paypal it stores as created
+  orderStatus: ['Payment Pending','Order Placed','Order Accepted','Order Executed','Shipped','Delivered','Cancelled','Not in Stock']
+</ng-prism>
+
+
+
+<h5>2. local.env.js (server/config/local.env.js)</h5>
+<h6>Requirements</h6>
+
+Create an account at <a href="http://www.sendgrid.com/">Sendgrid</a> and generate a new API Key
+Create create a new app at the following websites
+ <br/><a href="http://developer.paypal.com/">PayPal Developer 
+ <br/><a href="http://developer.facebook.com/">Facebook Developer 
+ <br/><a href="https://console.developers.google.com">Google Developer Console</a> 
+ <br/><a href="https://dev.twitter.com/">Twitter Developer</a>
+
+<ng-prism class="language-javascript">FACEBOOK_ID:          'app-id',
+FACEBOOK_SECRET:      'secret',
+
+TWITTER_ID:           'app-id',
+TWITTER_SECRET:       'secret',
+
+GOOGLE_ID:            'app-id',
+GOOGLE_SECRET:        'secret',
+
+SENDGRID_APIKEY:      'YOUR_GENERATED_SENDGRID_API_KEY',
+
+PAYPAL_MODE :         'sandbox', //sandbox or live
+PAYPAL_CLIENT_ID:     'YOUR_PAYPAL_CLIENT_ID',
+PAYPAL_CLIENT_SECRET: 'YOUR_PAYPAL_CLIENT_SECRET'
+</ng-prism>
+
+
+<h5>3(a). User Roles (server/config/environment/shared.js)</h5>
+<ng-prism class="language-javascript">userRoles: ['guest', 'user', 'manager', 'admin']</ng-prism>
+<br/>
+<h5>3(b). Email Templates (server/config/environment/shared.js)</h5>
+<ng-prism class="language-javascript">mailOptions : {
+    forgotPassword: function(body){
+      return {
+        from: 'passwordreset@codenx.com',
+        to: body.to,
+        subject: 'Material Shop Password Reset Request',
+        text: 'You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n' +
+          'Please click on the following link, or paste this into your browser to complete the process:\n\n' +
+          'http://' + body.host + '/reset/' + body.token + '\n\n' +
+          'If you did not request this, please ignore this email and your password will remain unchanged.\n'
+      }
+    },
+    resetPassword: function(body){
+      return {
+        from: 'passwordreset@codenx.com',
+        to: body.to,
+        subject: 'Material Shop Password Changed',
+        text: 'Hello,\n\n' +
+                'This is a confirmation that the password for your account ' + body.to + ' has just been changed.\n'
+        }
+    },
+    orderPlaced: function(body){
+      return {
+        from: 'CodeNx <admin@codenx.com>',
+        to: body.to,
+        subject: 'Order Placed Successfully',
+        text: "Order No: "+body.orderNo
+            +"\n Status: "+body.status
+            +"\n\n Payment Method: "+body.payment_method 
+            +"\n\n Payment ID: "+body.id 
+            +"\n Amount: "+body.amount.total + " " + body.amount.currency
+            +"\n\n Address: \n Name: "+body.address.recipient_name 
+            +"\n Line: "+body.address.line1
+            +"\n City: "+body.address.city
+            +"\n State: "+body.address.state
+            +"\n Zip: "+body.address.postal_code
+        }
+    },
+    orderUpdated: function(body){
+      return {
+        from: 'CodeNx <admin@codenx.com>',
+        to: body.to,
+        subject: 'Your Order Status Updated',
+        text: "Order No: "+body.orderNo
+            +"\n Status: "+body.status
+            +"\n\n Payment Method: "+body.payment_method 
+            +"\n\n Payment ID: "+body.id 
+            +"\n Amount: "+body.amount.total + " " + body.amount.currency
+            +"\n\n Address: \n Name: "+body.address.recipient_name 
+            +"\n Line: "+body.address.line1
+            +"\n City: "+body.address.city
+            +"\n State: "+body.address.state
+            +"\n Zip: "+body.address.postal_code
+        }
+    }
+</ng-prism>
+
+
+      </div>
+</div>
+    </div>
+
+</section>
+</md-content>

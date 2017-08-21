@@ -1,0 +1,39 @@
+<style>
+    .ng-invalid{background-color: lightpink;}
+    .ng-valid{background-color: lightgreen;}
+    span.error{color:red;font-weight: bold;}
+</style>
+
+<a class="pull-right btn btn-info btn-xs" ng-click="cancel()" tooltip="Cancel"><span class="glyphicon glyphicon-remove"></span></a>
+<br></br>
+<div class="modal-header" style ="background-color:#CEECF5; margin-top:-10px;">
+    <h3 class="modal-title">Complete the form </h3>
+   
+</div>
+    <div class="modal-body"> 
+        <form name="addVaultForm" novalidate>
+            <div class="well">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input name="Name" class="form-control"
+                    ng-model="data.subvault.name" required />
+                    <span class="error" ng-show="addVaultForm.Name.$error.required">
+                    Please enter a name
+                    </span>
+                </div>
+                 <div class="form-group">
+                    <label>Description</label>
+                    <input name="description" class="form-control"
+                    ng-model="data.subvault.description" required />
+                    <span class="error" ng-show="addVaultForm.description.$error.required">
+                    Please enter a description
+                    </span>
+                </div>
+            </div>
+        </form>
+      
+    </div>
+    <div class="modal-footer" >  
+        <button class="btn btn-primary"  ng-click = "insertSubVault(dataCategory, data.subvault)" ng-disabled = "addVaultForm.$invalid">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>    

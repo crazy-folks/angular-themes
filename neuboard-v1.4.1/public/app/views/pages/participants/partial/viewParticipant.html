@@ -1,0 +1,106 @@
+﻿<!-- View Participant Modal -->
+<style>
+  .row:before {
+    content: none;
+  }
+  .row:after {
+    content: none;
+  }
+</style>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">&nbsp;</h3>
+    <div class="actions pull-right">
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+    </div>
+    <table class="container-fluid table" style="border:0;margin-bottom:0;">
+      <tr style="border:0;">
+        <td class="col-md-3 col-sm-3 col-xs-3" style="border:0;padding-bottom:15px;" rowspan="2">
+          <div class="span3 pull-left">
+            <profile-img userid="{{viewParticipant.subscriberid || 'null'}}" class="editable img-responsive"
+                         style="max-height:125px;max-width:125px;">
+          </div>
+        </td>
+        <td class="col-md-9 col-sm-9 col-xs-9" style="border:0;">
+
+          <button type="button" class="btn btn-primary btn-info pull-right" style="margin-left:5px;"
+                  ng-click="openEditParticipant(viewParticipant)">
+            Edit
+          </button>
+          <a class="btn btn-success pull-right" chat-modal-content
+             ng-click="open(viewParticipant,$event)" ng-if="viewParticipant.subscriberid.length > 0"
+             uib-tooltip="Open Chat Session">Chat</a>
+          <!--<a class="pull-right btn btn-success" tooltip="Send Email" tooltip-placement="top" href="/processes/email">  Send </a>-->
+        </td>
+      </tr>
+      <tr style="border:0;">
+        <td style="vertical-align:bottom;border:0;background:#FFF">
+          <h3 class="pull-right">{{viewParticipant.displayname}}</h3>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="panel-body">
+    <div class="table-responsive">
+      <table class="table">
+        <tbody>
+        <tr>
+          <td>Category</td>
+          <td class="text-right">{{viewParticipant.MainCategory}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td class="text-right">{{viewParticipant.email}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.address">
+          <td>Address</td>
+          <td class="text-right">{{viewParticipant.address}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.city">
+          <td>City</td>
+          <td class="text-right">{{viewParticipant.city}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.state">
+          <td>State</td>
+          <td class="text-right">{{viewParticipant.state}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.zip">
+          <td>Zipcode</td>
+          <td class="text-right">{{viewParticipant.zip}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.country">
+          <td>Country</td>
+          <td class="text-right">{{viewParticipant.country}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.phone">
+          <td>Telephone</td>
+          <td class="text-right">{{viewParticipant.phone}}</td>
+        </tr>
+        <tr class="row" ng-if="viewParticipant.fax">
+          <td>Fax</td>
+          <td class="text-right">{{viewParticipant.fax}}</td>
+        </tr>
+        <tr class="row" ng-if="(viewParticipant.notes && viewParticipant.notes.length > 0)">
+          <td colspan="2">Notes</td>
+        </tr>
+        <tr class="row" ng-if="(viewParticipant.notes && viewParticipant.notes.length > 0)">
+          <td colspan="2">
+            <ul style="overflow-y:auto;max-height:260px;width: 100%;padding: 0;">
+              <li class="row" ng-repeat="note in viewParticipant.notes track by $index"
+                  style="margin:0;padding:10px;list-style-type:none;">
+                <div>
+                  <span>{{note.note}}</span>
+                </div>
+                <div>
+                  <span class="pull-right" style="font-style:italic;font-size:x-small;">{{note.time | fromNow}}</span>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>

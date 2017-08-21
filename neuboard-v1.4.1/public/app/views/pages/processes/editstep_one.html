@@ -1,0 +1,29 @@
+<style>
+    input.ng-invalid{background-color: lightpink;}
+    input.ng-valid{background-color: lightgreen;}
+    span.error{color:red;font-weight: bold;}
+</style>
+
+<h2>Edit Process</h2>
+
+<div class="row">
+    <div class="col-lg-8">
+        <form name="editProcessForm" novalidate>
+        <div class="form-group">
+            <label class="control-label">Process</label>
+            <input name="processName" class="form-control" type="text" required ng-model="editprocess.name" />
+            <span class="error" ng-show="editProcessForm.processName.$error.required">
+            Please enter a process name
+            </span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Process Description</label>
+            <input name="processDescription" class="form-control" type="text" required ng-model="editprocess.description" />
+            <span class="error" ng-show="editProcessForm.processDescription.$error.required">
+            Please enter a process description
+            </span>
+        </div>
+        </form>
+    </div>
+</div>
+<a ui-sref="editProcess.edit_two" class="btn btn-primary" ng-disabled = "editProcessForm.$invalid">Next</a>

@@ -1,0 +1,81 @@
+[
+  {
+    "MainCategory": "Family",
+    "id": 1,
+    "SubCategory": [
+      {
+        "Category": "Member 01"
+      },
+      {
+        "Category": "Member 02"
+      }
+    ]
+  },
+  {
+    "MainCategory": "Friends",
+    "id": 2,
+    "SubCategory": [
+      {
+        "Category": "Friend 01"
+      },
+      {
+        "Category": "Friend 02"
+      }
+    ]
+  },
+  {
+    "MainCategory": "Company",
+    "id": 3,
+    "SubCategory": [
+      {
+        "Category": "Financial Planners",
+        "subSubCategory": [
+          {
+            "title": "Bellevue Finanical Planners",
+            "name": ""
+          },
+          {
+            "title": "Finanical Advisor",
+            "name": "Alex"
+          },
+          {
+            "title": "Finanical Assistant",
+            "name": "Joe"
+          }
+        ]
+      },
+      {
+        "Category": "Insurance",
+        "subSubCategory": [
+          {
+            "title": "Name Insurance Co"
+          }
+        ]
+      },
+      {
+        "Category": "Real Estate",
+        "subSubCategory": [
+          {
+            "title": "Real Estate Inc"
+          }
+        ]
+      },
+      {
+        "Category": "Health",
+        "subSubCategory": [
+          {
+            "title": "Everlake Clinic"
+          }
+        ]
+      },
+      {
+        "Category": "Tax",
+        "subSubCategory": [
+          {
+            "title": "Tax Book Inc"
+          }
+        ]
+      }
+    ]
+  }
+]

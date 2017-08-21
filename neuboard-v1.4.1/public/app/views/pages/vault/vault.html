@@ -1,0 +1,117 @@
+<div class="pageheader">
+    <h1>Vault</h1>
+    <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li class="active">Vault</li>
+        </ol>
+    </div>
+</div>
+<section id="main-content" ng-controller="vaultController" class="animated fadeIn">
+
+    <div>
+    <div class="row no-margin-y">
+    <div class="col-md-4 col-sm-4">
+    <div class="content"> 
+    <uib-accordion>
+    <uib-accordion-group ng-repeat="item in categories" is-disabled="true">
+        <uib-accordion-heading>
+        <i class="fa fa-users" style="color:#3c57a6"> </i>
+        <span ng-click="opened(item, $index)"  >{{item.name}}</span>
+        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isOpen, 'glyphicon-chevron-right': !isOpen}"></i>
+            <i class="pull-right btn btn-danger btn-xs" ng-click="deleteCategory(item); $event.stopPropagation;"
+               style="margin-right: 10px;"><span class="glyphicon glyphicon-remove" uib-tooltip="Delete"></span></i>
+        <i class="pull-right btn btn-warning btn-xs" ng-click="editCategory(item)" style="margin-right: 8px;"><span class="glyphicon glyphicon-edit" uib-tooltip="Edit"></span></i>
+        <i class="pull-right btn btn-success btn-xs" ng-click="openShare(item, $event)" share-modal-content style="margin-right: 8px;"><span class="glyphicon glyphicon-share" uib-tooltip="Share"></span></i>
+
+
+        </uib-accordion-heading>
+        <!-- <div>
+            <ul class="nav nav-pills nav-stacked">
+            <li  ng-repeat = "sub in item.subCategory"> <a  style = "cursor: pointer; font-weight:bold;">   <span ng-click="editSubCategory(item,sub)" > {{sub.name}} </span> 
+            <i class="pull-right btn btn-danger btn-xs" style="margin-right:6px;" ng-click = "deleteSubCategory(item, sub)"> <span class="glyphicon glyphicon-remove" uib-tooltip="Delete"></span> </i>
+            <i style="margin-right:8px;" class="pull-right btn btn-warning btn-xs" ng-click = "editSubCategory(item, sub)">  <span class="glyphicon glyphicon-edit" uib-tooltip="Edit"></span> </i>
+            <i style="margin-right:8px;" class="pull-right btn btn-success btn-xs" share-modal-content ng-click = "openShare(sub,$event )">  <span class="glyphicon glyphicon-share" uib-tooltip="Share"></span> </i>
+            </a>   
+            </li>
+            <li><a ng-click="addSubCategory(item)" style = "cursor: pointer;"><span style="font-style:italic;"><i class="fa fa-plus"></i>&nbsp;Add sub category </span></a></li>
+            </ul>
+        </div>   -->
+    </uib-accordion-group>
+   
+    <uib-accordion-group is-disabled="true">
+        <uib-accordion-heading>
+            <span style="font-style:italic;" ng-click = "addCategory()"><i class="fa fa-plus"></i>&nbsp;Add new data category </span>
+        </uib-accordion-heading>
+    </uib-accordion-group>
+
+    <hr> </hr>
+
+    <!-- For Sharing Content --> 
+     <uib-accordion-group is-disabled="true">
+        <uib-accordion-heading>
+            <i class="fa fa-fw fa-lock" style="color:#3c57a6"> </i>
+            <span style="font-style:italic;" ng-click = "findMyShare()"> Vault data shared by me </span>
+        </uib-accordion-heading>
+    </uib-accordion-group>
+
+    <uib-accordion-group is-disabled="true">
+        <uib-accordion-heading>
+            <i class="fa fa-fw fa-lock" style="color:#3c57a6"> </i>
+            <span style="font-style:italic;" ng-click = "initSharing()"> Vault data shared with me </span>
+        </uib-accordion-heading>
+       
+    </uib-accordion-group>
+    <!-- End of Sharing Content -->
+
+   
+   
+      
+    </uib-accordion>
+
+    </div>
+    </div>
+
+    <div class="col-md-8 col-sm-8" ng-show = "showPanel" ng-if="!(panel == '')">
+    <div class="block-flat">
+      <div ng-include="'/app/views/pages/vault/partial/vaultModal.html'" ng-if="(panel == 'addCategory')"></div>
+      <div ng-include="'/app/views/pages/vault/partial/editCategory.html'" ng-if="(panel == 'editCategory')"></div>
+      <div ng-include="'/app/views/pages/vault/partial/addSubCategory.html'" ng-if="(panel == 'addSubCategory')"></div>
+      <div ng-include="'/app/views/pages/vault/partial/descriptor.html'" ng-if="(panel == 'descriptorView')"></div>
+      <div ng-include="'/app/views/pages/vault/partial/sharingView.html'" ng-if="(panel == 'sharingView')"></div>
+      <div ng-include="'/app/views/pages/vault/partial/mySharedDataView.html'" ng-if="(panel == 'mySharedDataView')"></div>
+    </div>   
+    </div>
+
+    <div class="col-md-8 col-sm-8" ng-show = "deleteItem">
+        <alert type="warning" close="closeAlerts()">Are you sure that you want to delete this category: <b>{{deleteItem.name}} ? </b>
+        <br> </br>
+        <btn class = "btn btn-danger" ng-click = "confirmDelete(deleteItem)"> Confirm </btn>
+        </alert>
+    </div>
+
+    <div class="col-md-8 col-sm-8" ng-show = "deleteFCatItem">
+        <alert type="warning" close="closeAlerts()">Are you sure that you want to delete this file category: <b>{{deleteFCatItem.categoryName}} ? </b>
+        <br> </br>
+        <btn class = "btn btn-danger" ng-click = "confirmDeleteCat(deleteFCatItem)"> Confirm </btn>
+        </alert>
+    </div>
+
+
+    <div class="col-md-8 col-sm-8" ng-show="deleted">
+        <alert type="success" close="closeAlerts()"> {{deleted}}
+    </div>
+
+    <div class="col-md-8 col-sm-8" ng-show = "deleteSubItem" >
+        <alert type="warning" close="closeAlerts()">Are you sure that you want to delete this sub category: <b>{{deleteSubItem.name}} ?</b>
+        <br> </br>
+        <btn class = "btn btn-danger" ng-click = "confirmDeleteSub(dataAnother, deleteSubItem)"> Confirm </btn>
+        </alert>
+    </div>
+
+    
+    
+    </div>
+    </div>
+</section>

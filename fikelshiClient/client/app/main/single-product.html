@@ -1,0 +1,144 @@
+<navbar leftmenu="true"></navbar>
+<div layout="row" class="wrapper">
+  <div ng-include="'components/navbar/cart.html'"></div>
+  <md-content flex layout="column">
+  <section layout="column" layout-fill flex>
+    <div class="sort-products md-whiteframe-z2">
+        <div>
+            Home > <a ui-sref="/">Products</a> > {{single.product.name}}
+        </div>
+    </div>
+    
+    <div class="single-product-container" layout-gt-md="row" layout="column">
+            <div class="side-thumb" layout="column" layout-xs="row" layout-sm="row" layout-md="row" layout-lg="column" flex=10>
+                <md-card ng-repeat="v in single.product.variants" ng-click="single.changeIndex($index);" ng-if="v.size!=single.product.variants[i].size">
+                    <img ng-src="{{v.image}}" err-SRC="/assets/images/486x325.png" alt="{{single.product.name}}"/>
+                </md-card>
+            </div>
+
+              <div layout="column" flex=40 class="main-product">
+                <md-card>
+                    <md-card-title-media layout="column" >
+                    <img ng-src="{{single.product.variants[single.i].image}}" err-SRC="/assets/images/450x450.png" alt="{{single.product.name}}"/>                       
+                    </md-card-title-media>
+                </md-card>
+              </div>
+
+          <div class="product-description" flex=50>
+            <h2 class="name">{{single.product.name}}</h2>
+            <md-divider></md-divider><br/>
+            <div class="price">
+                <div class="price">Price: <span class="text-muted">{{single.product.variants[single.i].price | currency : vm.Settings.currency.symbol}}</span></div>
+                <del ng-if="single.product.variants[single.i].price!=single.product.variants[single.i].mrp">
+                    MRP: {{single.product.variants[single.i].mrp | currency : vm.Settings.currency.symbol}}
+                </del>   
+            </div>
+            <br/><md-divider></md-divider><br/>
+
+        <div layout="row" layout-align="start center">
+            <cart-buttons variant="single.product.variants[single.i]" product="single.product"></cart-buttons>
+            <wish pid="single.productId" product="single.product" variant="single.product.variants[single.i]"></wish>
+        </div>
+<md-list layout-gt-xs="row" layout="column">
+    <md-list-item class="md-2-line" ng-if="single.product.variants[single.i].size">
+        <ng-md-icon icon="format_shapes" md-menu-align-target></ng-md-icon>
+        <div class="md-list-item-text">
+        <h3> Size </h3>
+        <p> {{single.product.variants[single.i].size}} </p>
+        </div>
+    </md-list-item>
+
+    <md-list-item class="md-2-line" ng-if="single.product.brand">
+        <ng-md-icon icon="verified_user" md-menu-align-target></ng-md-icon>
+        <div class="md-list-item-text">
+        <h3> Brand </h3>
+        <p> {{single.product.brand.name}} </p>
+        </div>
+    </md-list-item>
+
+    <md-list-item class="md-2-line" ng-if="single.product.category">
+        <ng-md-icon icon="subject" md-menu-align-target></ng-md-icon>
+        <div class="md-list-item-text">
+        <h3> Category </h3>
+        <p> {{single.product.category.name}} </p>
+        </div>
+    </md-list-item>
+</md-list>
+    <md-divider></md-divider>
+    <br/>
+        <div ng-if="single.product.info">
+            <b>Description: </b>
+            <div class="description">
+               {{single.product.info}}
+            </div>
+        </div>
+        <span ng-if="single.product.keyFeatures">
+            <div ng-if="single.product.keyFeatures.length>0">
+                <b>Key Features:</b>
+                <ul>
+                    <li ng-repeat="k in single.product.keyFeatures"><b>{{k.key}}</b> : {{k.val}}</li>
+                </ul>
+            </div>
+        </span>
+        <span ng-if="single.product.features">
+            <div ng-if="single.product.features.length>0"><b>Features:</b>
+                <ul><li ng-repeat="k in single.product.features"><b>{{k.key}}</b> : {{k.val}}</li></ul>
+            </div>
+        </span>
+
+        <div layout="rows" layout-align="center center" ng-if="single.reviews.length==0 && single.reviewSettings.enabled">
+            <br/><md-divider></md-divider><br/>
+            <md-button ng-click="single.reviewForm()" class="md-raised md-primary">Be the first to review this item</md-button>
+        </div>
+        <div class="reviews" ng-if="single.reviews.length>0 && single.reviewSettings.enabled">
+            <!--<h3>Reviews</h3>-->
+            <div class="reviews-header" layout="column" layout-gt-xs="row">
+                <div layout="column" layout-gt-xs="row">
+                    <div class="total-rating" layout="column" layout-xs="row" layout-align="space-between"> 
+                        <div layout="row" layout-align="start start" class="total"> {{single.rating.avg}}<ng-md-icon icon="star"></ng-md-icon></div>
+                        <div>{{single.rating.count}} Ratings</div>
+                        <div>{{single.reviewCount}} Reviews</div>
+                    </div>
+                    <div class="rating-signal">
+                        <div layout="row" layout-align="start center">5&nbsp;<ng-md-icon icon="star" style="fill:rgb(33,150,243)"></ng-md-icon> <md-progress-linear md-mode="determinate" value="{{single.rating.r5*100 / single.rating.count}}"></md-progress-linear>{{single.rating.r5}}</div>
+                        <div layout="row" layout-align="start center">4&nbsp;<ng-md-icon icon="star" style="fill:rgb(33,150,243)"></ng-md-icon> <md-progress-linear md-mode="determinate" value="{{single.rating.r4*100 / single.rating.count}}"></md-progress-linear>{{single.rating.r4}}</div>
+                        <div layout="row" layout-align="start center">3&nbsp;<ng-md-icon icon="star" style="fill:rgb(33,150,243)"></ng-md-icon> <md-progress-linear md-mode="determinate" value="{{single.rating.r3*100 / single.rating.count}}"></md-progress-linear>{{single.rating.r3}}</div>
+                        <div layout="row" layout-align="start center">2&nbsp;<ng-md-icon icon="star" style="fill:rgb(255,87,34)"></ng-md-icon> <md-progress-linear class="md-warn" md-mode="determinate" value="{{single.rating.r2*100 / single.rating.count}}"></md-progress-linear>{{single.rating.r2}}</div>
+                        <div layout="row" layout-align="start center">1&nbsp;<ng-md-icon icon="star" style="fill:rgb(255,87,34)"></ng-md-icon> <md-progress-linear class="md-warn" md-mode="determinate" value="{{single.rating.r1*100 / single.rating.count}}"></md-progress-linear>{{single.rating.r1}}</div>
+                    </div>
+                </div>
+                <div flex layout="row" layout-align="center center">
+                    <md-button ng-click="single.reviewForm()" class="md-primary md-raised">Rate & Review</md-button>
+                </div>
+            </div>
+            
+            <md-card ng-repeat="review in single.reviews | orderBy: '-created'">
+                <md-card-header>
+                    <md-card-avatar>
+                        <list-image string="{{review.message || review.rating}}"></list-image>
+                    </md-card-avatar>
+                    <md-card-header-text>
+                        <span class="md-subhead" ng-if="review.rating">
+                            <div class="rating-button">{{review.rating}} <ng-md-icon icon="star" size="15"></ng-md-icon></div>
+                        </span>
+                        <span class="md-title" style="white-space: pre;">{{review.message}}</span>
+                    </md-card-header-text>
+                </md-card-header>
+                <!--<md-card-content>Good product within 7000</md-card-content>-->
+                <md-card-actions layout="row" layout-align="space-between center">
+                    <span layout="row" layout-align="start center">
+                        <ng-md-icon icon="person" size="15"></ng-md-icon>&nbsp;{{review.reviewer}}&nbsp;
+                        <ng-md-icon icon="access_time" size="15"></ng-md-icon>&nbsp;{{review.created | amCalendar}}
+                    </span>
+                        <md-button ng-if="single.myReview(review)" class="md-icon-button" ng-click="single.deleteReview(review)" aria-label="Delete Review">
+                            <ng-md-icon icon="delete" style="fill: #aaa"></ng-md-icon>&nbsp;
+                        </md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        </div>
+      </div>
+</section>
+</md-content>
+</div>
+<footer></footer>

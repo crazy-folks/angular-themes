@@ -1,0 +1,53 @@
+<form class="form-horizontal" ng-submit= "editVaultValue(desData, label.option, temp)" novalidate name = "myForm">
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Type </label>
+		<div class="col-sm-6">
+			<select ng-init="label = fieldsData[0]" ng-model="label"
+            ng-options="labels.option for labels in fieldsData track by labels.option" > </select> <span style ="margin-left:20px;"> <b>Old Type: {{desData.vaultvalues[desData.vaultvalues.length -1].type}} </b> </span>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Label</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="desData.name">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Old Value</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" placeholder ="{{desData.vaultvalues[desData.vaultvalues.length -1].value}}" ng-disabled = "true" >
+		</div>
+	</div> 
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">New Value</label>
+		<div class="col-sm-6">
+			<!-- <input type="text" class="form-control" ng-model="newVaultValue" placeholder= "Ex: {{label.code}}" > -->
+			<input type="date" ng-model="temp.newDateValue" is-open="status.opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-show = "label.option=='Date'" class="form-control"/>
+			<input type="text" ng-model="temp.newVaultValue" ui-mask="(999) 999-9999"  ng-show = "label.option=='Phone'"class="form-control" model-view-value="true" />
+   			<input type="text" ng-model="temp.newVaultValue" ui-mask="(999) 999-9999? x99999"  ng-show = "label.option=='Phone-ext'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ui-mask="+33 999 999 999"  ng-show = "label.option=='Phone-int'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ui-mask="99-9999999"  ng-show = "label.option=='Tax Id'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ui-mask="a*-999-a999"  ng-show = "label.option=='Product Key'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ui-mask="99%"  ng-show = "label.option=='Percent'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ui-mask="$999,999.99"  ng-show = "label.option=='Currency'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ui-mask="999-99-9999"  ng-show = "label.option=='SSN'"class="form-control" model-view-value="true"/>
+    		<input type="text" ng-model="temp.newVaultValue" ng-show = "label.option=='Text'"class="form-control" placeholder = "Enter your text"/>
+    		<input type="password" ng-model="temp.newVaultValue" placeholder= "{{label.code}}" ng-show = "label.option=='password'"class="form-control"/>
+    		<input type="email" name="input" ng-model="temp.newEmailValue" placeholder= "{{label.code}}" ng-show = "label.option=='Email'"class="form-control" require/>
+    		<span class="pull-right alert alert-danger form-control" style = "width:100%;" ng-show="myForm.input.$error.required" ng-show = "label.option=='Email'">
+    		Required!</span>
+  			<span class="pull-right alert alert-danger form-control" style = "width:100%;" ng-show="myForm.input.$error.email" ng-show = "label.option=='Email'">
+    		Not valid email your're entering!</span>
+		</div>
+	</div>
+	
+	<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-6">
+		<button type="submit" class="btn btn-success btn-lg btn-block">Update Descriptor</button>
+	</div>
+	</div>
+
+</form>

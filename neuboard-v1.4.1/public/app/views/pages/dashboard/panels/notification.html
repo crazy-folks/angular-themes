@@ -1,0 +1,17 @@
+<div class="panel panel-default" ng-controller="sidebarController" ng-show = "notifications.length > 0">
+  <div class="panel-heading">
+    <h3 class="panel-dashboardtitle">Notification</h3>
+    <div class="actions pull-right">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel">
+    <div class="content" >
+     <div class="alert alert-info alert-dismissable" ng-repeat = "item in notifications track by $index">
+      <button ng-click = "deleteNotification($index)" type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <strong>Heads up!</strong> <a ui-sref="agreements" title="Agreements" style ="color:#3A87AD;">  {{item.msg}} </a> </div>
+    </div>
+  </div>
+</div>

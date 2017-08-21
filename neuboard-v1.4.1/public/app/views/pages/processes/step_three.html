@@ -1,0 +1,32 @@
+<h2>Add Participant/Delete Section</h2>
+
+<div class="row">
+    <div class="col-md-4" >
+        <p> Please select which section to add Participants or delete </p>
+        <ul ng-repeat = "item in processSec.sections">
+            <li> {{item.name}}  
+            <span> <input type="checkbox" ng-model='item.modify'> </span> </li> 
+        </ul>
+    </div>
+    <div class="col-md-8" style = "height:300px">
+        <div
+        isteven-multi-select
+        input-model="allParticipants"
+        output-model="outputParts"
+        button-label="icon shareName"
+        item-label="icon shareName maker"
+        tick-property="ticked"
+        ...
+        group-property="msGroup"
+        >
+        </div>
+        <p ng-show = "outputParts.length < 1" style ="color:red;"> Please select participant </p>
+    </div>
+</div>
+<a ui-sref="newProcess.step_two" class="btn btn-default">Previous</a>
+<a class="btn btn-success" ng-click = "saveParticipant(outputParts,processSec)" ng-disabled = "outputParts.length < 1">Save</a>
+<a class="btn btn-danger" ng-click = "deleteSection(processSec)" ng-disabled = "processSec.sections.length < 1" tooltip ="Delete one section at a time">Delete</a>
+
+<a ui-sref="newProcess.step_fourth" class="btn btn-primary" ng-disabled = "process.sections.length < 1" style="margin-left:3px;">Next</a>
+
+

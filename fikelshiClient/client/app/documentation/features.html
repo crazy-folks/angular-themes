@@ -1,0 +1,74 @@
+<doc-menu></doc-menu>
+
+<md-toolbar layout="row" class="md-hue-3">
+  <div class="md-toolbar-tools">
+    <span>Features</span>
+  </div>
+</md-toolbar>
+
+
+<div layout="row" layout-wrap layout-padding layout-align="center space-between">
+<!--<div class="cart-item md-whiteframe-z1">
+</div>-->
+
+<md-card ng-repeat="f in doc.newFeatures" flex-xs flex-gt-xs="50" flex-gt-md="30" layout-align="start start">
+  <md-card-title>
+    <!--<md-card-title-media>
+      <div class="md-media-lg card-media">
+        <ng-md-icon icon="{{f.i}}" size="120" style="fill: #999"></ng-md-icon>
+      </div>
+    </md-card-title-media>-->
+    <md-card-title-text>
+      <span class="md-headline">{{f.h2}}</span>
+      <span class="md-subhead">{{f.p}}</span>
+    </md-card-title-text>
+  </md-card-title>
+</md-card>
+
+<md-toolbar layout="row" class="md-hue-3">
+  <div class="md-toolbar-tools">
+    <span>Store Front Features</span>
+  </div>
+</md-toolbar>
+<div layout="row" layout-wrap>
+<md-card ng-repeat="f in doc.storeFrontFeatures" flex-xs flex-gt-xs="50" flex-gt-md="30">
+  <md-card-title>
+    <h2>{{f.h2}}</h2>         
+  </md-card-title>
+  <md-card-content>
+    <p>{{f.p}}</p>
+  </md-card-content>
+</md-card>
+</div>
+
+<md-toolbar layout="row" class="md-hue-3">
+  <div class="md-toolbar-tools">
+    <span>Store Back Office Features</span>
+  </div>
+</md-toolbar>
+<div layout="row" layout-wrap>
+<md-card ng-repeat="f in doc.storeBackFeatures" flex-xs flex-gt-xs="50" flex-gt-md="30">
+  <md-card-title>
+    <h2>{{f.h2}}</h2>         
+  </md-card-title>
+  <md-card-content>
+    <p>{{f.p}}</p>
+  </md-card-content>
+</md-card>
+</div>
+
+<md-toolbar layout="row" class="md-hue-3">
+  <div class="md-toolbar-tools">
+    <span>Future</span>
+  </div>
+</md-toolbar>
+<div layout="row" layout-wrap>
+<md-card ng-repeat="f in doc.future" flex-xs flex-gt-xs="50" flex-gt-md="30">
+  <md-card-title>
+    <h2>{{f.h2}}</h2>         
+  </md-card-title>
+  <md-card-content>
+    <p>{{f.p}}</p>
+  </md-card-content>
+</md-card>
+</div>

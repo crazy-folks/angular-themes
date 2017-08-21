@@ -1,0 +1,39 @@
+﻿<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-dashboardtitle">Processes in progress</h3>
+    <div class="actions pull-right">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel">
+    <div class="list-group tickets" ng-controller="processController">
+      <ul class="list list-group tickets" style="list-style:none;margin-bottom:0;">
+        <li ng-repeat="item in processHardCode"
+            ng-class="{'list-group-item in-progress':item.link != '', 'list-group-item coming-up':item.link == ''}"
+            class="list-group-item message messages" ng-controller="chartJsDoughnutCtrl">
+
+          <span class="pull-left">
+           <img ng-src="{{item.icon}}" style = "height:45px; width:45px;margin-right:10px;" tooltip = "{{item.name}}"  tooltip-placement="right"> 
+          </span>
+           <span class="pull-right">
+          <canvas tc-chartjs-doughnut chart-options="options" chart-data="processdata" height="40px" width="40px"></canvas>
+         
+          </span>
+          <span class="name">{{item.name}} <p style = "color:blue;"> <a ui-sref="processesNews({name: '{{item.processName}}'})"> {{item.processName}} </a></p> <!-- <b style = "color:blue; margin-left:20px;"> {{item.processName}} </b> --> </span>
+           <!-- <span class="name"><a title={{item.name}} id = "{{item.processName}}" style="margin-left:15px;margin-right:15px " ui-sref="processesNews({name: '{{item.processName}}'})"> {{item.processName}}  </a></span>  -->
+
+
+    <!--       <span ng-show="item.status == 'active'" class="label label-sm label-success">Active </span>
+          <span ng-show="item.status == 'expire'"class="label label-sm label-warning">Expiring soon</span>
+          <span ng-show="item.status == 'inactive' "class="label label-sm label-danger">Inactive</span> -->
+          
+          <!--<span ng-class="{'label label-progress pull-right' : item.complete != ' ', 'label label-warning pull-right' : item.complete == ' '}">{{item.status}}</span>-->
+        </li>
+    </div>
+  </div>
+ 
+</div>
+  

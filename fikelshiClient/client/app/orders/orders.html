@@ -1,0 +1,78 @@
+<navbar leftmenu="true"></navbar>
+<left-menu></left-menu>
+<md-content flex class="content md-padding" layout="column" layout-align="start center">
+      <section class="header" layout="column" layout-align="center center">
+        <h2>Orders Management</h2>
+        <md-input-container flex>
+          <label>Search Orders</label>
+          <input name="search" type="text" ng-model="orders.search" md-autofocus/>
+        </md-input-container>
+      </section>
+  <section layout="column" class="orders">
+  <md-card ng-repeat="o in orders.orders | orderBy : 'orderDate' : 'reverse' | filter:orders.search">
+      <md-card-header layout="row">
+        <div layout="row">
+          <md-card-header-text>
+            <span class=""># {{o.orderNo}}</span>
+            <span class="md-subhead">{{o.created_at | amCalendar}}</span>
+          </md-card-header-text>
+          <md-card-header-text>
+            <span class="">TOTAL</span>
+            <span class="md-subhead">{{o.amount.total | localPrice}}</span>
+          </md-card-header-text>
+        </div>
+        <div layout="column" layout-gt-sm="row" flex>
+          <md-card-header-text>
+            <span class="">Payment </span>
+            <span class="md-subhead">{{o.payment_method}}</span>
+          </md-card-header-text>
+          <md-card-header-text>
+            <span class="">Order Status</span>
+            <span class="md-subhead">
+              <md-select ng-model="o.status" placeholder="Order Status" ng-change="orders.changeStatus(o)" flex>
+                <md-option ng-value="o" ng-repeat="o in orders.Settings.orderStatus">{{o}}</md-option>
+              </md-select>
+            </span>
+          </md-card-header-text>
+          <md-card-header-text>
+            <span class="">Payment Status </span>
+            <span class="md-subhead">
+              <md-select ng-model="o.payment.state" placeholder="Payment Status" ng-change="orders.changeStatus(o)">
+                <md-option ng-value="o" ng-repeat="o in orders.Settings.paymentStatus">{{o}}</md-option>
+              </md-select>
+            </span>
+          </md-card-header-text>
+        </div>
+      </md-card-header>
+      <md-card-content layout="column" layout-gt-sm="row" layout-align="space-between">
+          <md-list flex=40>
+            <div layout="row" ng-repeat="i in o.items">
+              <md-card-avatar>
+                 <img ng-src="{{i.url}}" err-SRC="/assets/images/150x150.png" class="md-card-image" alt="{{i.name}}" width="100px" hide show-gt-xs>
+              </md-card-avatar>
+              
+              <div class="content">
+              <a ng-click="orders.navigate(i)">{{i.name}}</a><br/><br/>
+              <b>Amount:&nbsp;&nbsp;</b> {{i.price | localPrice}} * {{i.quantity}}&nbsp;=&nbsp;{{i.price * i.quantity | localPrice}}
+              <div ng-if="i.amount.details.shipping>0"><b>Shipping: </b> {{i.amount.details.shipping | localPrice}}</div>
+              <br/>
+                
+              </div>
+            </div>
+          </md-list>
+                <md-list class="md-list-item-text order-address" flex=30>
+                  <ng-md-icon icon="local_shipping"></ng-md-icon>&nbsp;Address
+                  <hr>
+                  {{o.address.recipient_name}}<br/>
+                  {{o.address.line1}}<br/>
+                  {{o.address.city}}<br/>
+                  {{o.address.postal_code}}<br/>
+                  {{o.address.state}}<br/>
+                  {{o.phone}}<br/>
+                  {{o.address.country_code}}<br/>
+                </md-list>
+      </md-card-content>
+  </md-card>
+  </section>
+</md-content>
+<footer></footer>

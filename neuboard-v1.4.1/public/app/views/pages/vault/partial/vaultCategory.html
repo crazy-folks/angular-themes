@@ -1,0 +1,19 @@
+<div class="content" ng-controller = "vaultController">   
+
+<br> </br>
+<div class="butpro butstyle flat" ng-repeat="item in vault.categories">
+            <a ui-sref = "vaults/vault/{{item.name}}" title= {{item.name}}>
+
+              <div class="sub">
+                 <h2> {{item.name}} </h2>
+              <i class="fa fa-dollar fa-3x" style="margin-left: 45%;"></i> 
+            </div>
+          </a>
+</div> 
+
+<!-- ui view for associate sub vault category -->
+<div ui-view> view here
+    
+
+</div> 
+</div>

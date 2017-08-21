@@ -1,0 +1,26 @@
+[
+  {
+    "Title": "Me",
+    "ref":"ac3-1",
+    "Field": [
+      {"field":"Last Name", "data-mask":"date", "class":"input-group no-margin"},
+      {"field":"First Name","data-mask":"date", "class":"input-group no-margin"},
+      {"field":"Phone","data-mask":"phone", "class":"input-group no-margin"},
+      {"field":"Email","data-mask":"email","class":"input-group no-margin"},
+      {"field":"Address","data-mask":"","class":"input-group no-margin"}
+    ]
+  },
+  {
+    "Title": "Family",
+    "ref":"ac3-2",
+    "Field": [
+      {"field":"Spouse/Partner","data-mask":"date","class":"input-group no-margin"},
+      {"field":"Sibling","data-mask":"date","class":"input-group no-margin"},
+      {"field":"Other","data-mask":"date","class":"input-group no-margin"}
+    ]    
+  },
+  {
+    "Title": "Friends",
+    "ref":"ac3-3"  
+  }
+]

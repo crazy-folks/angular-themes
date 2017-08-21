@@ -1,0 +1,43 @@
+<div class="page-head">
+	
+	<h2 ng-if="vault.type == 'edit'">Edit Vault</h1>
+</div>
+
+<form class="form-horizontal" ng-submit="vault.saveVault()">
+	
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="vault.vaultData.name">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">description</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="vault.vaultData.description">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Type</label>
+		<div class="col-sm-6">
+			<input type="txt" class="form-control" ng-model="vault.vaultData.type">
+		</div>
+	</div>
+	
+	<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-6">
+		<button type="submit" class="btn btn-success btn-lg btn-block" ng-if="vault.type == 'edit'">Update Vault</button>
+	</div>
+	</div>
+
+</form>
+
+<div class="row show-hide-message" ng-show="vault.message">
+	<div class="col-sm-6 col-sm-offset-2">	
+		<div class="alert alert-info">
+			{{ vault.message }}
+		</div>
+	</div>
+</div>

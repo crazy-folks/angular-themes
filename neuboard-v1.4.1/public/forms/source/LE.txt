@@ -1,0 +1,334 @@
+---
+FieldType: Button
+FieldName: Conventional
+FieldNameAlt: Conventional
+FieldFlags: 0
+FieldValue: On
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: FHA
+FieldNameAlt: FHA
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: VA
+FieldNameAlt: VA
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: NO
+FieldNameAlt: NO
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: YES until
+FieldNameAlt: YES, until
+FieldFlags: 0
+FieldValue: On
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Loan Amount
+FieldNameAlt: Loan Amount
+FieldFlags: 0
+FieldValue: $162,000     
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Interest Rate
+FieldNameAlt: Interest Rate
+FieldFlags: 4096
+FieldValue: 3.875%
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Payment Calculation
+FieldNameAlt: Payment Calculation
+FieldFlags: 0
+FieldValue: Years 1-7
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Estimated Total Monthly Payment
+FieldNameAlt: Estimated Total Monthly Payment
+FieldFlags: 0
+FieldValue: $1,050
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Property Taxes
+FieldNameAlt: Property Taxes
+FieldFlags: 0
+FieldValue: On
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Homeowners Insurance
+FieldNameAlt: Homeowner&#8217;s Insurance
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Estimated Cash to Close
+FieldNameAlt: Estimated Cash to Close
+FieldFlags: 0
+FieldValue: $16,054
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Includes Closing Costs See Calculating Cash to Close on page 2 for details
+FieldNameAlt: Includes Closing Costs. See Calculating Cash to Close on page 2 for details.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: G  Initial Escrow Payment at Closing
+FieldNameAlt: G.  Initial Escrow Payment at Closing
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: B Services You Cannot Shop For
+FieldNameAlt: B. Services You Cannot Shop For
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: H  Other
+FieldNameAlt: H.  Other
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: C  Services You Can Shop For
+FieldNameAlt: C.  Services You Can Shop For
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: I  TOTAL OTHER COSTS E  F  G  H
+FieldNameAlt: I.  TOTAL OTHER COSTS (E + F + G + H
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: J  TOTAL CLOSING COSTS
+FieldNameAlt: J.  TOTAL CLOSING COSTS
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: D TOTAL LOAN COSTS A  B  C
+FieldNameAlt: D. TOTAL LOAN COSTS (A + B + C
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: In 5 Years
+FieldNameAlt: In 5 Years
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Total Interest Percentage TIP
+FieldNameAlt: Total Interest Percentage (TIP)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: will allow under certain conditions  this person to assume this loan on the original terms
+FieldNameAlt: will allow, under certain conditions,  this person to assume this loan on the original terms
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: will not allow assumption of this loan on the original terms
+FieldNameAlt: will not allow assumption of this loan on the original terms
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: days late we will charge a late fee of
+FieldNameAlt: days late, we will charge a late fee of
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If your payment is more than
+FieldNameAlt: If your payment is more than
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: to service your loan If so you will make your payments to us
+FieldNameAlt: to service your loan. If so, you will make your payments to us
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: to transfer servicing of your loan
+FieldNameAlt: to transfer servicing of your loan
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Signature
+FieldName: Applicant Signature
+FieldNameAlt: Applicant Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: CoApplicant Signature
+FieldNameAlt: Co-Applicant Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_2
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date Issued
+FieldFlags: 4096
+FieldValue: 1/1/2016
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Applicants
+FieldFlags: 4096
+FieldValue: Pam and Michael Jone&#13;123 Anywhere St
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sale Price
+FieldFlags: 4096
+FieldValue: $180,000.00
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Product
+FieldFlags: 4096
+FieldValue: Fixed Rate
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Loan ID #
+FieldFlags: 4096
+FieldValue: 12345678
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Monthly Principal  Interest
+FieldNameAlt: Monthly Principal &amp; Interest See Projected Payments below for your Estimated Total Monthly Payment
+FieldFlags: 4096
+FieldValue: $761.78
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Principal  Interest
+FieldNameAlt: Principal &amp; Interest Mortgage Insurance Estimated Escrow Amount can increase over time
+FieldFlags: 4096
+FieldValue: $761.78
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Mortgage Insurance
+FieldNameAlt: Principal &amp; Interest Mortgage Insurance Estimated Escrow Amount can increase over time
+FieldFlags: 4096
+FieldValue: + 82
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Estimated Escrow
+FieldNameAlt: Principal &amp; Interest Mortgage Insurance Estimated Escrow Amount can increase over time
+FieldFlags: 4096
+FieldValue: + 206
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Balloon Payment
+FieldNameAlt: Does the loan have these features?_Balloon Payment
+FieldFlags: 0
+FieldValue: No
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Prepayment Penalty
+FieldNameAlt: Does the loan have these features?_Balloon Payment
+FieldFlags: 0
+FieldValue: As high as $3,240 if you pay off loan during first 2 years
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Estimated Closing Costs
+FieldNameAlt: Estimated Closing Costs
+FieldFlags: 0
+FieldValue: $ 8,054
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Estimated Taxes Insurance Assessments
+FieldNameAlt: Estimated Closing Costs
+FieldFlags: 0
+FieldValue: $ 206 a month
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Property
+FieldFlags: 4096
+FieldValue: Somewhere Ave, Anytown, WA USA
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Loan Term
+FieldFlags: 4096
+FieldValue: 30 years
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Purpose
+FieldFlags: 4096
+FieldValue: Purchase
+FieldJustification: Left

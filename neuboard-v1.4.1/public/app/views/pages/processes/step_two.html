@@ -1,0 +1,31 @@
+<style>
+    input.ng-invalid{background-color: lightpink;}
+    input.ng-valid{background-color: lightgreen;}
+    span.error{color:red;font-weight: bold;}
+</style>
+<h2>Enter Section Information</h2>
+
+<div class="row">
+    <div class="col-lg-8">
+        <form name="addSectionForm" novalidate>
+        <div class="form-group">
+            <label class="control-label">Section Name</label>
+            <input  name="sectionName" class="form-control" type="text" ng-model="process.sectionName" required />
+            <span class="error" ng-show="addSectionForm.sectionName.$error.required">
+            Please enter a section name
+            </span>
+          
+        </div>
+        <div class="form-group">
+            <label class="control-label">Section Description</label>
+            <input  name ="sectionDescription" class="form-control" type="text" ng-model="process.sectionDescription" required/>
+            <span class="error" ng-show="addSectionForm.sectionDescription.$error.required">
+            Please enter a section description
+            </span>
+        </div>
+        </form>
+    </div>
+</div>
+<a ui-sref="newProcess.step_one" class="btn btn-default">Previous</a>
+<a class="btn btn-success" ng-click = "saveSection(process)" tooltip ="Rename to save another section" ng-disabled = "addSectionForm.$invalid">Save</a>
+<a ui-sref="newProcess.step_three" class="btn btn-primary" ng-disabled = "addSectionForm.$invalid" style="margin-left:3px;">Next</a>

@@ -1,0 +1,30 @@
+<div id="cl-wrapper">
+  <div class="page-head text-center">
+    <h2>Welcome to Kazume</h2>
+  </div>
+
+  <div class="cl-mcont">
+    <div class="col-md-12">
+      <div class="block-center">
+
+        <div class="col-lg-6">
+          <div ng-if="!main.loggedIn">
+            <p>Login to enter Kazume</p>
+            <a href="/login" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+        <!-- 	<div ng-if="main.loggedIn">
+            <p>Manage your users.</p>
+            <a href="/users" class="btn btn-primary">View Users</a>
+          </div> -->
+
+        <div ng-if="main.loggedIn" class="text-center col-md-12">
+          <p>You are already logged in!</p>
+          <a href="/dashboard" class="btn btn-primary">Go to dashboard</a>
+        </div>
+      </div>
+      <!-- </div>	 -->
+      <!-- </div> -->
+    </div>
+
+  </div>

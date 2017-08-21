@@ -1,0 +1,25 @@
+﻿<div class="panel panel-default" ng-controller="eventCalendarController">
+  <div class="panel-heading">
+    <h3 class="panel-dashboardtitle">Events</h3>
+    <div class="actions pull-right">
+      <div class="btn-group-sm pull-left" dropdown is-open="status.isopen">
+        <button event-modal-content class="btn fa fa-calendar-o" ng-click="open()" ng-transclude> New event</button>
+        <button id="single-button" type="button" class="btn fa fa-chevron-down" dropdown-toggle ng-disabled="disabled" style="margin-right:5px;">
+          View
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+          <li role="menuitem"><a href="#" ng-click="changeView('agendaDay', 'myCalendar')">Day</a></li>
+          <li role="menuitem"><a href="#" ng-click="changeView('agendaWeek', 'myCalendar')">Week</a></li>
+          <li role="menuitem"><a href="#" ng-click="changeView('month', 'myCalendar')">Month</a></li>
+        </ul>
+      </div>
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="calendar" ng-model="eventSources" calendar="myCalendar" ui-calendar="uiConfig.calendar"></div>
+
+  </div>
+</div>

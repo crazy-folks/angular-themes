@@ -1,0 +1,42 @@
+
+<a class="pull-right btn btn-info btn-xs" ng-click="cancel()" tooltip="Cancel"><span class="glyphicon glyphicon-remove"></span></a>
+<div class="row" >
+<div class="col-md-12">
+<div class="panel panel-default">
+<div class="panel-heading" style ="background-color:#CEECF5">
+    <h2 class="panel-title" style="font-weight:bold">Category</h2>
+    
+    <div class="actions pull-right">
+    <i data-widget-toggle class="fa fa-chevron-down"></i>
+                       <!-- <i data-widget-close class="fa fa-times"></i> -->
+    </div>
+</div>
+<div class="panel-body">
+<form class="form-horizontal" ng-submit= "updateCategory(categoryData._id,categoryData)">
+	
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="categoryData.name">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Description</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" ng-model="categoryData.description">
+		</div>
+	</div>
+	
+	<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-6">
+		<button type="submit" class="btn btn-info btn-lg ">Update</button>
+		<i class="btn btn-success btn-lg" tooltip="Share" share-modal-content ng-click = "openShare(categoryData, $event)">  <span class="glyphicon glyphicon-share"></span> </i>
+	</div>
+	</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>

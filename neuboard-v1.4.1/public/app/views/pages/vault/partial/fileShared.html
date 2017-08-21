@@ -1,0 +1,62 @@
+<style>
+#tempAnchor:hover {
+  cursor:pointer;
+}
+</style> 
+
+<div class="jumbotron text-center" ng-show="loadingFileStatus">
+    <progressbar class="progress-striped active" value="dynamic" type="info"></progressbar>
+    <p>Loading ...</p>
+</div>
+
+<div class="panel panel-default" >
+  <div class="panel-heading" style ="background-color:#CEECF5; height:50px;">
+    <h2 class="panel-title" style="font-weight:bold" ng-if = "sharedFiles.length > 0">Shared Files</h2>
+    <h2 class="panel-title" style="font-weight:bold" ng-if = "sharedFiles.length < 1">You Have No Shared Files</h2>
+    <div class="actions pull-right" style = "margin-top:20px; margin-right:20px;">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel" ng-show = "sharedFiles.length > 0">
+    <div  ng-controller="vaultController">
+<table class="table table-bordered" id="datatable">
+<thead>
+  <tr> 
+  <th ><b>File Name</b></th>
+  <th><b>Share From</b></th>
+  <th><b>Action time</b></th>
+  <th><b>End Time</b></th>
+  <th><b>Expire</b></th>
+  <th class="col-sm-1"><b>Delete</b></th>
+  <th class="col-sm-1"><b>Download</b></th>
+  <!-- <th class="col-sm-2"><b>Preview</b></th> -->
+   </tr>
+</thead>
+<tbody>
+  <tr ng-repeat="item in filteredFiles">
+  <td> <a ng-click = "downloadFile(item)" style = "color:#3380FF; font-weight:bold" id = "tempAnchor"> {{item.name}} </a> </td>
+  <td> {{item.myName}}</td>
+  <td><span> {{toNormalDate(item.actiondatetime)}} </span> {{normalDate}}</td>
+  <td><span> {{toNormalDate(item.enddatetime)}} </span> {{normalDate}}</td>
+  <td> <span> {{compareDate(item.enddatetime)}} </span> {{result}} </td>
+
+  <td> <i class="btn btn-danger btn-xs" ng-click="deleteFileAgreement(item)" style="margin-left:10px"><span class="glyphicon glyphicon-remove" tooltip="Delete"></span></i></td>
+  <td> <i class="btn btn-info btn-xs" ng-hide = "item.confirmStatus == 'To Be Agreed'"  ng-disabled = "result == true" ng-click = "downloadFile(item)" style="margin-left:20px"><span class="glyphicon glyphicon-download" tooltip="Download"></span></i>
+  <span tooltip="Acknowledge to download file" ng-show = "item.confirmStatus == 'To Be Agreed'"> Require </span>
+  </td>
+  
+ <!--  <td> <user-img ng-hide = "item.confirmStatus == 'To Be Agreed'" userid="{{item.subscriberid}}" filename="{{item.name}}" css="pull-left" style="height:50px;width:100px;"  ></user-img> </td> -->
+</tbody>
+</table>
+<uib-pagination boundary-links="true" total-items="totalItems" ng-model="fileVar.currentPage" class="pagination-sm"
+                      ng-change="changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                      last-text="&raquo;" items-per-page="fileVar.numPerPage" style="margin: 0;">
+      </uib-pagination>
+</div>
+</div>
+</div>
+ 
+</div>

@@ -1,0 +1,63 @@
+<style>
+    input.ng-invalid{background-color: lightpink;}
+    input.ng-valid{background-color: lightgreen;}
+    span.error{color:red;font-weight: bold;}
+</style>
+<h2>Click Section name to edit</h2>
+
+<div class="row" style = "margin-bottom:10px;">
+    <div class="col-lg-4">
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat="item in editprocess.sections track by $index"> 
+            <a style="cursor: pointer; font-weight:bold; margin-left:20px"> <span ng-click = "editSection($index)"> {{item.name}} </span> 
+            <i class="btn btn-danger btn-xs pull-right" ng-click="deleteEditSection($index)"><span class="glyphicon glyphicon-remove" uib-tooltip="Delete"></span></i> </a> 
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-4" ng-show = "showEditSection">
+        <form name="editSectionForm" novalidate>
+        <div class="form-group">
+            <label class="control-label">Section Name</label> 
+            <input  name="sectionName" class="form-control" type="text" ng-model = "editprocess.sections[idx].name" required />
+            <span class="error" ng-show="editSectionForm.sectionName.$error.required">
+            Please enter a section name
+            </span>
+          
+        </div>
+        <div class="form-group">
+            <label class="control-label">Section Description</label>
+            <input  name ="sectionDescription" class="form-control" type="text" ng-model = "editprocess.sections[idx].description" required/>
+            <span class="error" ng-show="editSectionForm.sectionDescription.$error.required">
+            Please enter a section description
+            </span>
+        </div>
+        </form>
+    </div>
+    <div class="col-lg-4" ng-show = "showAddSection">
+        <form name="addSectionForm" novalidate>
+        <div class="form-group">
+            <label class="control-label">Section Name</label> 
+            <input  name="sectionName" class="form-control" type="text" ng-model = "newSection.name" required />
+            <span class="error" ng-show="addSectionForm.sectionName.$error.required">
+            Please enter a section name
+            </span>
+          
+        </div>
+        <div class="form-group">
+            <label class="control-label">Section Description</label>
+            <input  name ="sectionDescription" class="form-control" type="text" ng-model = "newSection.description" required/>
+            <span class="error" ng-show="addSectionForm.sectionDescription.$error.required">
+            Please enter a section description
+            </span>
+        </div>
+        <div class="btn btn-primary info" ng-click = "saveSectionInEdit(newSection)" ng-disabled ="addSectionForm.$invalid">
+            Save
+        </div>
+        </form>
+    </div>
+</div>
+<a ui-sref="editProcess.edit_one" class="btn btn-default">Previous</a>
+<div class="btn btn-primary info" ng-click = "addSectionInEdit()">
+            New Section
+</div>
+<a ui-sref="editProcess.edit_three" class="btn btn-primary" style="margin-left:3px;">Next</a>

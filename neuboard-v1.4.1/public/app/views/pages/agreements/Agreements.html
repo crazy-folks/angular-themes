@@ -1,0 +1,93 @@
+<style>
+  td {
+    font-size: small;
+  }
+  th {
+    font-size: small;
+    font-weight: bold;
+  }
+</style>
+<div class="pageheader">
+  <h1>Agreements</h1>
+  <div class="breadcrumb-wrapper hidden-xs">
+    <span class="label">You are here:</span>
+    <ol class="breadcrumb">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li class="active">Agreements</li>
+    </ol>
+  </div>
+</div>
+<section id="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title" style="font-weight:bold">Agreements</h2>
+          <div class="actions pull-right">
+            <i data-fullscreen-widget class="fa fa-expand"></i>
+            <i data-widget-toggle class="fa fa-chevron-down"></i>
+            <!-- <i data-widget-close class="fa fa-times"></i> -->
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive" ng-init="initAgreement()"></div>
+          <table class="table table-bordered" id="datatable" style="width: 100% !important;overflow-x: scroll;">
+            <thead>
+            <tr>
+              <th>Data Share</th>
+              <th>Share From</th>
+              <th>Share To</th>
+              <th>Action time</th>
+              <th>End Time</th>
+              <th>Expire</th>
+              <th>Status</th>
+              <th class="col-sm-1"></th>
+              <th class="col-sm-1"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-hide="agreementFiles.length < 1" ng-repeat="item in filteredAgr track by $index">
+
+              <td>{{item.name}}</td>
+              <td ng-show="item.subscriberid == '{{myid}}'">Me</td>
+              <td ng-show="item.subscriberid == '{{myid}}'">{{item.shareName}}</td>
+
+              <td ng-show="item.sharesubscribers == '{{myid}}'">{{item.myName}}</td>
+              <td ng-show="item.sharesubscribers == '{{myid}}'">Me</td>
+
+              <td><span> {{toNormalDate(item.actiondatetime)}} </span> {{normalDate}}</td>
+              <td><span> {{toNormalDate(item.enddatetime)}} </span> {{normalDate}}</td>
+
+              <td><span> {{compareDate(item.enddatetime)}} </span> {{result}}</td>
+
+              <td ng-show="item.confirmStatus == 'Acknowledged'"><b> {{item.confirmStatus}} </b></td>
+              <td class="col-sm-1" ng-show="item.confirmStatus == 'To Be Agreed'"><a class="btn btn-info"
+                                                                                     ng-click="openAgreementShare(item)">
+                {{item.confirmStatus}} </a></td>
+
+              <td class="col-sm-1"><i style="margin-right:20px;" class="pull-right btn btn-success btn-xs"
+                                      share-modal-content ng-click="openShare(sub,$event )"
+                                      ng-disabled="item.confirmStatus == 'To Be Agreed' || result == true "> <span
+                  class="glyphicon glyphicon-share" uib-tooltip="Share"></span> </i></td>
+              <td class="col-sm-1"><i class="pull-right btn btn-danger btn-xs" ng-click="deleteAgreement(item)"
+                                      style="margin-right: 20px;"><span class="glyphicon glyphicon-remove"
+                                                                        uib-tooltip="Delete"></span></i></td>
+
+            </tr>
+            </tbody>
+          </table>
+          <uib-pagination boundary-links="true" total-items="totalItems" ng-model="agrVar.currentPage"
+                          class="pagination-sm"
+                          ng-change="changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                          last-text="&raquo;" items-per-page="agrVar.numPerPage" style="margin: 0;">
+          </uib-pagination>
+          <!-- <a class="btn btn-info pull-right" ng-click = "openAll()"> Agree All </a>  -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 

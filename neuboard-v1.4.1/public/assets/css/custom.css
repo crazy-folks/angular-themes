@@ -1,0 +1,8 @@
+/* Fixes Accordion blue line outline in Chrome, and mouse pointer to reflect a link */
+div.accordion-toggle:focus {
+    outline: 0;
+}
+div.accordion-toggle {
+    cursor: pointer;
+}
+

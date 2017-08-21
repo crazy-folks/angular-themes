@@ -1,0 +1,544 @@
+﻿{
+  "description": "",
+  "name": "Loan Application",
+  "participants": [
+    "nathan@kazume.com",
+    "atma@kazume.com"
+  ],
+  "sections": [
+   {
+      "description": "This is the Borrower Profile Section. This section should be completed by the borrower.",
+      "name": "Borrower Profile",
+      "fields": [
+        {
+          "name": "Gender",
+          "placeholder": "Please select...",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Male"
+            },
+            {
+              "name": "Female"
+            }
+          ]
+        },
+        {
+          "name": "Borrower's Name",
+          "placeholder": "First and Last Name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Email",
+          "placeholder": "Email",
+          "required": true,
+          "type": "text"
+        }
+        ,
+        {
+          "name": "Home Phone",
+          "placeholder": "(XXX) XXX-XXXX",
+          "required": true,
+          "type": "text"
+        },
+         {
+          "name": "Cell Phone",
+          "placeholder": "(XXX) XXX-XXXX",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Business Phone (incl. area code)",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Marital Status",
+          "placeholder": "Single/ Married",
+          "required": true,
+          "type": "text"
+        },
+         {
+          "name": "Date of Birth",
+          "placeholder": "XX/XX/XXXX",
+          "required": true,
+          "type": "text"
+        },
+         {
+          "name": "Years of school",
+          "placeholder": "XX yrs",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Occupation",
+          "placeholder": "Occupation",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Years in current Occupation",
+          "placeholder": "# of year",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "SSN Number",
+          "placeholder": "XXX-XX-XXXX",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "# of Dependents",
+          "placeholder": "#",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Present Address",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "# of years in Present address",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+
+        {
+          "name": "If residing at present address for less than two years, enter Former address",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Mailing Address, if different than Present Address",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Name and Address of current employer",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Self Employed",
+          "placeholder": "Yes/ No",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Years on this job",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Position/Title/Type of Business",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        }
+          
+      ]
+    },
+  {
+      "description": "This is the Co-Borrower Profile Section.",
+      "name": "Co-Borrower Profile",
+      "fields": [
+        {
+          "name": "Gender",
+          "placeholder": "Please select...",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Male"
+            },
+            {
+              "name": "Female"
+            }
+          ]
+        },
+        {
+          "name": "Co-Borrower's Name",
+          "placeholder": "First and Last Name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Email",
+          "placeholder": "Email",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Marital Status",
+          "placeholder": "Single/ Married",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Occupation",
+          "placeholder": "Occupation",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Years in current Occupation",
+          "placeholder": "# of year",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Marital Status",
+          "placeholder": "Unmarried/ Married/ Seperated/ ",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Date of Birth",
+          "placeholder": "XX/XX/XXXX",
+          "required": true,
+          "type": "text"
+        },
+         {
+          "name": "Years of school",
+          "placeholder": "XX yrs",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "# of Dependents",
+          "placeholder": "#",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Present Address",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "# of years in Present address",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+
+        {
+          "name": "If residing at present address for less than two years, enter Former address",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Mailing Address, if different than Present Address",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Name and Address of current employer",
+          "placeholder": "",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Self Employed",
+          "placeholder": "Yes/ No",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Years on this job",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Position/Title/Type of Business",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Business Phone (incl. area code)",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+         {
+          "name": "Home Phone",
+          "placeholder": "(XXX) XXX-XXXX",
+          "required": true,
+          "type": "text"
+        },
+         {
+          "name": "Cell Phone",
+          "placeholder": "(XXX) XXX-XXXX",
+          "required": true,
+          "type": "text"
+        }      
+      ]
+    },
+
+    {
+      "description": "This is the Type of Mortgage & Terms of Loan Section. This section should be completed by the lender.",
+      "name": "Type of Mortgage & Terms of Loan",
+      "fields": [
+        {
+          "name": "Mortgage applied for:",
+          "placeholder": "Please select...",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Conventional"
+            },
+            {
+              "name": "FHA"
+            },
+            {
+              "name": "VA"
+            },
+            {
+              "name": "USDA/Rural Housing Service"
+            },
+            {
+              "name": "Other (explain)",
+              "explain": true
+            }
+          ]
+        },
+        {
+          "name": "Agency Case Number",
+          "placeholder": "Agency Case Number",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Lender Case Number",
+          "placeholder": "Lender Case Number",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Amount",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Interest Rate",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Number of Months",
+          "placeholder": "",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Amortization Type:",
+          "placeholder": "Please Select...",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Fixed Rate"
+            },
+            {
+              "name": "GPM"
+            },
+            {
+              "name": "ARM"
+            },
+            {
+              "name": "Other (explain)",
+              "explain": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "This is the Property Information & Purpose of Loan Section",
+      "name": "Property Information & Purpose of Loan",
+      "fields": [
+        {
+          "name": "Subject Property Address",
+          "placeholder": "Subject Property Address",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Number of Units",
+          "placeholder": "#",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "name": "Legal Description of Subject Property",
+          "placeholder": "Legal Description of Subject Property",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "name": "Year Built",
+          "placeholder": "1960",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Purpose of Loan",
+          "placeholder": "Please Select...",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Purchase"
+            },
+            {
+              "name": "Construction"
+            },
+            {
+              "name": "Refinance"
+            },
+            {
+              "name": "Construction-Permanent"
+            },
+            {
+              "name": "Other (explain)",
+              "explain": true
+            }
+          ]
+        },
+        {
+          "name": "Property will be:",
+                "placeholder": "Please Select...",
+          "required": true,
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Primary residence"
+            },
+            {
+              "name": "Secondary residence"
+            },
+            {
+              "name": "Investment"
+            },
+            {
+              "name": "Other (explain)",
+              "explain": true
+            }
+          ]
+        },
+        {
+          "name": "Year lot acquired",
+          "placeholder": "XXXX",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Orginal Cost",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Amount existing liens",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "If Construction, a. Present value of lot",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "If Construction, b. Cost of improvements",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "If Construction, (a + b)",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+         {
+          "name": "If Refinance, State purpose of refinance",
+          "placeholder": "",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "If Refinance, Describe improvement costs made and to be made",
+          "placeholder": "$",
+          "required": false,
+          "type": "text"
+        },
+            {
+          "name": "Title to be held in what name",
+          "placeholder": "",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Mannger in which title will be held",
+          "placeholder": "",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Source of Down Payment, Settlement Charges and/or Subordinate Financing (explain)",
+          "placeholder": "",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "name": "Estate will be held in:",
+          "placeholder": "Select one",
+          "type": "select",
+          "multiple": false,
+          "options": [
+            {
+              "name": "Fee simple"
+            },
+            {
+              "name": "Leasehold"
+            }
+           ]
+        },
+        {
+          "name": "Show expiration date",
+          "placeholder": "",
+          "required": false,
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+

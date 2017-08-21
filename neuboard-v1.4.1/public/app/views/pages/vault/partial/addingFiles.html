@@ -1,0 +1,74 @@
+<style>
+.dragover {
+    border: 5px dashed blue;
+}
+
+thead tr b {
+  font-weight:bold;
+}
+
+#tempAnchor:hover {
+  cursor:pointer;
+}
+
+</style>
+
+<div class="jumbotron text-center" ng-show="loadingFileStatus">
+    <progressbar class="progress-striped active" value="dynamic" type="info"></progressbar>
+    <p>Loading ...</p>
+</div>
+
+<div class="row" ng-controller="fileController">
+<div class="panel panel-default" ng-hide = "fFiles.length < 1 || loadingFileStatus">
+  <div class="panel-heading" style ="background-color:#CEECF5; height:50px; margin-top:-25px">
+    <h3 class="panel-dashboardtitle" style = "margin-top:-5px;">My Files</h3>
+    <div class="actions pull-right" style = "margin-top:20px; margin-right:20px;">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel">
+
+<table class="table table-bordered" id="datatable">
+<thead>
+  <tr> 
+  <th ><b>File Name</b></th>
+  <th class="col-sm-1"><b>Share</b></th>
+  <th class="col-sm-1"><b>Delete</b></th>
+  <th class="col-sm-1"><b>Download</b></th>
+  <!-- <th class="col-sm-2"><b>Preview</b></th> -->
+   </tr>
+</thead>
+<tbody>
+  <tr ng-repeat="item in filteredFiles">
+  <td> <a ng-click = "userDownloadFiles(item)" style = "color:#3380FF; font-weight:bold" id = "tempAnchor"> {{item.filename}} </a> </td>
+  <td><i class="btn btn-success btn-xs" ng-click="openShare(item, $event)" share-modal-content style="margin-left:10px"><span class="glyphicon glyphicon-share" tooltip="Share"></span></i> </td>
+  <td> <i class="btn btn-danger btn-xs" ng-click="deletefCatFile(item)" style="margin-left:10px"><span class="glyphicon glyphicon-remove" tooltip="Delete"></span></i>  </td> 
+  <td> <i class="btn btn-info btn-xs" ng-click="userDownloadFiles(item)" style="margin-left:20px"><span class="glyphicon glyphicon-download" tooltip="Download"></span></i></td>
+ <!--  <td> <user-img userid="{{item.owner}}" filename="{{item.filename}}" style="height:50px;width:100px;" css="pull-left"></user-img>  </td> -->
+  </tr>
+</tbody>
+</table>
+<uib-pagination boundary-links="true" total-items="totalItems" ng-model="fileVar.currentPage" class="pagination-sm"
+                      ng-change="changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                      last-text="&raquo;" items-per-page="fileVar.numPerPage" style="margin: 0;">
+      </uib-pagination>
+</div>
+ 
+</div>
+
+
+<div class="col-md-4 pull-right" style = "margin-right:-20px">
+  <div ngf-drop ngf-select ng-model="files" class="btn btn-primary info" 
+    ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true"
+    accept="image/*,application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" 
+    ngf-pattern="'image/*,application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document'" tooltip="Upload file" tooltip-placement="top" tooltip-trigger="mouseenter" ng-disabled ="disabledFileUpload"><span class="glyphicon glyphicon-upload" style ="margin-right:5px"></span> Click to upload file</div>
+  <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+</div>
+
+</div>
+
+
+

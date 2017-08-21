@@ -1,0 +1,78 @@
+﻿<script type="text/ng-template" id="eventModalContent.html">
+  <div class="modal-header md-content colored-header">
+    <h3>Event</h3>
+    <button type="button" class="close md-close" ng-click="cancel()" aria-hidden="true">&times;</button>
+  </div>
+  <div class="modal-body md-content form">
+    <form novalidate action="#" class="form-horizontal group-border-dashed" ng-submit="ok()">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Title</label>
+        <div class="col-sm-9">
+          <input type="text" placeholder="Title" class="form-control" ng-model="eventProperties.eventTitle">
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Start Date</label>
+        <p class="input-group">
+          <input type="text" class="form-control" uib-datepicker-popup="shortDate" ng-model="eventProperties.eventStartDate"
+                 is-open="startDate.opened" max-date="maxDate" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="openStart()"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+        </p>
+        <!--<div class="col-sm-9">-->
+          <!--<input type="text" placeholder="MM/DD/YYYY" class="form-control" data-mask="date" ng-model="eventProperties.eventDate">-->
+        <!--</div>-->
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Event</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" ng-model="eventProperties.eventDescription"></textarea>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <!--  -->
+      <div class="content clearfix">
+          <div class="form-group no-padding">
+            <div>
+              <label class="col-sm-3 control-label no-padding">Attendees</label>
+            </div>
+            <div class="col-sm-9">
+              <oi-select oi-options="item.name for item in participants track by item._id"
+                         ng-model="eventProperties.eventAttendees" multiple
+                         placeholder="Select Attendees..."></oi-select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label no-padding">Privacy Level</label>
+            <div class="clearfix fa fa-border padding10">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <label class="display-block">Read-only access</label>
+                <input class="switch" data-size="small" type="checkbox" ng-model="eventProperties.eventReadOnly" data-toggle="toggleProp(eventReadOnly)">
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <label class="display-block">Allow to Retain</label>
+                <input class="switch" data-size="small" type="checkbox" ng-model="eventProperties.eventAllowRetain" data-ng-change="toggleProp(eventAllowRetain)">
+              </div>
+              <div class="col-sm-4 col-md-3 col-lg-3">
+                <label class="display-block">Get Updates</label>
+                <input class="switch" data-size="small" type="checkbox" ng-model="eventProperties.eventGetUpdates" ng-change="toggleProp(eventGetUpdates)">
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--  -->
+      <strong></strong>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary btn-flat" ng-click="ok()">Save Event</button>
+    <button class="btn btn-primary btn-flat" ng-click="cancel()">Close</button>
+  </div>
+
+</script>

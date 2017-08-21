@@ -1,0 +1,175 @@
+<style>
+ #otherView .form-control {
+    width:23% ;
+    float:left;
+}
+
+
+</style>
+
+ <a class="pull-right btn btn-info btn-xs" ng-click="cancel()" tooltip="Cancel" ><span class="glyphicon glyphicon-remove"></span></a>
+<!-- <div class="row" ng-hide = "desData">
+<div class="col-md-12">
+<div class="panel panel-default">
+<div class="panel-heading" style ="background-color:#CEECF5">
+
+    <h2 class="panel-title" style="font-weight:bold">Sub Category</h2>
+    <div class="actions pull-right">
+    <i data-widget-toggle class="fa fa-chevron-down"></i>
+                                            
+    </div>
+</div>
+<div class="panel-body">
+    <form class="form-horizontal" ng-submit= "updateSubVault(dataMain._id,categoryData)" >
+   
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="categoryData.name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Description</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" ng-model="categoryData.description">
+        </div>
+    </div>
+    
+    <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-6">
+        <button type="submit" class="btn btn-info btn-lg" >Update</button>
+        <i class="btn btn-success btn-lg" tooltip="Share" share-modal-content ng-click = "openShare(categoryData, $event)">  <span class="glyphicon glyphicon-share"></span> </i>
+    </div>
+    </div>
+    </form>               
+</div>
+</div>
+</div>
+</div> -->
+
+
+<!-- Edit Descriptor part -->
+<div class="row" ng-show = "desData">
+<div class="col-md-12">
+<div class="panel panel-default">
+<div class="panel-heading" style ="background-color:#CEECF5">
+    <h2 class="panel-title" style="font-weight:bold">Edit Descriptor</h2>
+    <div class="actions pull-right">
+    <i data-widget-toggle class="fa fa-chevron-down"></i>
+                       <!-- <i data-widget-close class="fa fa-times"></i> -->
+    </div>
+</div>
+<div class="panel-body">
+<div  ng-show = "desData"> 
+    <div ng-include="'/app/views/pages/vault/partial/descriptorEdit.html'"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-default">
+<div class="panel-heading" style ="background-color:#CEECF5">
+
+    <h2 class="panel-title" style="font-weight:bold">Items</h2>
+    <div class="actions pull-right">
+    <i data-fullscreen-widget class="fa fa-expand"></i>
+    <i data-widget-toggle class="fa fa-chevron-down"></i>
+                       <!-- <i data-widget-close class="fa fa-times"></i> -->
+    </div>
+</div>
+<div class="panel-body">
+<div id = "otherView">
+<form class="form-horizontal"  name = "myForm" novalidate>
+    <div class="panel-body">
+    <div class="table-responsive">
+    <table class="table table-bordered" id="datatable">
+    <thead>
+        <tr> 
+        <th><b>Descriptor</b></th>
+        <th><b>Value</b></th>
+        <th class="col-sm-1"></th>
+        <th class="col-sm-1"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in filterDes">
+        <td>{{item.name}}</td>
+
+        <td ng-hide = "item.vaultvalues[item.vaultvalues.length -1].type == 'password' || item.vaultvalues[item.vaultvalues.length -1].type == 'Date'" >{{item.vaultvalues[item.vaultvalues.length -1].value}}</td>
+
+        <td ng-if = "item.vaultvalues[item.vaultvalues.length -1].type == 'password'" >   <span> {{toPassWordType("ToHiding")}}  </span> {{parseString}} </td>
+
+        <td ng-if = "item.vaultvalues[item.vaultvalues.length -1].type == 'Date'">  <span> {{toNormalDate(item.vaultvalues[item.vaultvalues.length -1].value)}} </span>  {{normalDate}}  </td>
+
+        <td class="col-sm-1"> <i class="btn btn-warning btn-xs" ng-click = "editDescriptorValue(item)">  <span class="glyphicon glyphicon-edit" uib-tooltip="Edit"></span> </i> </td>
+        <td class="col-sm-1">  <i class="pull-right btn btn-danger btn-xs" ng-click="deleteVaultValue(item)"><span class="glyphicon glyphicon-remove" uib-tooltip="Delete"></span></i> </td>
+        <td  class="col-sm-1" ng-if = "item.vaultvalues[item.vaultvalues.length -1].type == 'password'"> <i class="btn btn-info btn-xs" ng-click = "requestActuallValue(item)" uib-tooltip ="Get password">  <span class="glyphicon glyphicon-envelope" ></span> </i> </td>
+
+        </tr>
+        
+    </tbody>
+
+    </table>
+    <uib-pagination boundary-links="true" total-items="numDes" ng-model="desVar.currentPage" class="pagination-sm"
+                      ng-change="changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                      last-text="&raquo;" items-per-page="desVar.numPerPage" style="margin: 0;">
+      </uib-pagination>
+    </div>  
+</div>
+
+<div class="clear"></div>
+<br> </br>
+<div ng-show = "showFields"> 
+    <select ng-init = "label = fieldsData[0]" ng-model = "label"
+            ng-options="labels.option for labels in fieldsData track by labels.option" class="form-control"> </select>
+    <input ng-model="data.label" placeholder= "Enter label" class="form-control"/>  
+    <input type="text" data-ng-model="data.value" ui-mask="(999) 999-9999"  ng-show = "label.option=='Phone'"class="form-control" model-view-value="true" />
+    <input type="text" ng-model="data.value" ui-mask="(999) 999-9999? x99999"  ng-show = "label.option=='Phone-ext'"class="form-control" model-view-value="true"/>
+    <input type="text" data-ng-model="data.value" ui-mask="+33 999 999 999"  ng-show = "label.option=='Phone-int'"class="form-control" model-view-value="true"/>
+    <input type="text" data-ng-model="data.value" ui-mask="99-9999999"  ng-show = "label.option=='Tax Id'"class="form-control" model-view-value="true"/>
+    <input type="text" data-ng-model="data.value" ui-mask="a*-999-a999"  ng-show = "label.option=='Product Key'"class="form-control" model-view-value="true"/>
+    <input type="text" data-ng-model="data.value" ui-mask="99%"  ng-show = "label.option=='Percent'"class="form-control" model-view-value="true"/>
+    <input type="text" data-ng-model="data.value" ui-mask="$999,999.99"  ng-show = "label.option=='Currency'"class="form-control" model-view-value="true"/>
+    <input type="text" data-ng-model="data.value" ui-mask="999-99-9999"  ng-show = "label.option=='SSN'"class="form-control" model-view-value="true"/>
+    <input type="text" ng-model="data.value" ng-show = "label.option=='Text'"class="form-control" placeholder = "Enter your text"/>
+    <input type="password" ng-model="data.value" placeholder= "{{label.code}}" ng-show = "label.option=='password'"class="form-control"/>
+
+   
+    <input type="date" data-ng-model="dateValue" is-open="status.opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-show = "label.option=='Date'" class="form-control"/>
+         <!-- <span class="input-group-btn">
+        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span> -->
+    <input type="email" name="input" ng-model="emailValue" placeholder= "{{label.code}}" ng-show = "label.option=='Email'"class="form-control" require/>
+    <span class="alert alert-danger form-control"  ng-show="myForm.input.$error.required" ng-show = "label.option=='Email'">
+    Required!</span>
+    <span class="alert alert-danger form-control"  ng-show="myForm.input.$error.email" ng-show = "label.option=='Email'">
+    Not valid email!</span>
+    
+</div>
+</form> 
+<div class="clear"></div>
+<div style ="margin-top:30px;">
+    <button class = "btn btn-primary" ng-click = "addVaultValue()" ng-disabled= "showFields" > Add Item</button>
+    <button ng-click = "addDescriptor(descriptor, data, label.option, emailValue, dateValue)"
+    class="btn btn-primary" ng-disabled= "!showFields">
+     Save </button>  
+    <button class = "btn btn-primary" ng-click = "cancel()" > Cancel</button>
+<alert type="info" close="closeAlerts()" ng-show="message" >  {{message}} </alert> 
+
+</div>
+<alert type="warning" close="closeAlerts()" ng-show = "deleteVaultItem">Are you sure that you want to delete the item: <b>{{deleteVaultItem.name}} ?</b>
+<br> </br>
+<btn class = "btn btn-danger" ng-click = "confirmDeleteVault(deleteVaultItem)"> Confirm </btn>
+</alert>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,4981 @@
+---
+FieldType: Text
+FieldName: Individual Life Insurance
+FieldNameAlt: Individual Life Insurance
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Administrative Office Phone 8776787534 7045 College Boulevard Fax 8888717537 Overland Park KS 662111523 wwwzlifeusacom
+FieldNameAlt: Administrative Office Phone: 877.678.7534 7045 College Boulevard Fax: 888.871.7537 Overland Park, KS 66211-1523 www.zlifeusa.com
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Product Name
+FieldNameAlt: Product Name
+FieldFlags: 0
+FieldValue: Product Name data
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Specified Amount of Insurance
+FieldNameAlt: Specified Amount of Insurance
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Option A Level
+FieldNameAlt: Option A (Level
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Option B Increasing
+FieldNameAlt: Option B (Increasing
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Option C Specified Amount plus return of net premiums paid
+FieldNameAlt: Option C (Specified Amount plus return of net premiums paid
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Option D Specified Amount plus return of net premiums paid plus interest
+FieldNameAlt: Option D (Specified Amount plus return of net premiums paid plus interest
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: First Proposed Insured
+FieldNameAlt: First Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1 Name First Middle Initial Last
+FieldNameAlt: 1. Name (First, Middle Initial, Last)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: 2 Gender
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: F
+FieldStateOption: M
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: 3 Birth Date MMDDYYYY
+FieldNameAlt: 3. Birth Date (MM/DD/YYYY)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 Birth Place CountryState
+FieldNameAlt: 4. Birth Place (Country/State)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 5 Social Security Number
+FieldNameAlt: 5. Social Security Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 6 Home Phone Number
+FieldNameAlt: 6. Home Phone Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Work Phone Number
+FieldNameAlt: 7. Work Phone Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 8 Email Address
+FieldNameAlt: 8. E-mail Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 9 Address Street City State Zip Code Country
+FieldNameAlt: 9. Address (Street, City, State, Zip Code, Country)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 10 Driver s License State of Issue
+FieldNameAlt: 10. Driver s License State of Issue
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 11 Driver s License Number and Expiration Date
+FieldNameAlt: 11. Driver s License Number and Expiration Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 12 Occupation
+FieldNameAlt: 12. Occupation
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 13 Employer Name and Address
+FieldNameAlt: 13. Employer Name and Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 14 Annual Income
+FieldNameAlt: 14. Annual Income
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 15 Net Worth approximate
+FieldNameAlt: 15. Net Worth (approximate)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 16 Permanent US Resident Yes No
+FieldNameAlt: 16. Permanent U.S. Resident? Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_2
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Citizenship
+FieldNameAlt: Citizenship
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 17 Are you a citizen of the United States Yes No If No provide details below
+FieldNameAlt: 17. Are you a citizen of the United States? Yes No If &quot;No&quot;, provide details below
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_3
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_4
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: 18 Country of Citizenship
+FieldNameAlt: 18. Country of Citizenship
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Green Card
+FieldNameAlt: Green Card
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Visa
+FieldNameAlt: Visa
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: 19b If Visa provide type
+FieldNameAlt: 19b. If &quot;Visa&quot;, provide type
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 20 Expiration Date
+FieldNameAlt: 20. Expiration Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 21 Country of Permanent Residence
+FieldNameAlt: 21. Country of Permanent Residence
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Second Proposed Insured
+FieldNameAlt: Second Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1 Name First Middle Initial Last_2
+FieldNameAlt: 1. Name (First, Middle Initial, Last)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: 2 Gender_2
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: F_2
+FieldStateOption: M_2
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: 3 Birth Date MMDDYYYY_2
+FieldNameAlt: 3. Birth Date (MM/DD/YYYY)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 Birth Place CountryState_2
+FieldNameAlt: 4. Birth Place (Country/State)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 5 Social Security Number_2
+FieldNameAlt: 5. Social Security Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 6 Home Phone Number_2
+FieldNameAlt: 6. Home Phone Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Work Phone Number_2
+FieldNameAlt: 7. Work Phone Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 8 Email Address_2
+FieldNameAlt: 8. E-mail Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 9 Address Street City State Zip Code Country_2
+FieldNameAlt: 9. Address (Street, City, State, Zip Code, Country)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 10 Driver s License State of Issue_2
+FieldNameAlt: 10. Driver s License State of Issue
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 11 Driver s License Number and Expiration Date_2
+FieldNameAlt: 11. Driver s License Number and Expiration Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 12 Occupation_2
+FieldNameAlt: 12. Occupation
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 13 Employer Name and Address_2
+FieldNameAlt: 13. Employer Name and Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 14 Annual Income_2
+FieldNameAlt: 14. Annual Income
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 15 Net Worth approximate_2
+FieldNameAlt: 15. Net Worth (approximate)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 16 Permanent US Resident Yes No_2
+FieldNameAlt: 16. Permanent U.S. Resident? Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_5
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_6
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Citizenship_2
+FieldNameAlt: Citizenship
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 17 Are you a citizen of the United States Yes No If No provide details below_2
+FieldNameAlt: 17. Are you a citizen of the United States? Yes No If &quot;No&quot;, provide details below
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_7
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_8
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: 18 Country of Citizenship_2
+FieldNameAlt: 18. Country of Citizenship
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Green Card_2
+FieldNameAlt: Green Card
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Visa_2
+FieldNameAlt: Visa
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: 19b If Visa provide type_2
+FieldNameAlt: 19b. If &quot;Visa&quot;, provide type
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 20 Expiration Date_2
+FieldNameAlt: 20. Expiration Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 21 Country of Permanent Residence_2
+FieldNameAlt: 21. Country of Permanent Residence
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 22 Years in the US
+FieldNameAlt: 22. Years in the U.S.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1 OwnerTrust Name
+FieldNameAlt: 1. Owner/Trust Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 2 Relationship to Insureds
+FieldNameAlt: 2. Relationship to Insured(s)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 3 Social SecurityTax ID Number
+FieldNameAlt: 3. Social Security/Tax ID Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: 4 Permanent US Resident
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: 5 US Citizen
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_2
+FieldStateOption: Off
+FieldStateOption: Yes_2
+---
+FieldType: Text
+FieldName: 6 Email Address
+FieldNameAlt: 6. E-mail Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Phone Number
+FieldNameAlt: 7. Phone Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 8 Names Authorized Trustees
+FieldNameAlt: 8. Name(s) Authorized Trustee(s)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 9 Trust Date MMDDYYYY
+FieldNameAlt: 9. Trust Date (MM/DD/YYYY)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 10 State Trust Established
+FieldNameAlt: 10. State Trust Established
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 11 Address Street City State Zip Code Country of OwnerRow1
+FieldNameAlt: 11. Address (Street, City, State, Zip Code, Country) of Owner_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Name First Middle LastPrimary
+FieldNameAlt: Name (First, Middle, Last)_Primary
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Relationship to Proposed InsuredsPrimary
+FieldNameAlt: Relationship to Proposed Insured(s)_Primary
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Percentage of Proceeds if not equalPrimary
+FieldNameAlt: Percentage of Proceeds (if not equal)_Primary
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Name First Middle LastPrimary_2
+FieldNameAlt: Name (First, Middle, Last)_Primary
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Relationship to Proposed InsuredsPrimary_2
+FieldNameAlt: Relationship to Proposed Insured(s)_Primary
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Percentage of Proceeds if not equalPrimary_2
+FieldNameAlt: Percentage of Proceeds (if not equal)_Primary
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Name First Middle LastContingent
+FieldNameAlt: Name (First, Middle, Last)_Contingent
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Relationship to Proposed InsuredsContingent
+FieldNameAlt: Relationship to Proposed Insured(s)_Contingent
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Percentage of Proceeds if not equalContingent
+FieldNameAlt: Percentage of Proceeds (if not equal)_Contingent
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Name First Middle LastContingent_2
+FieldNameAlt: Name (First, Middle, Last)_Contingent
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Relationship to Proposed InsuredsContingent_2
+FieldNameAlt: Relationship to Proposed Insured(s)_Contingent
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Percentage of Proceeds if not equalContingent_2
+FieldNameAlt: Percentage of Proceeds (if not equal)_Contingent
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Section E Proposed Insureds Other Insurance
+FieldNameAlt: Section E: Proposed Insured's Other Insurance
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: policyrider in effect with Zurich American Life Insurance Company its affiliated companies or any
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_3
+FieldStateOption: Off
+FieldStateOption: Yes_3
+---
+FieldType: Button
+FieldName: 1
+FieldNameAlt: 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: 2
+FieldNameAlt: 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Name of Company1 2
+FieldNameAlt: Name of Company_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Face amount plus riders1 2
+FieldNameAlt: Face amount plus riders_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Year Issued1 2
+FieldNameAlt: Year Issued_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Pers
+FieldNameAlt: Pers
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Bus
+FieldNameAlt: Bus
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Yes No
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_9
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_10
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_11
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_4
+FieldStateOption: Off
+FieldStateOption: Yes_4
+---
+FieldType: Button
+FieldName: 1_2
+FieldNameAlt: 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: 2_2
+FieldNameAlt: 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Name of Company1 2_2
+FieldNameAlt: Name of Company_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Face amount plus riders1 2_2
+FieldNameAlt: Face amount plus riders_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Year Issued1 2_2
+FieldNameAlt: Year Issued_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Pers_2
+FieldNameAlt: Pers
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Bus_2
+FieldNameAlt: Bus
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Yes No_2
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_12
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_13
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_14
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_5
+FieldStateOption: Off
+FieldStateOption: Yes_5
+---
+FieldType: Button
+FieldName: 1_3
+FieldNameAlt: 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: 2_3
+FieldNameAlt: 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Name of Company1 2_3
+FieldNameAlt: Name of Company_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Face amount plus riders1 2_3
+FieldNameAlt: Face amount plus riders_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Year Issued1 2_3
+FieldNameAlt: Year Issued_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Pers_3
+FieldNameAlt: Pers
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Bus_3
+FieldNameAlt: Bus
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Yes No_3
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_15
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_16
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_17
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_6
+FieldStateOption: Off
+FieldStateOption: Yes_6
+---
+FieldType: Button
+FieldName: 1_4
+FieldNameAlt: 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: 2_4
+FieldNameAlt: 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Name of Company1 2_4
+FieldNameAlt: Name of Company_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Face amount plus riders1 2_4
+FieldNameAlt: Face amount plus riders_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Year Issued1 2_4
+FieldNameAlt: Year Issued_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Pers_4
+FieldNameAlt: Pers
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Bus_4
+FieldNameAlt: Bus
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Yes No_4
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_18
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_19
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_20
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_7
+FieldStateOption: Off
+FieldStateOption: Yes_7
+---
+FieldType: Button
+FieldName: 1_5
+FieldNameAlt: 1
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: 2_5
+FieldNameAlt: 2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Name of Company1 2_5
+FieldNameAlt: Name of Company_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Face amount plus riders1 2_5
+FieldNameAlt: Face amount plus riders_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Year Issued1 2_5
+FieldNameAlt: Year Issued_1 2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Pers_5
+FieldNameAlt: Pers
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Bus_5
+FieldNameAlt: Bus
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Yes No_5
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_21
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_22
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_23
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_8
+FieldStateOption: Off
+FieldStateOption: Yes_8
+---
+FieldType: Text
+FieldName: undefined_24
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_25
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_26
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_27
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: ProductsRow1
+FieldNameAlt: Product(s)_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: FrequencyAmountRow1
+FieldNameAlt: Frequency/Amount_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Date last usedRow1
+FieldNameAlt: Date last used_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: undefined_28
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_29
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_30
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_31
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_32
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_33
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_34
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_35
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_36
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_37
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_38
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_39
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Purpose
+FieldNameAlt: Purpose
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_40
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_41
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Duration weeks
+FieldNameAlt: Duration (weeks)_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Cities and Countries
+FieldNameAlt: Cities and Countries_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Purpose_2
+FieldNameAlt: Purpose_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: undefined_42
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_43
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_44
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_45
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_46
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_47
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Duration weeks_2
+FieldNameAlt: Duration (weeks)_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Cities and Countries_2
+FieldNameAlt: Cities and Countries_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Purpose_3
+FieldNameAlt: Purpose_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: undefined_48
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_49
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_50
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_51
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_52
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_53
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Duration weeks_3
+FieldNameAlt: Duration (weeks)_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Cities and Countries_3
+FieldNameAlt: Cities and Countries_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Purpose_4
+FieldNameAlt: Purpose_
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: undefined_54
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_55
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_56
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_57
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_58
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_59
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_60
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_61
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_62
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_63
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_64
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_65
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If Yes please provide dates and violations
+FieldNameAlt: If &quot;Yes&quot;, please provide date(s) and violation(s):
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_66
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_67
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_68
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_69
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_70
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_71
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_72
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_73
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_74
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_75
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_76
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_77
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Remarks
+FieldNameAlt: Remarks:
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: ICC14ZM10300GP
+FieldNameAlt: ICC14-ZM-10300GP
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Section G Premium and Billing Information
+FieldNameAlt: Section G: Premium and Billing Information
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Date to save age
+FieldNameAlt: Date to save age
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Specific date
+FieldNameAlt: Specific date
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: A current Policy Date will be used unless you select one of the following
+FieldNameAlt: A current Policy Date will be used unless you select one of the following
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: No_9
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Yes Do not submit money unless the face amount is 500000 or less and the Temporary Insurance Insurance completed
+FieldNameAlt: Yes (Do not submit money unless the face amount is $500,000 or less and the Temporary Insurance Insurance completed
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Amount
+FieldNameAlt: Amount
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Temporary Insurance Agreement if eligible
+FieldNameAlt: Temporary Insurance Agreement, if eligible
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Weekly
+FieldNameAlt: Weekly
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Monthly
+FieldNameAlt: Monthly
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Quarterly
+FieldNameAlt: Quarterly
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Annually
+FieldNameAlt: Annually
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Will a loan be carried over from another insurance carrier
+FieldNameAlt: Will a loan be carried over from another insurance carrier
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_78
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_10
+FieldStateOption: Off
+FieldStateOption: Yes_9
+---
+FieldType: Button
+FieldName: Is a third party family member friend or nonrelative helping you to pay all or any part of your first year premium
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_11
+FieldStateOption: Off
+FieldStateOption: Yes_10
+---
+FieldType: Text
+FieldName: If so please advise details of the individualentity and amount involved 1
+FieldNameAlt: If so, please advise details of the individual/entity and amount involved [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If so please advise details of the individualentity and amount involved 2
+FieldNameAlt: If so, please advise details of the individual/entity and amount involved [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If so please advise details of the individualentity and amount involved 3
+FieldNameAlt: If so, please advise details of the individual/entity and amount involved [3]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: premiums or both in connection with this Application for Individual Life Insurance
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_12
+FieldStateOption: Off
+FieldStateOption: Yes_11
+---
+FieldType: Text
+FieldName: undefined_79
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If Yes indicate name of the financing agreement
+FieldNameAlt: If &quot;Yes&quot;, indicate name of the financing agreement
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Yes Give details in the Remarks section
+FieldNameAlt: Yes (Give details in the Remarks section
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_13
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Direct
+FieldNameAlt: Direct
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Monthly bank draft Complete Section H PreAuthorized Checking
+FieldNameAlt: Monthly bank draft (Complete Section H: Pre-Authorized Checking
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Single premium
+FieldNameAlt: Single premium
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Annually_2
+FieldNameAlt: Annually
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: SemiAnnually
+FieldNameAlt: Semi-Annually
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Quarterly_2
+FieldNameAlt: Quarterly
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Monthly Available with List Bill only
+FieldNameAlt: Monthly (Available with List Bill only
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_80
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Indicate the duration of the nolapse guarantee that will be funded
+FieldNameAlt: Indicate the duration of the no-lapse guarantee that will be funded
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: First Proposed Insured_2
+FieldNameAlt: First Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Second Proposed Insured_2
+FieldNameAlt: Second Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Employer
+FieldNameAlt: Employer
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Primary Policyowner
+FieldNameAlt: Primary Policyowner
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_81
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 6
+FieldNameAlt: 6
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Payor of Premiums continued
+FieldNameAlt: Payor of Premiums (continued)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1 Name
+FieldNameAlt: 1. Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 2 Relationship to Insureds_2
+FieldNameAlt: 2. Relationship to Insured(s
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 3 Care of if applicable
+FieldNameAlt: 3. Care of (if applicable
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 Street
+FieldNameAlt: 4. Street
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 5 City
+FieldNameAlt: 5. City
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 6 State
+FieldNameAlt: 6. State
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Zip Code
+FieldNameAlt: 7. Zip Code
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 1
+FieldNameAlt: 7. Remarks [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 2
+FieldNameAlt: 7. Remarks [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 3
+FieldNameAlt: 7. Remarks [3]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 4
+FieldNameAlt: 7. Remarks [4]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 5
+FieldNameAlt: 7. Remarks [5]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 6
+FieldNameAlt: 7. Remarks [6]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 7
+FieldNameAlt: 7. Remarks [7]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 8
+FieldNameAlt: 7. Remarks [8]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 9
+FieldNameAlt: 7. Remarks [9]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 10
+FieldNameAlt: 7. Remarks [10]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 11
+FieldNameAlt: 7. Remarks [11]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 12
+FieldNameAlt: 7. Remarks [12]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 13
+FieldNameAlt: 7. Remarks [13]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 14
+FieldNameAlt: 7. Remarks [14]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 15
+FieldNameAlt: 7. Remarks [15]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 16
+FieldNameAlt: 7. Remarks [16]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 17
+FieldNameAlt: 7. Remarks [17]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 18
+FieldNameAlt: 7. Remarks [18]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7 Remarks 19
+FieldNameAlt: 7. Remarks [19]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Financial Institution a reasonable opportunity to act on it
+FieldNameAlt: Financial Institution a reasonable opportunity to act on it
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: DD
+FieldNameAlt: DD
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: YYYY
+FieldNameAlt: YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: MM
+FieldNameAlt: MM
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: SemiAnnual
+FieldNameAlt: Semi-Annual
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Checking
+FieldNameAlt: Checking
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Quarterly_3
+FieldNameAlt: Quarterly
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Savings
+FieldNameAlt: Savings
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Monthly_2
+FieldNameAlt: Monthly
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Bank Routing Number
+FieldNameAlt: Bank Routing Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Bank Account Number
+FieldNameAlt: Bank Account Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name of Financial Institution
+FieldNameAlt: Name of Financial Institution
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Section I Signature All Proposed Insureds and Policy Owner must sign
+FieldNameAlt: Section I: Signature: (All Proposed Insured(s) and Policy Owner must sign
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: City and State
+FieldNameAlt: City and State
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed InsuredSignature of Parent or
+FieldNameAlt: Signature of Proposed Insured/Signature of Parent or
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: MMDDYYYY
+FieldNameAlt: MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of OwnerApplicant if other than Proposed Insured
+FieldNameAlt: Signature of Owner/Applicant, if other than Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of BrokerWitness
+FieldNameAlt: Signature of Broker/Witness
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Print Broker Name
+FieldNameAlt: Print Broker Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Broker License Number
+FieldNameAlt: Broker License Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Second Proposed Insured
+FieldNameAlt: Signature of Second Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Print Second Proposed Insured Name
+FieldNameAlt: Print Second Proposed Insured Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_82
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Section J Broker Identification and Certification
+FieldNameAlt: Section J: Broker Identification and Certification
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Estate planning
+FieldNameAlt: Estate planning
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Buysell If Yes percentage of Business Owned
+FieldNameAlt: Buy/sell If &quot;Yes&quot;, percentage of Business Owned
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Key person
+FieldNameAlt: Key person
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Charitable giving
+FieldNameAlt: Charitable giving
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_83
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Fair market value of Business
+FieldNameAlt: Fair market value of Business
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Income protection
+FieldNameAlt: Income protection
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other_2
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_84
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Is this insurance a replacement
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_14
+FieldStateOption: Off
+FieldStateOption: Yes_12
+---
+FieldType: Button
+FieldName: Have you completed and attached the required replacement forms
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_13
+FieldStateOption: Yes_14
+---
+FieldType: Button
+FieldName: Did you use only sales material approved for use by the appropriate Company
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_15
+FieldStateOption: No_16
+FieldStateOption: Off
+FieldStateOption: Yes_15
+FieldStateOption: Yes_16
+---
+FieldType: Button
+FieldName: NA
+FieldNameAlt: N/A
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: NA_2
+FieldNameAlt: N/A
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_17
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_18
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: If No why not
+FieldNameAlt: If &quot;No&quot;, why not
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Are you related to the Proposed Insureds
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_19
+FieldStateOption: Off
+FieldStateOption: Yes_17
+---
+FieldType: Text
+FieldName: If Yes indicate relationship
+FieldNameAlt: If &quot;Yes&quot;, indicate relationship
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: I certify that I personally met with the Ownerslegal representatives of the entity and reviewed the
+FieldNameAlt: I certify that I personally met with the Owner(s)/legal representative(s) of the entity and reviewed the
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: I did not meet in person with the Ownerslegal representatives of the entity or I was otherwise unable to
+FieldNameAlt: I did not meet in person with the Owner(s)/legal representative(s) of the entity or I was otherwise unable to
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Producer Name Please print full nameRow1
+FieldNameAlt: Producer Name (Please print full name)_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Sales Office Agency NumberIDRow1
+FieldNameAlt: Sales Office/ Agency Number/ID_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Broker NumberIDRow1
+FieldNameAlt: Broker Number/ID_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Commission Split  1st Year RenewalRow1
+FieldNameAlt: Commission Split % 1st Year Renewal_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Commission Split  1st Year RenewalRow1_2
+FieldNameAlt: Commission Split % 1st Year Renewal_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Producer Name Please print full nameRow2
+FieldNameAlt: Producer Name (Please print full name)_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Sales Office Agency NumberIDRow2
+FieldNameAlt: Sales Office/ Agency Number/ID_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Broker NumberIDRow2
+FieldNameAlt: Broker Number/ID_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Commission Split  1st Year RenewalRow2
+FieldNameAlt: Commission Split % 1st Year Renewal_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Commission Split  1st Year RenewalRow2_2
+FieldNameAlt: Commission Split % 1st Year Renewal_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Producer Name Please print full nameRow3
+FieldNameAlt: Producer Name (Please print full name)_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Sales Office Agency NumberIDRow3
+FieldNameAlt: Sales Office/ Agency Number/ID_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Broker NumberIDRow3
+FieldNameAlt: Broker Number/ID_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Commission Split  1st Year RenewalRow3
+FieldNameAlt: Commission Split % 1st Year Renewal_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Commission Split  1st Year RenewalRow3_2
+FieldNameAlt: Commission Split % 1st Year Renewal_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Name of Broker
+FieldNameAlt: Name of Broker
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Broker Signature
+FieldNameAlt: Broker Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date MMDDYYYY
+FieldNameAlt: Date (MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Section L Temporary Insurance Agreement
+FieldNameAlt: Section L: Temporary Insurance Agreement
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Proposed Insured Name
+FieldNameAlt: Proposed Insured Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date of Birth MMDDYYYY
+FieldNameAlt: Date of Birth (MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Application Number
+FieldNameAlt: Application Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Yes No_6
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_85
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: disorder of the heart or blood vessels angina heart attack stroke cancer tumor Acquired Immune
+FieldNameAlt: disorder of the heart or blood vessels, angina, heart attack, stroke, cancer, tumor, Acquired Immune
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_86
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Within the past two years has the Proposed Insured been diagnosed or treated by a physician for a
+FieldNameAlt: Within the past two years, has the Proposed Insured been diagnosed or treated by a physician for a
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_87
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Has the Proposed Insured ever applied for insurance which has been declined rated or modified in
+FieldNameAlt: Has the Proposed Insured ever applied for insurance which has been declined, rated or modified in
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_88
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Within the past 90 days has the Proposed Insured been unable to perform the normal duties of hisher
+FieldNameAlt: Within the past 90 days, has the Proposed Insured been unable to perform the normal duties of his/her
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_89
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: takes effect
+FieldNameAlt: takes effect
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Stop Date
+FieldNameAlt: Stop Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Insured
+FieldNameAlt: Signature of Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date of this TIA
+FieldNameAlt: Date of this TIA
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Policy Owner
+FieldNameAlt: Signature of Proposed Policy Owner
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Person from whom received
+FieldNameAlt: Person from whom received
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_90
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Broker
+FieldNameAlt: Signature of Broker
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Broker
+FieldNameAlt: Broker
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: s Number
+FieldNameAlt: s Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Zurich American Life Insurance Company
+FieldNameAlt: Zurich American Life Insurance Company
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: b Height
+FieldNameAlt: b. Height
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: c
+FieldNameAlt: c.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Weight
+FieldNameAlt: Weight
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: d
+FieldNameAlt: d
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Birth Date MMDDYYYY
+FieldNameAlt: Birth Date (MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: lbs
+FieldNameAlt: lbs
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_91
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_20
+FieldStateOption: Off
+FieldStateOption: Yes_18
+---
+FieldType: Text
+FieldName: If Yes please provide details
+FieldNameAlt: If Yes, please provide details
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: or medical facility if used instead If none so state
+FieldNameAlt: or medical facility if used instead): (If none, so state
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date and reason for last medical or health consultation within last five years
+FieldNameAlt: Date and reason for last medical or health consultation (within last five years
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: What treatment was given or recommended If none so state
+FieldNameAlt: What treatment was given or recommended? (If none, so state
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Been advised to have or scheduled any diagnostic test hospitalization or surgery which was not completed
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_19
+FieldStateOption: Yes_20
+FieldStateOption: Yes_21
+FieldStateOption: Yes_22
+FieldStateOption: Yes_23
+FieldStateOption: Yes_24
+FieldStateOption: Yes_25
+FieldStateOption: Yes_26
+FieldStateOption: Yes_27
+FieldStateOption: Yes_28
+FieldStateOption: Yes_29
+FieldStateOption: Yes_30
+FieldStateOption: Yes_31
+FieldStateOption: Yes_32
+FieldStateOption: Yes_33
+FieldStateOption: Yes_34
+FieldStateOption: Yes_35
+FieldStateOption: Yes_36
+FieldStateOption: Yes_37
+FieldStateOption: Yes_38
+---
+FieldType: Button
+FieldName: undefined_92
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_21
+FieldStateOption: No_22
+FieldStateOption: No_23
+FieldStateOption: No_24
+FieldStateOption: No_25
+FieldStateOption: No_26
+FieldStateOption: No_27
+FieldStateOption: No_28
+FieldStateOption: No_29
+FieldStateOption: No_30
+FieldStateOption: No_31
+FieldStateOption: No_32
+FieldStateOption: No_33
+FieldStateOption: No_34
+FieldStateOption: No_35
+FieldStateOption: No_36
+FieldStateOption: No_37
+FieldStateOption: No_38
+FieldStateOption: No_39
+FieldStateOption: No_40
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: Date of last use
+FieldNameAlt: Date of last use
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Used any other form of tobacco
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_39
+FieldStateOption: Yes_40
+---
+FieldType: Button
+FieldName: undefined_93
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_41
+FieldStateOption: No_42
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: What type
+FieldNameAlt: What type
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Ages if LivingFather
+FieldNameAlt: Age(s) if Living_Father
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Ages at DeathFather
+FieldNameAlt: Age(s) at Death_Father
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Ages if LivingMother
+FieldNameAlt: Age(s) if Living_Mother
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Ages at DeathMother
+FieldNameAlt: Age(s) at Death_Mother
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Ages if LivingBrothers Sisters
+FieldNameAlt: Age(s) if Living_Brother(s) /Sister(s)
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Ages at DeathBrothers Sisters
+FieldNameAlt: Age(s) at Death_Brother(s) /Sister(s)
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow1
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow1_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow2_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow3
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow3_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_3
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow4
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_4
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow4_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_4
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow5
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_5
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow5_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_5
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow6
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_6
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow6_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_6
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow7
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_7
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow7_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_7
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow8
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_8
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow8_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_8
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow9
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_9
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow9_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_9
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow10
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_10
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow10_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_10
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow11
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_11
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow11_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_11
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow12
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_12
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow12_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_12
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow13
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_13
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow13_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_13
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow14
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_14
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow14_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_14
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow15
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_15
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: 9 Please provide full details for all Yes answers to questions 36 Include the dates the results and the names and addresses of all attending physicians and medical facilities Question DetailsRow15_2
+FieldNameAlt: 9. Please provide full details for all &quot;Yes&quot; answers to questions 3-6. (Include the dates, the results and the names and addresses of all attending physicians and medical facilities.) Question Details_Row_15
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Signed at
+FieldNameAlt: Signed at
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: CityState
+FieldNameAlt: City/State
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date MMDDYYYY_2
+FieldNameAlt: Date (MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Insured_2
+FieldNameAlt: Signature of Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Witness Medical or paramedical examiner will please sign here
+FieldNameAlt: Witness (Medical or paramedical examiner will please sign here
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Medical Report on Proposed Insured
+FieldNameAlt: Medical Report on Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name of Proposed Insured
+FieldNameAlt: Name of Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Birth Date MMDDYYYY_2
+FieldNameAlt: Birth Date (MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Age
+FieldNameAlt: Age
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 10 Height
+FieldNameAlt: 10. Height
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Did you weigh
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_43
+FieldStateOption: No_44
+FieldStateOption: Off
+FieldStateOption: Yes_41
+FieldStateOption: Yes_42
+---
+FieldType: Button
+FieldName: Gain
+FieldNameAlt: Gain
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Yes_43
+FieldNameAlt: Yes
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: LossCause
+FieldNameAlt: Loss-Cause
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_45
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Is there any cardiovascular disorder
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_46
+FieldStateOption: Off
+FieldStateOption: Yes_44
+---
+FieldType: Text
+FieldName: If Yes describe
+FieldNameAlt: If Yes, describe
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Is murmur present
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_45
+FieldStateOption: Yes_46
+---
+FieldType: Button
+FieldName: undefined_94
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_47
+FieldStateOption: No_48
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: Transmitted
+FieldNameAlt: Transmitted
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Localized
+FieldNameAlt: Localized
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Constant
+FieldNameAlt: Constant
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Systolic
+FieldNameAlt: Systolic
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Presystolic
+FieldNameAlt: Presystolic
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Diastolic
+FieldNameAlt: Diastolic
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Unchanged
+FieldNameAlt: Unchanged
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Decreased
+FieldNameAlt: Decreased
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Inconstant
+FieldNameAlt: Inconstant
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Apical
+FieldNameAlt: Apical
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Basal
+FieldNameAlt: Basal
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other_3
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Increased
+FieldNameAlt: Increased
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Absent
+FieldNameAlt: Absent
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Soft Gr 12
+FieldNameAlt: Soft (Gr. 1-2
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Mod Gr 34
+FieldNameAlt: Mod. (Gr. 3-4
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Loud Gr 56
+FieldNameAlt: Loud (Gr. 5-6
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Examiners remarks and description of positive findings
+FieldNameAlt: Examiner's remarks and description of positive findings:
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Employment ID
+FieldNameAlt: Employment I.D
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other picturesignature ID
+FieldNameAlt: Other picture/signature I.D
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Skin incl scars lymph nodes blood vessels Incl varicose veins
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_47
+FieldStateOption: Yes_48
+FieldStateOption: Yes_49
+FieldStateOption: Yes_50
+FieldStateOption: Yes_51
+FieldStateOption: Yes_52
+FieldStateOption: Yes_53
+FieldStateOption: Yes_54
+---
+FieldType: Button
+FieldName: Driver
+FieldNameAlt: Driver
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Passport
+FieldNameAlt: Passport
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Green card
+FieldNameAlt: Green card
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Proposed Insured speaks and understands
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_55
+FieldStateOption: Yes_56
+---
+FieldType: Button
+FieldName: undefined_95
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_49
+FieldStateOption: No_50
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: undefined_96
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_51
+FieldStateOption: No_52
+FieldStateOption: No_53
+FieldStateOption: No_54
+FieldStateOption: No_55
+FieldStateOption: No_56
+FieldStateOption: No_57
+FieldStateOption: No_58
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: out above
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_59
+FieldStateOption: Off
+FieldStateOption: Yes_57
+---
+FieldType: Text
+FieldName: Medical Examiner
+FieldNameAlt: Medical Examiner
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: or Employer ID Number Please give us this information below
+FieldNameAlt: or Employer I.D. Number. Please give us this information below
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: My Office
+FieldNameAlt: My Office
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other_4
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_97
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date and Hour of Examination
+FieldNameAlt: Date and Hour of Examination
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_98
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: AM
+FieldNameAlt: A.M
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: PM
+FieldNameAlt: P.M
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Administrative Office 7045 College Boulevard Overland Park KS 662111523 Phone 8776787534 Fax 8888717537 wwwzlifeusacom
+FieldNameAlt: Administrative Office 7045 College Boulevard Overland Park, KS 66211-1523 Phone: 877.678.7534 Fax: 888.871.7537 www.zlifeusa.com
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: First Name
+FieldNameAlt: First Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Middle Initial
+FieldNameAlt: Middle Initial
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Last Name
+FieldNameAlt: Last Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: First Name_2
+FieldNameAlt: First Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Middle Initial_2
+FieldNameAlt: Middle Initial
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Last Name_2
+FieldNameAlt: Last Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Cash Value Accumulation Test CVAT
+FieldNameAlt: Cash Value Accumulation Test (CVAT
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Guideline Premium Test GPT
+FieldNameAlt: Guideline Premium Test (GPT
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Lapse Protection Period Extension Rider
+FieldNameAlt: Lapse Protection Period Extension Rider
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other_5
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: undefined_99
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Check box if no optional riders are elected
+FieldNameAlt: Check box if no optional riders are elected
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Check box if there are no premium allocations to Index Interest Account Accounts
+FieldNameAlt: Check box if there are no premium allocations to Index Interest Account Account(s
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Check box if there are no premium allocations to Long Term Fixed Account
+FieldNameAlt: Check box if there are no premium allocations to Long Term Fixed Account
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: A
+FieldNameAlt: A.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Russell 2000 Index
+FieldNameAlt: Russell 2000&#174; Index
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: B
+FieldNameAlt: B.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Long Term Fixed Account
+FieldNameAlt: Long Term Fixed Account
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: MSCI EAFE Index
+FieldNameAlt: MSCI EAFE Index
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: C
+FieldNameAlt: C.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: MSCI Emerging Markets Index
+FieldNameAlt: MSCI Emerging Markets Index
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 Monthly Automatic Transfer Instructions
+FieldNameAlt: 4. Monthly Automatic Transfer Instructions
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: A_2
+FieldNameAlt: A.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Long Term Fixed Account_2
+FieldNameAlt: Long Term Fixed Account
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: MSCI EAFE Index_2
+FieldNameAlt: MSCI EAFE Index
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: B_2
+FieldNameAlt: B.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: C_2
+FieldNameAlt: C.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Russell 2000 Index_2
+FieldNameAlt: Russell 2000&#174; Index
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: E
+FieldNameAlt: E._%
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: MSCI Emerging Markets Index_2
+FieldNameAlt: MSCI Emerging Markets Index_%
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: I We have received an illustration of the policy for which I We applied
+FieldNameAlt: I (We) have received an illustration of the policy for which I (We) applied
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: I We have NOT received an illustration of the policy for which I We applied I We acknowledge that an
+FieldNameAlt: I (We) have NOT received an illustration of the policy for which I (We) applied. I (We) acknowledge that an
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: CityState_2
+FieldNameAlt: City/State
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date MMDDYYYY_3
+FieldNameAlt: Date (MM/DD/YYYY
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Policy Owner_2
+FieldNameAlt: Signature of Proposed Policy Owner
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Witness
+FieldNameAlt: Witness
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Second Proposed Policy Owner if applicable
+FieldNameAlt: Signature of Second Proposed Policy Owner (if applicable
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 8 Key Terms Used Above
+FieldNameAlt: 8. Key Terms Used Above
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Proposed Insured Please Pr
+FieldNameAlt: Proposed Insured (Please Pr
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: nt
+FieldNameAlt: nt)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date of Birth
+FieldNameAlt: Date of Birth
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name and Address of designated Physician Health Care Provider or Health Care Agency
+FieldNameAlt: Name and Address of designated Physician, Health Care Provider or Health Care Agency
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1_6
+FieldNameAlt: [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 2_6
+FieldNameAlt: [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Insured or ParentGuardian
+FieldNameAlt: Signature of Proposed Insured or Parent/Guardian
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: State of Residence
+FieldNameAlt: State of Residence
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: conforming to the policy as issued will be provided no later than at the time of policy delivery
+FieldNameAlt: conforming to the policy as issued will be provided no later than at the time of policy delivery
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: applied I understand that an illustration conforming to the policy as issued will be provided no later
+FieldNameAlt: applied. I understand that an illustration conforming to the policy as issued will be provided no later
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: X
+FieldNameAlt: X
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: X_2
+FieldNameAlt: X
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Proposed Insureds Signature
+FieldNameAlt: Proposed Insured&#8217;s Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_2
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Proposed Policy Owners Signature
+FieldNameAlt: Proposed Policy Owner&#8217;s Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_3
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Agents Signature
+FieldNameAlt: Agent&#8217;s Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_4
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Form W9 Rev December 2014 Department of the Treasury Internal Revenue ServiceRow1
+FieldNameAlt: Form W-9 (Rev. December 2014) Department of the Treasury Internal Revenue Service_Row_1
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1  Name as shown on your income tax return Name is required on this line do not leave this line blank
+FieldNameAlt: 1  Name (as shown on your income tax return). Name is required on this line; do not leave this line blank.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 2  Business namedisregarded entity name if different from above
+FieldNameAlt: 2  Business name/disregarded entity name, if different from above
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Individualsole proprietor or
+FieldNameAlt: Individual/sole proprietor or
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: C Corporation
+FieldNameAlt: C Corporation
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: S Corporation
+FieldNameAlt: S Corporation
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Partnership
+FieldNameAlt: Partnership
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Trustestate
+FieldNameAlt: Trust/estate
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Note For a singlemember LLC that is disregarded do not check LLC check the appropriate box in the line above for
+FieldNameAlt: Note. For a single-member LLC that is disregarded, do not check LLC; check the appropriate box in the line above for
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Exemption from FATCA reporting
+FieldNameAlt: Exemption from FATCA reporting
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Limited liability company Enter the tax classification CC corporation SS corporation Ppartnership
+FieldNameAlt: Limited liability company. Enter the tax classification (C=C corporation, S=S corporation, P=partnership)
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other see instructions
+FieldNameAlt: Other (see instructions)
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Applies to accounts maintained outside the US
+FieldNameAlt: Applies to accounts maintained outside the U.S
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 5  Address number street and apt or suite no
+FieldNameAlt: 5  Address (number, street, and apt. or suite no.)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 6  City state and ZIP code
+FieldNameAlt: 6  City, state, and ZIP code
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Requesters name and address optional
+FieldNameAlt: Requester&#8217;s name and address (optional)
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 7  List account numbers here optional
+FieldNameAlt: 7  List account number(s) here (optional)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Social security numberEnter your TIN in the appropriate box The TIN provided must match the name given on line 1 to avoid backup withholding For individuals this is generally your social security number SSN However for a resident alien sole proprietor or disregarded entity see the Part I instructions on page 3 For other entities it is your employer identification number EIN If you do not have a number see How to get a
+FieldNameAlt: Social security number_Enter your TIN in the appropriate box. The TIN provided must match the name given on line 1 to avoid backup withholding. For individuals, this is generally your social security number (SSN). However, for a resident alien, sole proprietor, or disregarded entity, see the Part I instructions on page 3. For other entities, it is your employer identification number (EIN). If you do not have a number, see How to get a
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Social security numberEnter your TIN in the appropriate box The TIN provided must match the name given on line 1 to avoid backup withholding For individuals this is generally your social security number SSN However for a resident alien sole proprietor or disregarded entity see the Part I instructions on page 3 For other entities it is your employer identification number EIN If you do not have a number see How to get a_2
+FieldNameAlt: Social security number_Enter your TIN in the appropriate box. The TIN provided must match the name given on line 1 to avoid backup withholding. For individuals, this is generally your social security number (SSN). However, for a resident alien, sole proprietor, or disregarded entity, see the Part I instructions on page 3. For other entities, it is your employer identification number (EIN). If you do not have a number, see How to get a
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Social security numberEnter your TIN in the appropriate box The TIN provided must match the name given on line 1 to avoid backup withholding For individuals this is generally your social security number SSN However for a resident alien sole proprietor or disregarded entity see the Part I instructions on page 3 For other entities it is your employer identification number EIN If you do not have a number see How to get a_3
+FieldNameAlt: Social security number_Enter your TIN in the appropriate box. The TIN provided must match the name given on line 1 to avoid backup withholding. For individuals, this is generally your social security number (SSN). However, for a resident alien, sole proprietor, or disregarded entity, see the Part I instructions on page 3. For other entities, it is your employer identification number (EIN). If you do not have a number, see How to get a
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: fill_9
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_10
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: guidelines on whose number to enter
+FieldNameAlt: guidelines on whose number to enter.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Sign Here
+FieldNameAlt: Sign Here
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Signature of US person  Date
+FieldNameAlt: Signature of U.S. person  Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Cat No 10231X
+FieldNameAlt: Cat. No. 10231X
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Form W9 Rev 122014
+FieldNameAlt: Form W-9 (Rev. 12-2014
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: IF the payment is for
+FieldNameAlt: IF the payment is for . . .
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: THEN the payment is exempt for
+FieldNameAlt: THEN the payment is exempt for . . .
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Interest and dividend payments
+FieldNameAlt: Interest and dividend payments
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: All exempt payees except for 7
+FieldNameAlt: All exempt payees except for 7
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Broker transactions
+FieldNameAlt: Broker transactions
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Exempt payees 1 through 4
+FieldNameAlt: Exempt payees 1 through 4
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Payments over 600 required to be reported and direct sales over 50001
+FieldNameAlt: Payments over $600 required to be reported and direct sales over $5,0001
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Generally exempt payees 1 through 52
+FieldNameAlt: Generally, exempt payees 1 through 52
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Exempt payees 1 through 4_2
+FieldNameAlt: Exempt payees 1 through 4
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: The owner Legal entity The corporation The organization The partnership The broker or nominee The public entity The trust
+FieldNameAlt: The owner Legal entity The corporation The organization The partnership The broker or nominee The public entity The trust
+FieldFlags: 4096
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Dated At
+FieldNameAlt: Dated At
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: On
+FieldNameAlt: On
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Insured or Parent if required
+FieldNameAlt: Signature of Proposed Insured or Parent if required
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Print Names of Proposed Insureds
+FieldNameAlt: Print Name(s) of Proposed Insured(s
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Additional Proposed Insured
+FieldNameAlt: Signature of Additional Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Print Name of Soliciting Agent
+FieldNameAlt: Print Name of Soliciting Agent
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Witness Soliciting Agent
+FieldNameAlt: Signature of Witness (Soliciting Agent
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Agents Number
+FieldNameAlt: Agent&#8217;s Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: DoctorPhysician or Facility Name
+FieldNameAlt: Doctor/Physician or Facility Name
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name of Proposed Insured please print
+FieldNameAlt: Name of Proposed Insured (please print
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date of birth
+FieldNameAlt: Date of birth
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature Proposed Insured or Personal Representative
+FieldNameAlt: Signature Proposed Insured or Personal Representative
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_5
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Description of Personal Representative
+FieldNameAlt: Description of Personal Representative
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: s Authority or Relationship to Proposed Insured
+FieldNameAlt: s Authority or Relationship to Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Can there be reduced benefits or increased premiums in later years
+FieldNameAlt: Can there be reduced benefits or increased premiums in later years
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_60
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Explanation 1
+FieldNameAlt: Explanation [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Explanation 2
+FieldNameAlt: Explanation [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Are there penalties setup or surrender charges for the new policy
+FieldNameAlt: Are there penalties, set-up or surrender charges for the new policy
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_61
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Explanation Emphasis is given to any extra cost for early withdrawal 1
+FieldNameAlt: Explanation: (Emphasis is given to any extra cost for early withdrawal [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Explanation Emphasis is given to any extra cost for early withdrawal 2
+FieldNameAlt: Explanation: (Emphasis is given to any extra cost for early withdrawal [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_100
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_62
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Explanation 1_2
+FieldNameAlt: Explanation [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Explanation 2_2
+FieldNameAlt: Explanation [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Are there adverse tax consequences from the replacement under current tax law
+FieldNameAlt: Are there adverse tax consequences from the replacement under current tax law
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: No_63
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Explanation 1_3
+FieldNameAlt: Explanation [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Explanation 2_3
+FieldNameAlt: Explanation [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: No_64
+FieldNameAlt: No
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Explanation Emphasis is given as to what portions of premiums or contributions will produce limited or no earnings the need for
+FieldNameAlt: Explanation: (Emphasis is given as to what portions of premiums or contributions will produce limited or no earnings, the need for
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: factors 1
+FieldNameAlt: factors [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: factors 2
+FieldNameAlt: factors [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Are minimum amounts required to be on deposit before excess interest will be paid
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_65
+FieldStateOption: Off
+FieldStateOption: Yes_58
+---
+FieldType: Text
+FieldName: Explanation 1_4
+FieldNameAlt: Explanation [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Explanation 2_4
+FieldNameAlt: Explanation [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Are the interest rate quotes before or after fees and mortality charges have been deducted
+FieldNameAlt: Are the interest rate quotes before or after fees and mortality charges have been deducted
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: The minimum interest rate to be paid is how much
+FieldNameAlt: The minimum interest rate to be paid is how much
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If applicable the rate you pay to borrow is
+FieldNameAlt: If applicable, the rate you pay to borrow is
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: and the limit on the amount that can be borrowed is
+FieldNameAlt: and the limit on the amount that can be borrowed is
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: The surrender charges are
+FieldNameAlt: The surrender charges are
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_101
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Are there other short or long term effects from the replacement that might be materially adverse
+FieldNameAlt: Are there other short or long term effects from the replacement that might be materially adverse
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_102
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_66
+FieldStateOption: Off
+FieldStateOption: Yes_59
+---
+FieldType: Text
+FieldName: Explanation 1_5
+FieldNameAlt: Explanation [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Explanation 2_5
+FieldNameAlt: Explanation [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name of Insurance Producer Print or Type
+FieldNameAlt: Name of Insurance Producer (Print or Type
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_6
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Address
+FieldNameAlt: Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Insurance Producer
+FieldNameAlt: Signature of Insurance Producer
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_103
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Applicant
+FieldNameAlt: Applicant
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Company Name and Address
+FieldNameAlt: Company Name and Address
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Policy Number
+FieldNameAlt: Policy Number
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_104
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_105
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_106
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_107
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Caution
+FieldNameAlt: Caution
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: The Insurance Commissioner suggests you consider these points
+FieldNameAlt: The Insurance Commissioner suggests you consider these points
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name of Insured
+FieldNameAlt: Name of Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_108
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_109
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_110
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Applicants Signature
+FieldNameAlt: Applicant&#8217;s Signature
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_7
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: wwwzlifeusacom
+FieldNameAlt: www.zlifeusa.com
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name of Proposed Insured_2
+FieldNameAlt: Name of Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date of Birth_2
+FieldNameAlt: Date of Birth
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Personal  Family Protection
+FieldNameAlt: Personal / Family Protection
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Loan Protection
+FieldNameAlt: Loan Protection
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Key Person Protection
+FieldNameAlt: Key Person Protection
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: BuySel
+FieldNameAlt: Buy/Sel
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: Other_6
+FieldNameAlt: Other
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: A Income
+FieldNameAlt: A. Income
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Last year
+FieldNameAlt: Last year: $
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Prior year
+FieldNameAlt: Prior year: $
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Salary
+FieldNameAlt: Salary
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_48
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_16
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Bonus
+FieldNameAlt: Bonus
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_49
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_17
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Commission
+FieldNameAlt: Commission
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_50
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_18
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: InterestDividends
+FieldNameAlt: Interest/Dividends
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_51
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_19
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Rental net
+FieldNameAlt: Rental (net)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_52
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_20
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: PensionSocial Security
+FieldNameAlt: Pension/Social Security
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_53
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_21
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Other_7
+FieldNameAlt: Other:
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_54
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_22
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Total
+FieldNameAlt: Total
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_23
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Assets
+FieldNameAlt: Assets
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Primary Residence
+FieldNameAlt: Primary Residence
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_25
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Personal Effects
+FieldNameAlt: Personal Effects
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_27
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Cash
+FieldNameAlt: Cash
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_29
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Investments
+FieldNameAlt: Investments
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_31
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Investment Property
+FieldNameAlt: Investment Property
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_33
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Business approximate market value of your share
+FieldNameAlt: Business (approximate market value of your share)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_35
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Other_8
+FieldNameAlt: Other:
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_37
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Liabilities
+FieldNameAlt: $_Liabilities
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Mortgage on Primary Residence
+FieldNameAlt: Mortgage on Primary Residence
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_39
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Loans
+FieldNameAlt: Loans
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_41
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Mortgage on Investment Property
+FieldNameAlt: Mortgage on Investment Property
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_43
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Other_9
+FieldNameAlt: Other:
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_45
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_46
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fill_7
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Purpose of LoanRow1
+FieldNameAlt: Purpose of Loan_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Names of BorrowersRow1
+FieldNameAlt: Name/s of Borrower/s_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Name of LenderRow1
+FieldNameAlt: Name of Lender_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Loan AmountRow1
+FieldNameAlt: Loan Amount_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Term of LoanRow1
+FieldNameAlt: Term of Loan_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Interest RateRow1
+FieldNameAlt: Interest Rate_Row_1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: Yes No_7
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_111
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_112
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Yes No_8
+FieldNameAlt: Yes No
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_113
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Button
+FieldName: undefined_114
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: On
+---
+FieldType: Text
+FieldName: Approximately how much revenue is directly attributable to you
+FieldNameAlt: Approximately how much revenue is directly attributable to you
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Are any other persons in the Business also considered key persons
+FieldNameAlt: Are any other persons in the Business also considered key persons
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_115
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_67
+FieldStateOption: Off
+FieldStateOption: Yes_60
+---
+FieldType: Text
+FieldName: If Yes please provide details and state whether insurance is also being sought on these other persons 1
+FieldNameAlt: If Yes, please provide details and state whether insurance is also being sought on these other persons [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If Yes please provide details and state whether insurance is also being sought on these other persons 2
+FieldNameAlt: If Yes, please provide details and state whether insurance is also being sought on these other persons [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If Yes please provide details and state whether insurance is also being sought on these other persons 3
+FieldNameAlt: If Yes, please provide details and state whether insurance is also being sought on these other persons [3]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_116
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_68
+FieldStateOption: Off
+FieldStateOption: Yes_61
+---
+FieldType: Text
+FieldName: If Yes please provide relevant details including the value of this interest or shareholding 1
+FieldNameAlt: If Yes, please provide relevant details including the value of this interest or shareholding [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If Yes please provide relevant details including the value of this interest or shareholding 2
+FieldNameAlt: If Yes, please provide relevant details including the value of this interest or shareholding [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: How was the sum insured calculated
+FieldNameAlt: How was the sum insured calculated
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: What is the current value of the Business
+FieldNameAlt: What is the current value of the Business
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: How and when was this value calculated
+FieldNameAlt: How and when was this value calculated
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Please state the names and  ownership of all other partners or shareholders
+FieldNameAlt: Please state the names and % ownership of all other partners or shareholders
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 1
+FieldNameAlt: 4 [1]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 2
+FieldNameAlt: 4 [2]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 3
+FieldNameAlt: 4 [3]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4 4
+FieldNameAlt: 4 [4]
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: undefined_117
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes_62
+FieldStateOption: Yes_63
+---
+FieldType: Button
+FieldName: undefined_118
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: No_69
+FieldStateOption: No_70
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: Name Please Print
+FieldNameAlt: Name (Please Print
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of Proposed Insured_3
+FieldNameAlt: Signature of Proposed Insured
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_8
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Name Please Print_2
+FieldNameAlt: Name (Please Print
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature CPAAttorney w license
+FieldNameAlt: Signature CPA/Attorney w/ license
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Date_9
+FieldNameAlt: Date
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1a  Name shown on tax return If a joint return enter the name shown first
+FieldNameAlt: 1a  Name shown on tax return. If a joint return, enter the name shown first.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 1b First social security number or individual taxpayer identification number on tax return
+FieldNameAlt: 1b First social security number or individual taxpayer identification number on tax return
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 2a  If a joint return enter spouses name shown on tax return
+FieldNameAlt: 2a  If a joint return, enter spouse&#8217;s name shown on tax return.
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 2b Second social security number or individual taxpayer identification number if joint tax return
+FieldNameAlt: 2b Second social security number or individual taxpayer identification number if joint tax return
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 4
+FieldNameAlt: 4
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Previous address shown on the last return filed if different from line 3 see instructions
+FieldNameAlt: Previous address shown on the last return filed if different from line 3 (see instructions)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: 5
+FieldNameAlt: 5
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: If the transcript is to be mailed to a third party such as a mortgage company enter the third partys name address and telephone number The IRS has no
+FieldNameAlt: If the transcript is to be mailed to a third party (such as a mortgage company), enter the third party&#8217;s name, address, and telephone number. The IRS has no
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Telephone number 8776787534
+FieldNameAlt: Telephone number 877-678-7534
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Caution If the tax transcript is being mailed to a third party ensure that you have filled in line 6 before signing Sign and date the form once you have filled in this
+FieldNameAlt: Caution. If the tax transcript is being mailed to a third party, ensure that you have filled in line 6 before signing. Sign and date the form once you have filled in this
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: days
+FieldNameAlt: days
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_119
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_120
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: undefined_121
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Caution Do not sign this form unless all applicable lines have been completed
+FieldNameAlt: Caution. Do not sign this form unless all applicable lines have been completed
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Signature
+FieldName: Signature of taxpayers I declare that I am the taxpayer whose name is shown on either line 1a or 2a If the request applies to a joint return either spouse must
+FieldNameAlt: Signature of taxpayer(s). I declare that I am the taxpayer whose name is shown on either line 1a or 2a. If the request applies to a joint return, either spouse must
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Phone number of taxpayer on line 1a or 2a
+FieldNameAlt: Phone number of taxpayer on line 1a or 2a
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Privacy Act and Paperwork Reduction Act
+FieldNameAlt: Privacy Act and Paperwork Reduction Act
+FieldFlags: 0
+FieldJustification: Left

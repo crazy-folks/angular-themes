@@ -1,0 +1,52 @@
+<style>
+thead tr b {
+  font-weight:bold;
+}
+</style>
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-default">
+<div class="panel-heading" style ="background-color:#CEECF5; height:50px;">
+    <h2 class="panel-title" style="font-weight:bold" ng-if = "mySharingData.length > 0">File Share</h2>
+    <h2 class="panel-title" style="font-weight:bold" ng-if = "mySharingData.length == 0">You've not shared</h2>
+    <div class="actions pull-right">
+    <i data-fullscreen-widget class="fa fa-expand"></i>
+    <i data-widget-toggle class="fa fa-chevron-down"></i>
+                       <!-- <i data-widget-close class="fa fa-times"></i> -->
+    </div>
+</div>
+<div class="panel-body" ng-show = "mySharingData.length > 0">
+	<div class="table-responsive">
+	<table class="table table-bordered" id="datatable">
+	<thead>
+		<tr> 
+		<th><b>File Share</b></th>
+		<th><b>Shared With</b></th>
+		<th><b>From</b></th>
+		<th><b>To</b></th>
+		<th><b>Expire</b></th>
+		<th><b>Extend</b></th>
+		<th class="col-sm-1"></th>
+	 	</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in filteredFiles">
+		<td>{{item.name}}</td>
+		<td>{{item.shareName}}</td>
+		<td> <span> {{toNormalDate(item.startdatetime)}}  </span> {{normalDate}}</td>
+		<td> <span> {{toNormalDate(item.enddatetime)}}  </span> {{normalDate}} </td>
+		<td> <span> {{compareDate(item.enddatetime)}} </span> {{result}} </td>
+		<td class="col-sm-1"> <i class="btn btn-success btn-xs" ng-disabled = "result == false" ng-click = "extendTimeShare(item)" style = "margin-left:10px">  <span class="glyphicon glyphicon-ok" tooltip="Extend Time"></span> </i> </td>
+		<td class="col-sm-1">  <i class="pull-right btn btn-danger btn-xs" ng-click="deleteAgreementView(item)" style="margin-right: 10px;"><span class="glyphicon glyphicon-remove" tooltip="Delete"></span></i> </td>
+		</tr>
+	</tbody>
+	</table>
+	<uib-pagination boundary-links="true" total-items="totalItems" ng-model="fileVar.currentPage" class="pagination-sm"
+                      ng-change="changePage()" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;"
+                      last-text="&raquo;" items-per-page="fileVar.numPerPage" style="margin: 0;">
+      </uib-pagination>
+	</div>	
+</div>
+</div>
+</div>
+</div>

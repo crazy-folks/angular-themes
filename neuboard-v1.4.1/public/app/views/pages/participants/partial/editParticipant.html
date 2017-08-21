@@ -1,0 +1,109 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">&nbsp;</h3>
+    <table class="container-fluid table" style="border:0;margin-bottom:0;">
+      <tr style="border:0;">
+        <td class="col-md-3 col-sm-3 col-xs-3" style="border:0;padding-bottom:15px;" rowspan="2">
+          <div class="span3 pull-left">
+            <profile-img userid="{{editParticipant.subscriberid || 'null'}}" class="editable img-responsive" style="max-height:125px;max-width:125px;">
+          </div>
+        </td>
+
+      </tr>
+      <tr style="border:0;">
+        <td style="vertical-align:bottom;border:0;background:#FFF">
+          <input type="text" required ng-model="editParticipant.displayname" class="form-control col-md-12" />
+        </td>
+      </tr>
+    </table>
+    <div class="actions pull-right">
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+    </div>
+  </div>
+  <div class="panel-body">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-md-3 text-right">Category</label>
+        <div class="col-md-9">
+          <select class="form-control" ng-model="editParticipant.categoryname" style="box-sizing: border-box;">
+            <option ng-repeat="item in MainCategory track by item.name" ng-selected="(item.name==editParticipant.categoryname)" value="{{item.name}}">{{item.name}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Email</label>
+        <div class="col-md-9">
+          <input type="email" class="form-control" ng-model="editParticipant.email" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Address</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.address" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">City</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.city" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">State</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.state" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Zipcode</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.zip" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Country</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.country" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Telephone</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.phone" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Fax</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="editParticipant.fax" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Notes</label>
+        <div class="col-md-9">
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="editParticipant.note" />
+            <a class="input-group-addon btn btn-primary btn-sm inline" ng-click="addNote()"><i class="fa fa-plus-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row span12" style="margin:0;margin-right:-15px;margin-left:15px;overflow-y:auto;max-height:260px;" ng-if="editParticipant.notes && editParticipant.notes.length > 0">
+        <ul class="no-padding">
+          <li class="row" ng-repeat="note in editParticipant.notes track by $index" style="margin:0;padding:10px;list-style-type:none; border-top:1px solid #eee;">
+            <div>
+              <a class="btn btn-xs btn-danger pull-right no-margin" ng-click="removeNote($index)"><i class="fa fa-minus"></i></a>
+              <span>{{note.note}}</span>
+            </div>
+            <div>
+              <span class="pull-right" style="font-style:italic;font-size:x-small;">{{note.time | fromNow}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+  <div class="panel-footer" style="text-align:right;">
+    <button class="btn btn-primary btn-success" ng-click="save()">Save</button>
+    <button class="btn btn-primary btn-info" ng-click="cancel()">Cancel</button>
+  </div>
+</div>

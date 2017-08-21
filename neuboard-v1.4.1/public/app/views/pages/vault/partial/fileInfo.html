@@ -1,0 +1,68 @@
+<style>
+    .ng-invalid{background-color: lightpink;}
+    .ng-valid{background-color: lightgreen;}
+    span.error{color:red;font-weight: bold;}
+</style>
+
+<a class="pull-right btn btn-info btn-xs" ng-click="cancel()" tooltip="Cancel"><span class="glyphicon glyphicon-remove"></span></a>
+<br></br>
+<div class="modal-header" style ="background-color:#CEECF5; margin-top:-10px;">
+    <h3 class="modal-title">Complete the form </h3>
+   
+</div>
+    <div class="modal-body" ng-if = "action == 'add'"> 
+        <form name="addFileForm" novalidate>
+            <div class="well">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input name="categoryName" class="form-control"
+                    ng-model="data.fileData.categoryName" required />
+                    <span class="error" ng-show="addFileForm.categoryName.$error.required">
+                    Please enter a file category name
+                    </span>
+                </div>
+                 <div class="form-group">
+                    <label>Description</label>
+                    <input name="description" class="form-control"
+                    ng-model="data.fileData.description" required />
+                    <span class="error" ng-show="addFileForm.description.$error.required">
+                    Please enter a description
+                    </span>
+                </div>
+            </div>
+        </form>
+      
+    </div>
+    <div class="modal-footer" ng-if = "action == 'add'">  
+        <button class="btn btn-primary" ng-click = "addFileCategory(data.fileData)" ng-disabled = "addFileForm.$invalid || !data.fileData">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>    
+
+
+    <div class="modal-body" ng-if = "action == 'update'"> 
+        <form name="editFileForm" novalidate>
+            <div class="well">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input name="categoryName" class="form-control"
+                    ng-model="fileCat.categoryName" required />
+                    <span class="error" ng-show="editFileForm.categoryName.$error.required">
+                    Please enter a file category name
+                    </span>
+                </div>
+                 <div class="form-group">
+                    <label>Description</label>
+                    <input name="description" class="form-control"
+                    ng-model="fileCat.description" required />
+                    <span class="error" ng-show="editFileForm.description.$error.required">
+                    Please enter a description
+                    </span>
+                </div>
+            </div>
+        </form>
+      
+    </div>
+    <div class="modal-footer" ng-if = "action == 'update' " >   
+        <button class="btn btn-primary"  ng-click = "updateFileCategory(fileCat)" ng-disabled = "editFileForm.$invalid">Update</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>    

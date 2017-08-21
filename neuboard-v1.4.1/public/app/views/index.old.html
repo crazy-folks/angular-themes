@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kazume</title>
+  <!-- FOR ANGULAR ROUTING -->
+  <base href="/">
+  <!-- CSS  -->
+  <!-- Bootstrap core CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+  <link href="assets/js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/font-awesome-4/css/font-awesome.min.css">
+
+  <!-- load bootstrap from CDN and custom CSS -->
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/js/jquery.gritter/css/jquery.gritter.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/jquery.nanoscroller/nanoscroller.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/jquery.easypiechart/jquery.easy-pie-chart.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/bootstrap.switch/bootstrap-switch.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/bootstrap.slider/css/slider.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/intro.js/introjs.css" />
+  <link rel="stylesheet" href="assets/js/jquery.vectormaps/jquery-jvectormap-1.2.2.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/js/jquery.magnific-popup/dist/magnific-popup.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/jquery.niftymodals/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/bootstrap.summernote/dist/summernote.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/Chat.css" />
+  <link rel="stylesheet" type="text/css" href="Library/select.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/ngWizard.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/_panel.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/calendar/fullcalendar.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/calendar/fullcalendar.print.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/ngToast/ngToast.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/ngToast/ngToast-animations.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.steps.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+
+  <!-- Add AngularJS resources -->
+  <!-- load angular and angular-route via CDN -->
+  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>-->
+  <script type="text/javascript" src="Library/angular.min.js"></script>
+  <script type="text/javascript" src="Library/angular-animate.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>-->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.js"></script>
+  <script src="https://code.angularjs.org/1.4.0-rc.2/angular-resource.js"></script>
+
+  <!-- library dependency -->
+  <script type="text/javascript" src="Library/angular-ui-router.js"></script>
+  <!--<script type="text/javascript" src="Library/ui-bootstrap-tpls-0.13.0.min.js"></script>-->
+  <script type="text/javascript" src="Library/ui-bootstrap-tpls-1.0.3.min.js"></script>
+  <script type="text/javascript" src="Library/ui-mask.js"></script>
+  <script type="text/javascript" src="Library/select.min.js"></script>
+  <script type="text/javascript" src="Library/moment.js"></script>
+  <script type="text/javascript" src="Library/ngWizard.js"></script>
+  <script type="text/javascript" src="Library/_panel.js"></script>
+  <script type="text/javascript" src="assets/js/chartjs/Chart.min.js"></script>
+  <script type="text/javascript" src="assets/js/chartjs/Chart.js"></script>
+  <script type="text/javascript" src="assets/js/chartjs/tc-angular-chartjs.js"></script>
+  <script type="text/javascript" src="assets/js/calendar/calendar.js"></script>
+  <script type="text/javascript" src="assets/js/calendar/fullcalendar.min.js"></script>
+  <script type="text/javascript" src="assets/js/calendar/gcal.js"></script>
+  <script type="text/javascript" src="assets/js/ngToast/ngToast.min.js"></script>
+  <script type="text/javascript" src="Library/isteven-multi-select.js"></script>
+  <script type="text/javascript" src="Library/webrtc-v2.js"></script>
+
+  <!-- library for tree view -->
+  <link rel="stylesheet" type="text/css" href="Library/isteven-multi-select.css" />
+  <script type="text/javascript" src="Library/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="Library/angular-ui-tree.min.css" />
+  <link rel="stylesheet" type="text/css" href="Library/demo.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+  <script type="text/javascript" src="Library/ng-file-upload.min.js"></script>
+  <script type="text/javascript" src="Library/ng-file-upload-shim.min.js"></script>
+  <script type="text/javascript" src="Library/angular-md5.min.js"></script>
+  <script type="text/javascript" src="Library/angular-pdf.min.js"></script>
+  <script type="text/javascript" src="Library/compatibility.js"></script> 
+  <script type="text/javascript" src="Library/pdf.js"></script>
+  <script type="text/javascript" src="Library/pdf.worker.js"></script>
+  <script type="text/javascript" src="Library/FileSaver.js"></script> 
+  <!-- end of tree view -->
+  <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">-->
+
+  <!-- InstanceBeginEditable name="heading" -->
+  <!-- // <script type="text/javascript" src="js/jquery.js" ></script> -->
+  <!-- JS -->
+  <!-- services -->
+  <script type="text/javascript" src="app/services/fileService.js"></script>
+  <script type="text/javascript" src="app/services/socketService.js"></script>
+  <script type="text/javascript" src="app/services/authService.js"></script>
+  <script type="text/javascript" src="app/services/userService.js"></script>
+  <script type="text/javascript" src="app/services/vaultService.js"></script>
+  <script type="text/javascript" src="app/services/eventService.js"></script>
+  <script type="text/javascript" src="app/services/processService.js"></script>
+  <script type="text/javascript" src="app/services/chatService.js"></script>
+  <script type="text/javascript" src="app/services/participantService.js"></script>
+  <script type="text/javascript" src="app/services/desVaultService.js"></script>
+  <script type="text/javascript" src="app/services/agreementService.js"></script>
+  <script type="text/javascript" src="app/services/agreementCatService.js"></script>
+  <script type="text/javascript" src="app/services/newProcessService.js"></script>
+  <script type="text/javascript" src="app/services/adminService.js"></script>
+
+  <!-- controllers -->
+  <script type="text/javascript" src="app/controllers/participantCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/processCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/chatCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/eventCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/mainCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/userCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/agreementCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/roleCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/panelCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/screenCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/sidebarCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/fileCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/adminCtrl.js"></script>
+
+  <!-- script for vault categories -->
+  <script type="text/javascript" src="app/controllers/vaultCtrl.js"></script>
+  <script src="app/controllers/vaultCtrl.js"></script>
+  
+  <!-- services -->
+  <script src="app/services/subVaultService.js"></script>
+  <script src="app/services/roleService.js"></script>
+  <script src="app/services/panelService.js"></script>
+
+  <!-- main Angular app files -->
+  <script type="text/javascript" src="app/app.routes.js"></script>
+  <script type="text/javascript" src="app/app.js"></script>
+  <!-- NEED THIS for Safari Mac to render work -->
+  <script type="text/javascript">
+    // Specify the main script used to create a new PDF.JS web worker.  
+    // In production, change this to point to the combined `pdf.js` file.  
+    PDFJS.workerSrc = 'Library/pdf.worker.js';
+  </script>
+</head>
+<body ng-app="userApp" ng-controller="mainController as main">
+  <section id="main-wrapper" class="theme-default">
+    <!-- Page wrapper -->
+    <header id="header" class="navbar navbar-default navbar-fixed-top" ng-if="main.loggedIn">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="../../assets/images/logo.jpg" style="padding-left:5px;" />
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right user-nav">
+            <li class="dropdown profile_menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <profile-img userid="{{main.user._id}}"
+                             style="max-height:25px;max-width:25px;"></profile-img>
+                <span>{{ main.user.username }}</span> <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#" ng-href="/users/{{ main.user._id }}">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li class="divider"></li>
+                <li><a href="#" ng-click="main.doLogout()">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right not-nav">
+            <!-- <li class="button dropdown">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-comments"></i></a>
+              <ul class="dropdown-menu messages container-fluid avatar">
+                <li>
+                  <div>
+                    <div class="content">
+                      <ul>
+                        <li ng-repeat="item in main.messages" ng-if="main.messages.length > 0">
+                          <a href="#" class="messages message" chat-modal-content ng-click="open(item, $event)">
+
+                            <profile-img userid="{{item.guid}}" style="max-height:30px;max-width:30px;position:absolute;left:5px;top:8px;"
+                                         css="avatar c-avatar"></profile-img>
+                            <span class="date pull-right">{{item.time | fromNow}}</span> <span class="name">{{item.name}}</span>{{item.msg}}
+
+                          </a>
+                        </li>
+                        <li ng-if="main.messages.length == 0">
+                          <a href="#" style="padding-left:10px;padding-right:10px;">
+                            <span class="name text-center" style="font-style:italic;">No new messages</span>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="foot"><li><a href="#">View all messages </a></li></ul>
+                </li>
+              </ul>
+            </li> -->
+           <!--  <li class="button dropdown">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span class="bubble">3</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="nano nscroller">
+                    <div class="content">
+                      <ul>
+                        <li><a href="#"><i class="fa fa-cloud-upload info"></i><b>Daniel</b> is now following you <span class="date">2 minutes ago.</span></a></li>
+                        <li><a href="#"><i class="fa fa-male success"></i> <b>Michael</b> is now following you <span class="date">15 minutes ago.</span></a></li>
+                        <li><a href="#"><i class="fa fa-bug warning"></i> <b>Mia</b> commented on post <span class="date">30 minutes ago.</span></a></li>
+                        <li><a href="#"><i class="fa fa-credit-card danger"></i> <b>Andrew</b> asked for a referral<span class="date">1 hour ago.</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="foot"><li><a href="#">View all activity </a></li></ul>
+                </li>
+              </ul>
+            </li> --> 
+
+          </ul>
+
+        </div><!--/.nav-collapse animate-collapse -->
+      </div>
+    </header>
+    <!--</header>-->
+    <!-- Left Sidebar Navigation -->
+    <aside ng-if="main.loggedIn" class="sidebar sidebar-left" ng-include="'app/views/partials/left-sidebar.html'"></aside>
+    <!-- Content wraper -->
+    <section class="main-content-wrapper" ui-view>
+      <!-- Main content view  -->
+      <!--<div ></div>-->
+
+    </section>
+    <!-- /Content wraper-->
+  </section>
+
+
+
+  <!--<div id="cl-wrapper" class="fixed-menu">
+    <div class="cl-sidebar" ng-if="main.loggedIn">
+      <div class="cl-toggle"><i class="fa fa-bars"></i></div>
+      <div class="cl-navblock">
+        <div class="menu-space">
+          <div class="content">
+
+            <ul class="cl-vnavigation">
+
+              <li class="one"><a href="/dashboard"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+              <li class="two"><a href="/vault"><i class="fa fa-lock"></i><span>Vault</span></a></li>
+              <li class="three"><a href="/participants"><i class="fa fa-users"></i><span>Participants</span></a></li>
+              <li class="four"><a href="/processes"><i class="fa fa-cogs"></i><span>Processes</span></a></li>
+              <li class="five"><a href="/agreements"><i class="fa fa-exchange"></i><span>Agreements</span></a></li>
+              <li class="six"><a href="/users"><i class="fa fa-user"></i><span>Users</span></a></li>
+              <li class="seven"><a href="/roles"><i class="fa fa-plus-square"></i><span>Roles</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid" id="pcont">
+
+
+        <div ng-view></div>
+
+      </div>
+    </div>-->
+  <toast></toast>
+</body>
+</html>

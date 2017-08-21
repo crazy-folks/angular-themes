@@ -1,0 +1,85 @@
+<navbar leftmenu="true"></navbar>
+<div layout="row">
+  <div ng-include="'app/main/filter-menu.html'"></div>
+  <!--<md-content flex layout="column">-->
+  <section layout="column" layout-fill flex>
+    <div class="sort-products md-whiteframe-z2">
+        <div class="products-list-meta" ng-if="main.$mdMedia('gt-md')" flex>
+            Showing {{main.products.items.length}} products of {{main.products.count}} in: {{vm.Settings.currency.symbol}}<strong>{{main.priceSlider.min}}</strong> &nbsp;-&nbsp; {{vm.Settings.currency.symbol}}<strong>{{main.priceSlider.max}}</strong>
+        </div>
+
+        <section layout="row" layout-align="center center">
+          <div>Sort: &nbsp;</div> 
+          <md-button class="groupX left" ng-click="main.sortNow('variants.price')">{{main.Settings.currency.symbol}}<ng-md-icon icon="arrow_downward" style="fill:#888"></ng-md-icon></md-button>
+          <md-button class="groupX middle" ng-click="main.sortNow('-variants.price')">{{main.Settings.currency.symbol}}<ng-md-icon icon="arrow_upwards" style="fill:#888"></ng-md-icon></md-button>
+          <md-button class="groupX middle" ng-click="main.sortNow('name')">A-Z<ng-md-icon icon="arrow_downward" style="fill:#888"></ng-md-icon></md-button>
+          <md-button class="groupX right" ng-click="main.sortNow('-name')">Z-A<ng-md-icon icon="arrow_upwards" style="fill:#888"></ng-md-icon></md-button>
+        </section>
+
+
+    </div>
+<div layout="row">
+  <div ng-repeat="b in main.fl.brands">
+    <md-button class="md-raised" ng-click="main.removeBrand(b);" aria-label="Remove Brand Filter">
+      <ng-md-icon icon="verified_user" md-menu-align-target></ng-md-icon>
+      {{b.name}}
+      <ng-md-icon icon="close" aria-label="Close dialog"></ng-md-icon>
+    </md-button>
+  </div>
+  <md-button ng-show="main.fl.categories.length > 0" class="md-raised">
+    <ng-md-icon icon="subject" md-menu-align-target></ng-md-icon>
+    {{main.fl.categories[0].name}}
+  </md-button>
+<div ng-repeat="(k,features) in main.fl.features">
+  <md-button ng-show="features" ng-repeat="f in features" class="md-raised" ng-click="main.removeFeatures(features,k,f);" aria-label="Remove {{f}} Filter">
+      <ng-md-icon icon="format_shapes" md-menu-align-target></ng-md-icon>
+      {{f}}
+      <ng-md-icon icon="close" aria-label="Close dialog"></ng-md-icon>
+  </md-button>
+</div>
+</div>
+
+<div infinite-scroll='main.scroll()' infinite-scroll-disabled='main.products.busy' infinite-scroll-distance='1' layout-align="center center">
+  <div dw-loading="products" dw-loading-options="{text: ''}"></div>
+  <div layout="row" layout-wrap layout-align="start start">
+    <md-card ng-repeat="product in main.products.items" layout="column" layout-align="space-between center" class="product">
+      <img ng-src="{{product.variants[0].image}}"
+            err-SRC="/assets/images/486x325.png"
+            class="md-card-image" alt="{{product.name}}"
+              ng-click="main.gotoDetail(product)"/>
+      <md-card-content layout="column" layout-align="center center">
+        <div class="name" ng-click="main.gotoDetail(product)">{{product.name}}</div>
+        <div class="price">
+            {{product.variants[0].price | currency : vm.Settings.currency.symbol}}
+            <del ng-if="product.variants[0].price!=product.variants[0].mrp">{{product.variants[0].mrp | currency : vm.Settings.currency.symbol}}</del> 
+        </div>
+      </md-card-content>
+      <div layout="row" layout-align="start center">
+        <cart-buttons variant="product.variants[0]" product="product"></cart-buttons>
+      </div>
+      <!--<section class="md-actions cta" layout="row" layout-align="space-around start" ng-if="vm.cart.checkCart(product._id)">
+        <md-button ng-click="vm.cart.addItem({sku:product._id, name:product.name, slug:product.slug, mrp:product.variants[0].mrp, price:product.variants[0].price, quantity:1, image:product.variants[0].image,category:product.category, size:product.variants[0].size, weight:product.variants[0].weight} ,true);" class="md-raised md-primary"
+        aria-label="Add to cart">
+            <ng-md-icon icon="shopping_cart"></ng-md-icon>Add to cart
+        </md-button>
+      </section>
+      <section class="md-actions cta" layout="row" layout-align="space-around start" ng-if="!vm.cart.checkCart(product._id)">
+        <md-button class="md-raised md-primary left md-icon-button" 
+        ng-click="vm.cart.addItem({sku:product._id, name:product.name, slug:product.slug, mrp:product.variants[0].mrp, price:product.variants[0].price, weight:product.variants[0].weight}, -1)" 
+        aria-label="Remove from cart">
+            <ng-md-icon icon="remove"></ng-md-icon>
+        </md-button>
+
+        <md-button class="middle" aria-label="Cart quantity" ui-sref="checkout">Buy {{vm.cart.getQuantity(product._id)}}</md-button>
+
+        <md-button class="md-raised md-primary right md-icon-button" ng-click="vm.cart.addItem({sku:product._id, name:product.name, slug:product.slug, mrp:product.variants[0].mrp, price:product.variants[0].price, weight:product.variants[0].weight}, +1)" aria-label="Add to cart">
+            <ng-md-icon icon="add"></ng-md-icon>
+        </md-button>
+      </section>-->
+    </md-card>
+  </div>
+</div>
+</section>
+<!--</md-content>-->
+</div>
+<footer></footer>

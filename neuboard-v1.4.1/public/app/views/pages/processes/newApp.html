@@ -1,0 +1,174 @@
+﻿<div class="pageheader">
+  <h1>{{title}}</h1>
+  <div class="breadcrumb-wrapper hidden-xs">
+    <span class="label">You are here:</span>
+    <ol class="breadcrumb">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li>Processes</li>
+      <li class="active">{{title}}</li>
+    </ol>
+  </div>
+</div>
+<section id="main-content" class="row" style="margin:0;">
+  <div class="col-md-9">
+
+    <!-- Controller Parsed Form Data -->
+   <span compile="parsed"></span>
+    <!-- End Form Data -->
+
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-3"  style="padding:15px;">
+    <!-- <uib-accordion close-others="true" ng-repeat = "section in tempProcess.sections" ng-hide = "tempProcess.userid != myid">  -->
+    <uib-accordion close-others="true" ng-hide = "tempProcess.userid != myid">
+      <uib-accordion-group is-open="open.participants">
+        <uib-accordion-heading>
+          <i class="fa fa-users" style="color:#3c57a6">
+          </i><span> Participants</span>
+          <i class="pull-right glyphicon"
+             ng-class="{'glyphicon-chevron-down': open.participants,
+                                  'glyphicon-chevron-right': !open.participants}">
+          </i>
+        </uib-accordion-heading>
+        <ul class="nav nav-pills nav-stacked">
+          <!-- <li ng-repeat="item in userParts">
+            <i type="button" class="fa fa-times close pull-right" style="color:red;"
+               ng-click=""></i>
+            <profile-img userid="{{item.cusid || 'null'}}" style="height:30px;width:30px;"></profile-img>
+            <span style="font-size:medium;">&nbsp;{{item.cusName}}</span>
+          </li> -->
+          <i type="button" class="fa fa-times close pull-right" style="color:red;"
+               ng-click=""></i>
+            <profile-img userid="{{queryID || 'null'}}" style="height:30px;width:30px;"></profile-img>
+            <span style="font-size:medium;">&nbsp;{{queryName}}</span>
+        </ul>
+      </uib-accordion-group>
+
+     <uib-accordion-group is-open="open.sharing" ng-show = "filledFiles.length > 0">
+        <uib-accordion-heading>
+          <i class="fa fa-share" style="color:#3c57a6">
+          </i><span> Filled Forms</span>
+          <i class="pull-right glyphicon"
+             ng-class="{'glyphicon-chevron-down': open.sharing,
+                                  'glyphicon-chevron-right': !open.sharing}">
+          </i>
+        </uib-accordion-heading>
+        <ul class="nav nav-pills nav-stacked">
+          <li ng-repeat = "item in filledFiles">
+              <i class="btn btn-info btn-xs pull-right"
+               ng-click="userDownloadFiles(item._id, item.filename)"><span class="glyphicon glyphicon-download" uib-tooltip="Download"></span></i>
+               {{item.filename}}
+          </li>
+        </ul>
+      </uib-accordion-group>
+
+
+      <uib-accordion-group is-open="open.chat">
+        <uib-accordion-heading>
+          <!-- <i class="fa fa-comments" style="color:#3c57a6"> -->
+          <!--  ng-click="open(section.participants,$event)"  person for all -->
+           <span style="font-weight:bold;">
+           <span style="">
+          <i class="fa fa-comments close pull-left" style="padding-bottom:12px; font-size: 1.2em;" chat-modal-content
+                           ng-click="open(queryID,$event)"
+                        
+                           uib-tooltip="Open Chat Session">  Chat  </i>  </span> </span>
+         <!--  <span> Chat</span>
+          <i class="pull-right glyphicon"
+             ng-class="{'glyphicon-chevron-down': open.chat,
+                                  'glyphicon-chevron-right': !open.chat}">
+          </i> -->
+        </uib-accordion-heading>
+        <!-- Chat -->
+      </uib-accordion-group>
+      <uib-accordion-group is-open="open.screen">
+        <uib-accordion-heading>
+          <i class="fa fa-desktop pull-left" style="padding-bottom:12px;color:#3c57a6;"
+             uib-tooltip="Open Video Chat Connection"></i>
+          <span>&nbsp;Video Chat</span>
+          <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': open.screen,'glyphicon-chevron-right': !open.screen}"></i>
+        </uib-accordion-heading>
+        <div screen-portal ></div>
+      </uib-accordion-group>
+    </uib-accordion>
+
+    <uib-accordion ng-show = "tempProcess.userid != myid && showChat">
+    <uib-accordion-group is-open="open.participants">
+        <uib-accordion-heading>
+          <i class="fa fa-users" style="color:#3c57a6">
+          </i><span> Participants</span>
+          <i class="pull-right glyphicon"
+             ng-class="{'glyphicon-chevron-down': open.participants,
+                                  'glyphicon-chevron-right': !open.participants}">
+          </i>
+        </uib-accordion-heading>
+        <ul class="nav nav-pills nav-stacked">
+            <i type="button" class="fa fa-times close pull-right" style="color:red;"
+               ng-click=""></i>
+            <profile-img userid="{{tempProcess.userid || 'null'}}" style="height:30px;width:30px;"></profile-img>
+            <span style="font-size:medium;">&nbsp;{{tempProcess.owner}}</span>
+          
+        </ul>
+      </uib-accordion-group>
+
+      <uib-accordion-group is-open="open.sharing" ng-show = "filledFiles.length > 0">
+        <uib-accordion-heading>
+          <i class="fa fa-share" style="color:#3c57a6">
+          </i><span> Filled Forms</span>
+          <i class="pull-right glyphicon"
+             ng-class="{'glyphicon-chevron-down': open.sharing,
+                                  'glyphicon-chevron-right': !open.sharing}">
+          </i>
+        </uib-accordion-heading>
+        <ul class="nav nav-pills nav-stacked">
+          <li ng-repeat = "item in filledFiles">
+              <i class="btn btn-info btn-xs pull-right"
+               ng-click="userDownloadFiles(item._id, item.filename)"><span class="glyphicon glyphicon-download" uib-tooltip="Download"></span></i>
+               {{item.filename}}
+          </li>
+        </ul>
+      </uib-accordion-group>
+
+
+      <uib-accordion-group is-open="open.chat">
+        <uib-accordion-heading>
+          <!-- <i class="fa fa-comments" style="color:#3c57a6"> -->
+          <i class="fa fa-comments pull-left" style="padding-bottom:12px;" chat-modal-content
+                           ng-click="open(tempProcess.userid,$event)" 
+                           uib-tooltip="Open Chat Session">  Chat </i>
+         <!--  <span> Chat</span>
+          <i class="pull-right glyphicon"
+             ng-class="{'glyphicon-chevron-down': open.chat,
+                                  'glyphicon-chevron-right': !open.chat}">
+          </i> -->
+        </uib-accordion-heading>
+        <!-- Chat -->
+      </uib-accordion-group>
+
+      <uib-accordion-group is-open="open.screen">
+        <uib-accordion-heading>
+          <i class="fa fa-skype pull-left" style="padding-bottom:12px;"
+             uib-tooltip="Open Skype Connection"> Skype Screen Sharing</i>
+          <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': open.skype,'glyphicon-chevron-right': !open.skype}"></i>
+        </uib-accordion-heading>
+      </uib-accordion-group>
+    </uib-accordion>
+
+    <div class="modal fade" id="mod-success" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="text-center">
+              <div class="i-circle success"><i class="fa fa-check"></i></div>
+              <h4>Thank you! Your generated pdf will be available shortly</h4>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+  </div>
+</section>

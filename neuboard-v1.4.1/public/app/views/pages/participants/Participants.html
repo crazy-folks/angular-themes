@@ -1,0 +1,74 @@
+﻿<div class="pageheader">
+  <h1>Participants</h1>
+  <div class="breadcrumb-wrapper hidden-xs">
+    <span class="label">You are here:</span>
+    <ol class="breadcrumb">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li class="active">Participants</li>
+    </ol>
+  </div>
+</div>
+<section id="main-content">
+  <div class="row no-margin-top">
+    <div class="col-md-6 col-sm-6">
+      <div class="content">
+
+        <uib-accordion close-others="true">
+          <uib-accordion-group ng-repeat="category in sorted track by category.name" is-open="status.open[category.name]">
+            <uib-accordion-heading>
+              <i class="fa fa-users" style="color:#3c57a6">
+              </i><span> {{category.name}}</span>
+              <i class="pull-right glyphicon"
+                 ng-class="{'glyphicon-chevron-down': status.open[category.name],
+                                  'glyphicon-chevron-right': !status.open[category.name]}">
+              </i>
+              <span style="font-size: large;">
+                <i class="fa fa-fw fa-times close pull-right" type="button" ng-click="openDeleteCategory(category)"
+                   style="color:red;vertical-align:top;margin-left:1em;margin-right:1em;"
+                   uib-tooltip="Delete Category"></i>
+              </span>
+            </uib-accordion-heading>
+            <div>
+              <ul class="nav nav-pills nav-stacked">
+                <li href="#" ng-repeat="person in category.participants track by $index"
+                    ng-class="{'active':isSelected[person.displayname]}" ng-if="(category.participants.length > 0)">
+                  <a href="#" ng-click="openViewParticipant(person)">
+
+                    <profile-img userid="{{person.subscriberid || 'null'}}" style="max-height:24px;max-width:24px;" class="profile-image"></profile-img>
+                    &nbsp;{{person.displayname}}
+                    <span style="font-size: large;">
+                      <i type="button" class="fa fa-fw fa-times close pull-right" style="color:red;"
+                         ng-click="openDeleteParticipant(person,$event)"></i>
+                      <i class="fa fa-fw fa-comments close" style="margin-right:20px;" chat-modal-content
+                         ng-click="open(person,$event)" ng-if="person.subscriberid.length > 0"></i>
+                    </span>
+
+
+                  </a>
+
+                </li>
+                <li href="#"><a href="#" ng-click="openAddParticipant(category)"><span style="font-style:italic;"><i class="fa fa-plus"></i>&nbsp;Add new participant</span></a></li>
+              </ul>
+            </div>
+
+          </uib-accordion-group>
+          <uib-accordion-group is-disabled="true">
+            <uib-accordion-heading>
+              <a href="#" ng-click="openAddCategory()">
+                <span style="font-style:italic;"><i class="fa fa-plus"></i>&nbsp;Add new category</span>
+              </a>
+            </uib-accordion-heading>
+          </uib-accordion-group>
+        </uib-accordion>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6" ng-if="!(openPanel == '')">
+      <div ng-include="'/app/views/pages/participants/partial/addParticipant.html'" ng-if="(openPanel == 'addParticipant')"></div>
+      <div ng-include="'/app/views/pages/participants/partial/viewParticipant.html'" ng-if="(openPanel == 'viewParticipant')"></div>
+      <div ng-include="'/app/views/pages/participants/partial/editParticipant.html'" ng-if="(openPanel == 'editParticipant')"></div>
+      <div ng-include="'/app/views/pages/participants/partial/deleteParticipant.html'" ng-if="(openPanel == 'deleteParticipant')"></div>
+      <div ng-include="'/app/views/pages/participants/partial/addCategory.html'" ng-if="(openPanel == 'addCategory')"></div>
+      <div ng-include="'/app/views/pages/participants/partial/deleteCategory.html'" ng-if="(openPanel == 'deleteCategory')"></div>
+    </div>
+  </div>
+</section>

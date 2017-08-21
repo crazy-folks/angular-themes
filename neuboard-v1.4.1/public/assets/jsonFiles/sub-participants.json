@@ -1,0 +1,30 @@
+﻿[
+  {
+    "avatar": "images/avatar2_50.jpg",
+    "email": "test@email.com",
+    "firstname": "Joe",
+    "guid": "951cb4c9-a2d0-4e8b-84f2-fa4813c76d0f",
+    "lastname": "Schmoe"
+  },
+  {
+    "avatar": "images/avatar3_50.jpg",
+    "email": "test@email.com",
+    "firstname": "Jane",
+    "guid": "721cb4c9-a2d0-4e8b-84f2-fa4813c76d0f",
+    "lastname": "Doe"
+  },
+  {
+    "avatar": "images/avatar4_50.jpg",
+    "email": "test@email.com",
+    "firstname": "Jonathan",
+    "guid": "151cb4c9-a2d0-4e8b-84f2-fa4813c76d0f",
+    "lastname": "Schmoe"
+  },
+  {
+    "avatar": "images/avatar_50.jpg",
+    "email": "testing@email.com",
+    "firstname": "John",
+    "guid": "751cb4c9-a2d0-4e8b-84f2-fa4813c72d0f",
+    "lastname": "Doe"
+  }
+]

@@ -1,0 +1,153 @@
+<!--  		<div class="col-lg-3">
+    </div> -->
+<div class="row" ng-hide = "showRegister">
+  <div class="panel panel-default col-lg-4 col-md-6 col-sm-12" style="float:none;margin:auto;">
+
+
+    <div class="panel-heading">
+      <h3 class="text-center"><img class="logo-img" />Kazume</h3>
+    </div>
+    <div class="panel-body">
+      <form form style="margin-bottom: 0px !important;" class="form-horizontal" ng-submit="login.doLogin()">
+        <div class="content">
+          <h4 class="title"></h4>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <!-- <input type="text" placeholder="Username" id="username" class="form-control"> -->
+                <input type="text" placeholder="Username" id="username" class="form-control" ng-model="login.loginData.username">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="password" placeholder="Password" id="password" class="form-control" ng-model="login.loginData.password">
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-danger" ng-if="login.error">
+            {{ login.error }}
+          </div>
+
+
+          <!-- <button type="submit" class="btn btn-block btn-primary">
+            <span ng-if="!login.processing">Login</span>
+            <span ng-if="login.processing" class="spinner"><span class="glyphicon glyphicon-repeat"></span></span>
+          </button> -->
+        </div>
+
+      </form>
+
+
+
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-primary" data-dismiss="modal" type="submit" ng-click="login.doLogin()">
+        Log me in
+        <span ng-if="!login.processing"></span>
+        <span ng-if="login.processing" class="spinner"><span class="glyphicon glyphicon-repeat"></span></span>
+      </button>
+        <button class="btn btn-default" ng-click="login.newUser()" data-dismiss="modal" type="button">        
+          Register
+          <!-- <p><a href="#" ng-click="login.createSample()" class="btn btn-default" data-dismiss="modal">Create User</a></p> -->
+          <!-- <span ng-click="login.newUser()" data-dismiss="modal">Register</span> -->
+        </button>
+    </div>
+    <div class="text-center out-links"><a href="#">&copy; 2014 Kazume</a></div>
+  </div>
+</div>
+
+ <div class="row" ng-show = "showRegister">
+
+            <div class="col-md-6 col-md-offset-3">
+
+                <div id="login-wrapper">
+
+                    <!-- TODO: Add Kazume logo -->
+                    <!-- <header> -->
+
+                        <!-- <div class="brand">
+
+                            <a href="index.html" class="logo">
+
+                                <i class="icon-layers"></i>
+
+                                <span>NEU</span>BOARD</a>
+
+                        </div> -->
+
+                    <!-- </header> -->
+
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+
+                          <h3 class="panel-title">     
+
+                           Sign Up
+
+                        </h3>  
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <p>Already a member?  <a href="/login" title="Sign In"><strong>Sign In</strong></a></p>
+
+                        <form role="form">
+
+                            <div class="form-group">
+
+                                <label for="exampleInputName1">Name</label>
+                                <input type="text" class="form-control" ng-model="login.userData.name" placeholder="Enter your name">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="exampleInputEmail1">Email</label>
+
+                                <input type="email" class="form-control" ng-model="login.userData.email" placeholder="Enter your email">
+
+                            </div>
+
+                             <div class="form-group">
+
+                                <label for="exampleInputPassword1">Password</label>
+
+                                <input type="password" class="form-control" ng-model="login.userData.password" placeholder="Password">
+
+                            </div>
+
+                              <div class="form-group">
+
+                                <label for="exampleInputPassword2">Retype Password</label>
+
+                                <input type="password" class="form-control" id="password" placeholder="Retype your password">
+
+                            </div>
+
+                       
+
+                           <button type="submit" class="btn btn-primary btn-lg btn-block ng-scope" ng-click="login.saveNewUser()">Create User</button>
+
+                        </form>
+
+
+
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+

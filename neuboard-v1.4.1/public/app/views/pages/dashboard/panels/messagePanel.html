@@ -1,0 +1,33 @@
+﻿<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-dashboardtitle">Messages</h3>
+    <div class="actions pull-right">
+      <i data-fullscreen-widget class="fa fa-expand"></i>
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+      <i data-widget-close class="fa fa-times"></i>
+    </div>
+  </div>
+  <div class="panel-body fixed-panel">
+    <ul class="list list-group tickets" style="list-style:none;margin-bottom:0;">
+      <li ng-repeat="item in main.messages" ng-if="main.messages.length > 0" class="list-group-item message-list">
+        <a href="#" class="messages message" chat-modal-content ng-click="open(item.guid, $event)">
+          <profile-img userid="{{item.guid}}" style="height:50px;width:50px;"
+                       css="avatar c-avatar"></profile-img>
+
+          <span class="name">{{item.name}}</span>
+        </a>
+        <span class="date pull-right">{{item.time | fromNow}}</span>
+        <span class="msg"><br />{{item.msg}}</span>
+
+
+      </li>
+      <li ng-if="main.messages.length == 0">
+        <a href="#" style="padding-left:10px;padding-right:10px;">
+          <span class="name text-center" style="font-style:italic;">No new messages</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<!--   <div class="panel-footer">
+    <button chat-modal-content class="btn btn-default" ng-click="open()">New message</button>
+  </div> -->

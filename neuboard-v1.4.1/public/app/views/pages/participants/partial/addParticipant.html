@@ -1,0 +1,110 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">&nbsp;</h3>
+    <table class="container-fluid table" style="border:0;margin-bottom:0;">
+      <tr style="border:0;">
+        <td class="col-md-3 col-sm-3 col-xs-3" style="border:0;padding-bottom:15px;" rowspan="2">
+          <div class="span3 pull-left">
+            <profile-img userid="null" class="editable img-responsive profile-image" style="max-height:125px;max-width:125px;">
+          </div>
+        </td>
+        
+      </tr>
+      <tr style="border:0;">
+        <td style="vertical-align:bottom;border:0;background:#FFF">
+          <input type="text" required ng-model="newParticipant.displayname" class="form-control col-md-12" placeholder="Name (required)" />
+        </td>
+      </tr>
+    </table>
+    <div class="actions pull-right">
+      <i data-widget-toggle class="fa fa-chevron-down"></i>
+    </div>
+  </div>
+  <div class="panel-body">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-md-3 text-right">Category</label>
+        <div class="col-md-9">
+          <select class="form-control" ng-model="newParticipant.categoryname">
+            <option ng-repeat="item in MainCategory track by item.name" ng-selected="(item.name==newParticipant.categoryname)" value="{{item.name}}">{{item.name}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Email *</label>
+        <div class="col-md-9">
+          <input type="email" class="form-control" ng-model="newParticipant.email" placeholder="required" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Telephone</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.phone" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Address</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.address" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">City</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.city" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">State</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.state" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Zipcode</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.zip" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Country</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.country" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Fax</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" ng-model="newParticipant.fax" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 text-right">Notes</label>
+        <div class="col-md-9">
+          <div class="input-group">
+            <input type="text" class="form-control" ng-model="newParticipant.note" />
+            <a class="input-group-addon btn btn-primary inline" ng-click="addNote()"><i class="fa fa-plus-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row col-md-12" style="overflow-y:auto;max-height:260px;"
+           ng-if="newParticipant.notes && newParticipant.notes.length > 0">
+        <ul>
+          <li class="row" ng-repeat="note in newParticipant.notes track by $index" style="margin:0;padding:10px;list-style-type:none; border-top:1px solid #eee;">
+            <div>
+              <span>{{note.note}}</span>
+              <a class="btn btn-xs btn-danger pull-right" ng-click="removeNote($index)"><i class="fa fa-minus"></i></a>
+            </div>
+            <div>
+              <span class="pull-right" style="font-style:italic;font-size:small;">{{note.time | fromNow}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+  <div class="panel-footer" style="text-align:right;">
+    <button class="btn btn-primary btn-success" ng-click="postParticipant()">Save</button>
+    <button class="btn btn-primary btn-info" ng-click="cancel()">Cancel</button>
+  </div>
+</div>
